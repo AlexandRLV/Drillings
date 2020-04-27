@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ae9834e21801194288990b3190ee58d, type: 3}
+  m_Name: 250-4
+  m_EditorClassIdentifier: 
+  unitName: "\u0414\u043B\u0438\u043D\u0430 \u0448\u0442\u0430\u043D\u0433\u0438"
+  voices:
+  - {fileID: 8300000, guid: 3f3997b8d8a932645ac698909a90beb9, type: 3}
+  miniatureAnim: {fileID: 7400000, guid: 46a1e497757f14348996f8daeaf2d756, type: 2}
+  infoImage: {fileID: 0}
+  infoTextStrings:
+  - "\u0414\u043B\u0438\u043D\u0430 \u0448\u0442\u0430\u043D\u0433\u0438: 8,2 \u043C"
+  pointerReferenceId: 1
+  objectAnim: {fileID: 7400000, guid: 096b4bddbe6682d45971b7b51f34a69f, type: 2}
