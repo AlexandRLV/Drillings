@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: 1015-10
   m_EditorClassIdentifier: 
   unitName: "\u0412\u0435\u0441"
-  voice: {fileID: 8300000, guid: 4945d05b8f9c4d44bab94309ef6b4fdb, type: 3}
-  miniatureAnim: {fileID: 0}
-  infoText: "\u0412\u0435\u0441: 17 \u0442"
+  voices:
+  - {fileID: 8300000, guid: 4945d05b8f9c4d44bab94309ef6b4fdb, type: 3}
+  miniatureAnim: {fileID: 7400000, guid: 229fac1e25e66bb4081cdbe614c1bff7, type: 2}
+  infoImage: {fileID: 0}
+  infoTextStrings:
+  - "\u0412\u0435\u0441: 17\u0442"
+  pointerReferenceId: 0
   objectAnim: {fileID: 0}

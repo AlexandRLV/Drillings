@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Unit4Miniature
+  m_Name: Unit7Miniature
   serializedVersion: 6
   m_Legacy: 1
   m_Compressed: 0
@@ -87,7 +87,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: material._BaseColor.r
+    attribute: material._Color.r
     path: 10VS/Rocks
     classID: 23
     script: {fileID: 0}
@@ -124,7 +124,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: material._BaseColor.g
+    attribute: material._Color.g
     path: 10VS/Rocks
     classID: 23
     script: {fileID: 0}
@@ -161,7 +161,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: material._BaseColor.b
+    attribute: material._Color.b
     path: 10VS/Rocks
     classID: 23
     script: {fileID: 0}
@@ -198,7 +198,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: material._BaseColor.a
+    attribute: material._Color.a
     path: 10VS/Rocks
     classID: 23
     script: {fileID: 0}
@@ -302,7 +302,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: material._BaseColor.r
+    attribute: material._Color.r
     path: 10VS/Rocks
     classID: 23
     script: {fileID: 0}
@@ -339,7 +339,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: material._BaseColor.g
+    attribute: material._Color.g
     path: 10VS/Rocks
     classID: 23
     script: {fileID: 0}
@@ -376,7 +376,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: material._BaseColor.b
+    attribute: material._Color.b
     path: 10VS/Rocks
     classID: 23
     script: {fileID: 0}
@@ -413,7 +413,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: material._BaseColor.a
+    attribute: material._Color.a
     path: 10VS/Rocks
     classID: 23
     script: {fileID: 0}

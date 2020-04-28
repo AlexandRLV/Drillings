@@ -13,8 +13,12 @@ MonoBehaviour:
   m_Name: 1015-5
   m_EditorClassIdentifier: 
   unitName: "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u043F\u0435\u0440\u0435\u043C\u0435\u0449\u0435\u043D\u0438\u044F"
-  voice: {fileID: 8300000, guid: f5dc709fb03177f4dbfae42dcb8db453, type: 3}
-  miniatureAnim: {fileID: 0}
-  infoText: "\r\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u043F\u0435\u0440\u0435\u043C\u0435\u0449\u0435\u043D\u0438\u044F:
+  voices:
+  - {fileID: 8300000, guid: f5dc709fb03177f4dbfae42dcb8db453, type: 3}
+  miniatureAnim: {fileID: 7400000, guid: 54a8017c74eee684aa1c3f0530571b0f, type: 2}
+  infoImage: {fileID: 0}
+  infoTextStrings:
+  - "\r\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u043F\u0435\u0440\u0435\u043C\u0435\u0449\u0435\u043D\u0438\u044F:
     9 \u043A\u043C/\u0447"
+  pointerReferenceId: 0
   objectAnim: {fileID: 0}

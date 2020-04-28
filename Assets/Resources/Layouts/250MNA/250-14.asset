@@ -18,6 +18,6 @@ MonoBehaviour:
   miniatureAnim: {fileID: 0}
   infoImage: {fileID: 0}
   infoTextStrings:
-  - "\r\u0412\u0435\u0441: 85 \u043A\u0433"
+  - "\r\u0412\u0435\u0441: 85\u0442"
   pointerReferenceId: 0
   objectAnim: {fileID: 7400000, guid: 096b4bddbe6682d45971b7b51f34a69f, type: 2}

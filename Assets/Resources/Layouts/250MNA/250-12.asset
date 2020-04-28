@@ -21,6 +21,6 @@ MonoBehaviour:
   infoImage: {fileID: 0}
   infoTextStrings:
   - "\u041C\u0430\u0445 \u043F\u0440\u0435\u043E\u0434\u043E\u043B\u0435\u0432\u0430\u0435\u043C\u044B\u0439
-    \u043F\u043E\u0434\u044A\u0435\u043C: 12 \u0433\u0440\u0430\u0434\u0443\u0441\u043E\u0432"
+    \u043F\u043E\u0434\u044A\u0435\u043C: 12\xB0"
   pointerReferenceId: 0
   objectAnim: {fileID: 7400000, guid: 096b4bddbe6682d45971b7b51f34a69f, type: 2}

@@ -15,8 +15,12 @@ MonoBehaviour:
   unitName: "\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u044B\u0439
     \u043F\u0440\u0435\u043E\u0434\u043E\u043B\u0435\u0432\u0430\u0435\u043C\u044B\u0439
     \u043F\u043E\u0434\u044A\u0435\u043C"
-  voice: {fileID: 8300000, guid: b2286e0841c230f42beb8eba09b1df38, type: 3}
-  miniatureAnim: {fileID: 0}
-  infoText: "\u041C\u0430\u0445 \u043F\u0440\u0435\u043E\u0434\u043E\u043B\u0435\u0432\u0430\u0435\u043C\u044B\u0439
-    \u043F\u043E\u0434\u044A\u0435\u043C: 15\xB0"
+  voices:
+  - {fileID: 8300000, guid: b2286e0841c230f42beb8eba09b1df38, type: 3}
+  miniatureAnim: {fileID: 7400000, guid: 54a8017c74eee684aa1c3f0530571b0f, type: 2}
+  infoImage: {fileID: 0}
+  infoTextStrings:
+  - "\u041C\u0430\u0445 \u043F\u0440\u0435\u043E\u0434\u043E\u043B\u0435\u0432\u0430\u0435\u043C\u044B\u0439
+    \u043F\u043E\u0434\u044A\u0435\u043C:  15\xB0"
+  pointerReferenceId: 0
   objectAnim: {fileID: 0}

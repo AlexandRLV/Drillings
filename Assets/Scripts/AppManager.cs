@@ -85,7 +85,7 @@ public class AppManager : MonoBehaviour
     {
         AsyncOperation loading = SceneManager.LoadSceneAsync(CurrentScene, LoadSceneMode.Additive);
         while (!loading.isDone)
-            yield return new WaitForEndOfFrame();
+			yield return new WaitForEndOfFrame();
 
         CurrentLayout = FindObjectOfType<LayoutController>();
         CurrentLayout.UIManager = uiManager;
