@@ -86,7 +86,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: DrillAngle15
+    path: ArrowsParent
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -95,18 +95,18 @@ AnimationClip:
       - serializedVersion: 3
         time: 0
         value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
         weightedMode: 0
         inWeight: 0
         outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_IsActive
-    path: DrillAngleArrow
-    classID: 1
+    attribute: m_Color.a
+    path: ArrowsParent/DrillAngle15
+    classID: 212
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
@@ -114,18 +114,18 @@ AnimationClip:
       - serializedVersion: 3
         time: 0
         value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
         weightedMode: 0
         inWeight: 0
         outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_IsActive
-    path: DrillAngle30
-    classID: 1
+    attribute: m_Color.a
+    path: ArrowsParent/DrillAngleArrow
+    classID: 212
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
@@ -133,18 +133,18 @@ AnimationClip:
       - serializedVersion: 3
         time: 0
         value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
         weightedMode: 0
         inWeight: 0
         outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_IsActive
-    path: DrillAngle15Text
-    classID: 1
+    attribute: m_Color.a
+    path: ArrowsParent/DrillAngle30
+    classID: 212
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
@@ -152,18 +152,37 @@ AnimationClip:
       - serializedVersion: 3
         time: 0
         value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
         weightedMode: 0
         inWeight: 0
         outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_IsActive
-    path: DrillAngle30Text
-    classID: 1
+    attribute: m_Color.a
+    path: ArrowsParent/DrillAngle15Text
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Color.a
+    path: ArrowsParent/DrillAngle30Text
+    classID: 212
     script: {fileID: 0}
   m_PPtrCurves: []
   m_SampleRate: 60
@@ -305,7 +324,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: DrillAngle15
+    path: ArrowsParent
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -314,18 +333,18 @@ AnimationClip:
       - serializedVersion: 3
         time: 0
         value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
         weightedMode: 0
         inWeight: 0
         outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_IsActive
-    path: DrillAngleArrow
-    classID: 1
+    attribute: m_Color.a
+    path: ArrowsParent/DrillAngle15
+    classID: 212
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
@@ -333,18 +352,18 @@ AnimationClip:
       - serializedVersion: 3
         time: 0
         value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
         weightedMode: 0
         inWeight: 0
         outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_IsActive
-    path: DrillAngle30
-    classID: 1
+    attribute: m_Color.a
+    path: ArrowsParent/DrillAngleArrow
+    classID: 212
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
@@ -352,18 +371,18 @@ AnimationClip:
       - serializedVersion: 3
         time: 0
         value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
         weightedMode: 0
         inWeight: 0
         outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_IsActive
-    path: DrillAngle15Text
-    classID: 1
+    attribute: m_Color.a
+    path: ArrowsParent/DrillAngle30
+    classID: 212
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
@@ -371,18 +390,37 @@ AnimationClip:
       - serializedVersion: 3
         time: 0
         value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
         weightedMode: 0
         inWeight: 0
         outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_IsActive
-    path: DrillAngle30Text
-    classID: 1
+    attribute: m_Color.a
+    path: ArrowsParent/DrillAngle15Text
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Color.a
+    path: ArrowsParent/DrillAngle30Text
+    classID: 212
     script: {fileID: 0}
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
