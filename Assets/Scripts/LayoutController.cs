@@ -124,6 +124,11 @@ public class LayoutController : MonoBehaviour
             layoutUI.EnablePointer(referencePoints[unit.pointerReferenceId - 1]);
         else
             layoutUI.DisablePointer();
+        
+        if (LayoutData.CurrentUnitId == 3)
+            layoutUI.EnableArrows();
+        else
+            layoutUI.DisableArrows();
     }
 
     private void DisableUnitWorldContent()

@@ -7,18 +7,30 @@ public class LayoutWorldUI : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private Canvas canvas;
+    [SerializeField] private ArrowsManager arrowsManager;
+    [SerializeField] private GameObject arrowsParent;
     [SerializeField] private UIFadeManager infoImage;
     [SerializeField] private UIFadeManager infoCircle;
     [SerializeField] private Text infoText;
     [SerializeField] private UIFadeManager pointer;
 
+    [Header("SizeArrows")] 
+    [SerializeField] private RectTransform horizontalLongArrow;
+    [SerializeField] private RectTransform horizontalShortArrow;
+    [SerializeField] private RectTransform verticalArrow;
+    [SerializeField] private Text horizontalLongText;
+    [SerializeField] private Text horizontalShortText;
+    [SerializeField] private Text verticalText;
+
     private bool pointerEnabled;
+    private bool arrowsEnabled;
     private RectTransform imageRect;
     private RectTransform pointerRect;
+    private RectTransform hLTextRect;
+    private RectTransform hsTextRect;
+    private RectTransform vTextRect;
     private Transform cameraTransform;
     private Transform pointerTargetTransform;
-    public Vector2 imageCorner;
-    public Vector2 pointerTarget;
     
     
 
@@ -29,6 +41,9 @@ public class LayoutWorldUI : MonoBehaviour
         cameraTransform = Camera.main.transform;
         pointer.gameObject.SetActive(pointerEnabled);
         pointerRect = pointer.GetComponent<RectTransform>();
+        // hLTextRect = horizontalLongText.GetComponent<RectTransform>();
+        // hsTextRect = horizontalShortText.GetComponent<RectTransform>();
+        // vTextRect = verticalText.GetComponent<RectTransform>();
         
         infoImage.gameObject.SetActive(false);
         infoCircle.gameObject.SetActive(false);
@@ -41,36 +56,42 @@ public class LayoutWorldUI : MonoBehaviour
         transform.forward = cameraTransform.forward;
 
 
-        if (!pointerEnabled)
-            return;
-        
-        // Calculate reference points for pointer
-        // reference point on info image
-        float x = imageRect.anchoredPosition.x + imageRect.rect.width * imageRect.localScale.x / 2;
-        //x *= transform.localScale.x;
-        float y = imageRect.anchoredPosition.y - imageRect.rect.height * imageRect.localScale.y / 2;
-        //y *= transform.localScale.y;
-        imageCorner = new Vector2(x, y);
+        if (pointerEnabled)
+        {
+            // Calculate reference points for pointer
+            // reference point on info image
+            float x = imageRect.anchoredPosition.x + imageRect.rect.width * imageRect.localScale.x / 2;
+            //x *= transform.localScale.x;
+            float y = imageRect.anchoredPosition.y - imageRect.rect.height * imageRect.localScale.y / 2;
+            //y *= transform.localScale.y;
+            Vector2 imageCorner = new Vector2(x, y);
 
-        // reference point on target object, relative to camera view
-        Vector3 inversedTargetPos = canvas.transform.InverseTransformPoint(pointerTargetTransform.position);// * canvas.transform.localScale.x;
-        Vector3 inversedCamPos = canvas.transform.InverseTransformPoint(cameraTransform.position);// * canvas.transform.localScale.x;
-        float t = Mathf.Abs(inversedCamPos.z / Mathf.Abs(inversedCamPos.z - inversedTargetPos.z));
-        Vector2 flatTargetPos = new Vector2(inversedTargetPos.x, inversedTargetPos.y);
-        Vector2 flatCamPos = new Vector2(inversedCamPos.x, inversedCamPos.y);
-        Vector2 flatCamToTargetDir = (flatTargetPos - flatCamPos) * t;
+            // reference point on target object, relative to camera view
+            Vector2 pointerTarget = GetReferencePoint(pointerTargetTransform.position);
 
-        pointerTarget = flatCamPos + flatCamToTargetDir;
+            // Set pointer length, position and rotation
+            SetUpRect(pointerRect, imageCorner, pointerTarget);
+        }
 
-        // Set pointer length, position and rotation
-        Vector2 l = imageCorner - pointerTarget;
-        x = Vector2.Angle(Vector2.left, l);
-        y = l.magnitude;
-        pointerRect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, y / pointerRect.localScale.x);
-
-        pointerRect.anchoredPosition = (imageCorner + pointerTarget) / 2;
-
-        pointerRect.localRotation = Quaternion.Euler(0, 0, -x);
+        if (arrowsEnabled)
+        {
+            arrowsManager.CalculateArrowPoints();
+            
+            // set up long arrow
+            Vector2 arrowPoint1 = GetReferencePoint(arrowsManager.LongArrowPoint1);
+            Vector2 arrowPoint2 = GetReferencePoint(arrowsManager.LongArrowPoint2);
+            SetUpRect(horizontalLongArrow, arrowPoint1, arrowPoint2);
+            
+            // set up short arrow
+            arrowPoint1 = GetReferencePoint(arrowsManager.ShortArrowPoint1);
+            arrowPoint2 = GetReferencePoint(arrowsManager.ShortArrowPoint2);
+            SetUpRect(horizontalShortArrow, arrowPoint1, arrowPoint2);
+            
+            // set up vertical arrow
+            arrowPoint1 = GetReferencePoint(arrowsManager.VertArrowPoint1);
+            arrowPoint2 = GetReferencePoint(arrowsManager.VertArrowPoint2);
+            SetUpRect(verticalArrow, arrowPoint1, arrowPoint2);
+        }
     }
 
 
@@ -125,5 +146,42 @@ public class LayoutWorldUI : MonoBehaviour
         pointerEnabled = false;
         if (pointer.gameObject.activeSelf)
             pointer.FadeOut();
+    }
+
+    public void EnableArrows()
+    {
+        arrowsEnabled = true;
+        arrowsParent.SetActive(true);
+    }
+
+    public void DisableArrows()
+    {
+        arrowsEnabled = false;
+        arrowsParent.SetActive(false);
+    }
+
+
+    private void SetUpRect(RectTransform rect, Vector2 point1, Vector2 point2)
+    {
+        Vector2 l = point1 - point2;
+        float x = Vector2.Angle(Vector2.left, l);
+        float y = l.magnitude;
+        rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, y / pointerRect.localScale.x);
+
+        rect.anchoredPosition = (point1 + point2) / 2;
+
+        rect.localRotation = Quaternion.Euler(0, 0, -x);
+    }
+
+    private Vector2 GetReferencePoint(Vector3 worldPoint)
+    {
+        Vector3 inversedTargetPos = canvas.transform.InverseTransformPoint(worldPoint);// * canvas.transform.localScale.x;
+        Vector3 inversedCamPos = canvas.transform.InverseTransformPoint(cameraTransform.position);// * canvas.transform.localScale.x;
+        float t = Mathf.Abs(inversedCamPos.z / Mathf.Abs(inversedCamPos.z - inversedTargetPos.z));
+        Vector2 flatTargetPos = new Vector2(inversedTargetPos.x, inversedTargetPos.y);
+        Vector2 flatCamPos = new Vector2(inversedCamPos.x, inversedCamPos.y);
+        Vector2 flatCamToTargetDir = (flatTargetPos - flatCamPos) * t;
+
+        return flatCamPos + flatCamToTargetDir;
     }
 }
