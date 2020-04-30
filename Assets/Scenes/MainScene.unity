@@ -2878,7 +2878,7 @@ MonoBehaviour:
   controlsDefaultWidth: 400
   controlsWidthPerUnit: 110
   controlsButtonOffset: 73
-  delayBeforePlay: 2
+  delayBeforePlay: 3
   defaultUnitColor: {r: 1, g: 1, b: 1, a: 1}
   selectedUnitColor: {r: 0, g: 0.38431376, b: 0.65882355, a: 1}
   uiManager: {fileID: 1599249778}

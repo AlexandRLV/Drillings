@@ -92,11 +92,13 @@ public class ObjectUIController : MonoBehaviour
 
     public void SetUpUnit(ObjectInfoUnitData unitData)
     {
-        if (loadingTextFade.gameObject.activeSelf)
-            loadingTextFade.FadeOut();
-        
-        unitNameText.gameObject.SetActive(true);
         unitNameText.text = unitData.unitName;
+        
+        loadingTextFade.gameObject.SetActive(true);
+        loadingTextFade.FadeIn();
+        loadingText.text = unitData.unitName;
+        unitNameText.gameObject.SetActive(false);
+        
         isPlaying = false;
         playButtonImage.sprite = playSprite;
         
@@ -122,6 +124,11 @@ public class ObjectUIController : MonoBehaviour
     {
         if (currentRunningRoutine != null)
             StopCoroutine(currentRunningRoutine);
+        
+        if (loadingTextFade.gameObject.activeSelf)
+            loadingTextFade.FadeOut();
+        
+        unitNameText.gameObject.SetActive(true);
         
         isPlaying = !isPlaying;
         playButtonImage.sprite = isPlaying ? pauseSprite : playSprite;
@@ -166,18 +173,10 @@ public class ObjectUIController : MonoBehaviour
         selections[currentUnitId].color = selectedUnitColor;
     }
 
-    public void AudioFinished(string nextUnitName)
+    public void AudioFinished()
     {
         playButtonImage.sprite = playSprite;
         isPlaying = false;
-
-        if (!string.IsNullOrWhiteSpace(nextUnitName))
-        {
-            loadingTextFade.gameObject.SetActive(true);
-            loadingTextFade.FadeIn();
-            loadingText.text = nextUnitName;
-            unitNameText.gameObject.SetActive(false);
-        }
     }
 
     
@@ -202,5 +201,6 @@ public class ObjectUIController : MonoBehaviour
         yield return new WaitForSeconds(seconds);
         
         PlayPause();
+        currentRunningRoutine = null;
     }
 }

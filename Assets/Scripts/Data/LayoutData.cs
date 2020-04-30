@@ -6,16 +6,6 @@ public class LayoutData : ScriptableObject
     public ObjectInfoUnitData CurrentUnit => units[CurrentUnitId];
     public int UnitsCount => units.Length;
     public bool IsLastUnit => CurrentUnitId == units.Length - 1;
-    public string NextUnitName
-    {
-        get
-        {
-            if (CurrentUnitId >= units.Length - 1)
-                return null;
-
-            return units[CurrentUnitId + 1].unitName;
-        }
-    }
     public int CurrentUnitId { get; private set; }
 
     public string objectName;

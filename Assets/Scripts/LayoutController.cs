@@ -35,7 +35,7 @@ public class LayoutController : MonoBehaviour
         if (currentUnitVoiceId >= unit.voices.Length - 1)
         {
             Stop();
-            UIManager.AudioFinished(LayoutData.IsLastUnit, LayoutData.NextUnitName);
+            UIManager.AudioFinished(LayoutData.IsLastUnit);
             return;
         }
 
@@ -125,7 +125,10 @@ public class LayoutController : MonoBehaviour
         else
             layoutUI.DisablePointer();
         
-        layoutUI.EnableArrows();
+        if (unit.sizes != null && unit.sizes.Length > 0)
+            layoutUI.EnableArrows(unit.sizes[0], unit.sizes[1], unit.sizes[2]);
+        else
+            layoutUI.DisableArrows();
     }
 
     private void DisableUnitWorldContent()

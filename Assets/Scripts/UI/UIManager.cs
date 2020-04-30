@@ -74,17 +74,15 @@ public class UIManager : MonoBehaviour
         searchingCircles.Stop();
     }
 
-    public void AudioFinished(bool isLastUnit, string nextUnitName)
+    public void AudioFinished(bool isLastUnit)
     {
         Debug.Log("Audio finished");
-        objectLayout.AudioFinished(nextUnitName);
+        objectLayout.AudioFinished();
 
         if (isLastUnit)
             currentRoutine = StartCoroutine(ShowRestartButtonWithDelay());
         else
-        {
-            currentRoutine = StartCoroutine(ContinueWithDelay());
-        }
+            Continue();
     }
 
     public void Restart()
