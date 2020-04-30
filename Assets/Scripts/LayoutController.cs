@@ -125,10 +125,7 @@ public class LayoutController : MonoBehaviour
         else
             layoutUI.DisablePointer();
         
-        if (LayoutData.CurrentUnitId == 3)
-            layoutUI.EnableArrows();
-        else
-            layoutUI.DisableArrows();
+        layoutUI.EnableArrows();
     }
 
     private void DisableUnitWorldContent()
