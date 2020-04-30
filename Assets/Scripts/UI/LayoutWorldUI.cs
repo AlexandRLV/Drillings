@@ -189,6 +189,11 @@ public class LayoutWorldUI : MonoBehaviour
         x = arrowRect.anchoredPosition.x > 0 ? Mathf.Abs(x) : -Mathf.Abs(x);
         float y = sizeTextOffset * Mathf.Cos(a * Mathf.Deg2Rad);
         textRext.anchoredPosition = arrowRect.anchoredPosition + new Vector2(x, -y);
+        
+        if (a < -60)
+            a += 90;
+        else if (a > 60)
+            a -= 90;
         textRext.localRotation = Quaternion.Euler(0, 0, a);
     }
 
