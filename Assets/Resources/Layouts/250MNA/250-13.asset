@@ -21,4 +21,8 @@ MonoBehaviour:
   - "\r\u0414\u043B\u0438\u043D\u0430: 10,5 \u043C\n\u0428\u0438\u0440\u0438\u043D\u0430:
     6,1 \u043C\n\u0412\u044B\u0441\u043E\u0442\u0430: 16,2 \u043C"
   pointerReferenceId: 0
+  sizes:
+  - "10,5 \u043C"
+  - "6,1 \u043C"
+  - "16,2 \u043C"
   objectAnim: {fileID: 7400000, guid: 096b4bddbe6682d45971b7b51f34a69f, type: 2}

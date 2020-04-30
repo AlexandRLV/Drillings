@@ -12,5 +12,6 @@ public class ObjectInfoUnitData : ScriptableObject
     public Sprite infoImage;
     [TextArea(3, 10)] public string[] infoTextStrings;
     public int pointerReferenceId;
+    public string[] sizes;
     public AnimationClip objectAnim;
 }
