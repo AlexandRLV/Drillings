@@ -806,7 +806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91e8e616c37b7b24a83c71b8d4970dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sizeTextOffset: 1.5
+  sizeTextOffset: 2
   canvas: {fileID: 918806046}
   arrowsManager: {fileID: 778029876}
   arrowsParent: {fileID: 2031881640}
