@@ -19,15 +19,9 @@ public class Wireframe : MonoBehaviour
      private Vector3[] lines ;
      private ArrayList lines_List ;
      public Material lineMaterial ;
-     private Renderer renderer; 
- 
-     /*
-     ████████       ▄▀▀■  ▀▀█▀▀  ▄▀▀▄  █▀▀▄  ▀▀█▀▀ 
-     ████████       ▀■■▄    █    █■■█  █▀▀▄    █   
-     ████████       ■▄▄▀    █    █  █  █  █    █   
-     */
- 
-     
+     private Renderer renderer;
+
+
      void Start () {
          renderer = gameObject.GetComponent<Renderer>();
          if (lineMaterial == null) {
@@ -64,6 +58,8 @@ public class Wireframe : MonoBehaviour
          lines = (Vector3[]) lines_List.ToArray(typeof(Vector3));
          lines_List.Clear();//free memory from the arraylist
          size = lines.Length;
+         
+         //Invoke("DrawObject", 2f);
      }
      
      // to simulate thickness, draw line as a quad scaled along the camera's vertical axis.
@@ -83,15 +79,9 @@ public class Wireframe : MonoBehaviour
      {
          return gameObject.transform.TransformPoint(vec);
      }
- 
-     /*
-     ████████       █  █  █▀▀▄  █▀▀▄  ▄▀▀▄  ▀▀█▀▀  █▀▀▀ 
-     ████████       █  █  █▀▀   █  █  █■■█    █    █■■  
-     ████████       ▀▄▄▀  █     █▄▄▀  █  █    █    █▄▄▄ 
-     */
      
  
-     void OnRenderObject ()
+     private void OnRenderObject ()
      {
          renderer.enabled = render_mesh_normaly;
          if (lines == null || lines.Length < lineWidth) {
