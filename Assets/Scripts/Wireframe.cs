@@ -15,14 +15,14 @@ public class Wireframe : MonoBehaviour
     private Vector3[] lines;
     private ArrayList lines_List;
     public Material lineMaterial;
+    public Material meshMaterial;
     private Renderer renderer;
 
 
     void Start()
     {
         renderer = gameObject.GetComponent<Renderer>();
-        // lineMaterial.hideFlags = HideFlags.HideAndDontSave;
-        // lineMaterial.shader.hideFlags = HideFlags.HideAndDontSave;
+        renderer.material = meshMaterial;
         lines_List = new ArrayList();
 
         MeshFilter filter = gameObject.GetComponent<MeshFilter>();
