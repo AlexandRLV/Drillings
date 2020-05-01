@@ -197,15 +197,11 @@ public class LayoutWorldUI : MonoBehaviour
         
         if (a < -60)
         {
-            Debug.Log("Increasing a, current = " + a);
             a += 90;
-            Debug.Log("New a = " + a);
         }
         else if (a > 60)
         {
-            Debug.Log("Decreasing a, current = " + a);
             a -= 90;
-            Debug.Log("New a = " + a);
         }
         textRext.localRotation = Quaternion.Euler(0, 0, a);
     }

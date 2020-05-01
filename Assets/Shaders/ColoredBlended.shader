@@ -6,10 +6,10 @@ Shader "Lines/Colored Blended"
         {
             BindChannels 
             { 
-                Bind "Color",color 
+                Bind "Color", color 
             }
             
-            Blend SrcAlpha OneMinusSrcAlpha
+            //Blend SrcAlpha OneMinusSrcAlpha
             //ZWrite on 
             Cull Off 
             Fog { Mode Off }
