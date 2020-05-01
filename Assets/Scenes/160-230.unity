@@ -1977,7 +1977,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1750060172
 Transform:
   m_ObjectHideFlags: 0
@@ -2587,3 +2587,4 @@ MonoBehaviour:
   backgroundColor: {r: 1, g: 0.9858491, b: 0.9858491, a: 1}
   lineWidth: 1
   lineMaterial: {fileID: 2100000, guid: 29900f7ed1019a94e9cee7862490c13a, type: 2}
+  meshMaterial: {fileID: 0}
