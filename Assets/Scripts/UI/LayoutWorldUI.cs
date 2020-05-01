@@ -174,6 +174,10 @@ public class LayoutWorldUI : MonoBehaviour
         Vector2 l = point1 - point2;
         float x = Vector2.Angle(Vector2.left, l);
         x = l.y < 0 ? x : -x;
+        if (x > 90)
+            x -= 180;
+        else if (x < -90)
+            x += 180;
         float y = l.magnitude;
         rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, y / pointerRect.localScale.x);
 
@@ -185,15 +189,24 @@ public class LayoutWorldUI : MonoBehaviour
     private void SetUpTextRect(RectTransform textRext, RectTransform arrowRect)
     {
         float a = arrowRect.localRotation.eulerAngles.z;
+        a = a > 180 ? a - 360 : a;
         float x = sizeTextOffset * Mathf.Sin(a * Mathf.Deg2Rad);
         x = arrowRect.anchoredPosition.x > 0 ? Mathf.Abs(x) : -Mathf.Abs(x);
         float y = sizeTextOffset * Mathf.Cos(a * Mathf.Deg2Rad);
         textRext.anchoredPosition = arrowRect.anchoredPosition + new Vector2(x, -y);
         
         if (a < -60)
+        {
+            Debug.Log("Increasing a, current = " + a);
             a += 90;
+            Debug.Log("New a = " + a);
+        }
         else if (a > 60)
+        {
+            Debug.Log("Decreasing a, current = " + a);
             a -= 90;
+            Debug.Log("New a = " + a);
+        }
         textRext.localRotation = Quaternion.Euler(0, 0, a);
     }
 
