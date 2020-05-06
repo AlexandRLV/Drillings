@@ -41,7 +41,8 @@ public class UIFadeManager : MonoBehaviour
             float t = timer / fadeInTime;
             foreach (Graphic graphic in targetGraphics)
             {
-                graphic.color = new Color(1, 1, 1, t);
+				Color baseColor = graphic.color;
+                graphic.color = new Color(baseColor.r, baseColor.g, baseColor.b, t);
             }
             timer += Time.deltaTime;
             yield return null;
@@ -49,7 +50,8 @@ public class UIFadeManager : MonoBehaviour
 
         foreach (Graphic graphic in targetGraphics)
         {
-            graphic.color = Color.white;
+			Color baseColor = graphic.color;
+            graphic.color = new Color(baseColor.r, baseColor.g, baseColor.b, 1);
         }
     }
 
@@ -61,7 +63,8 @@ public class UIFadeManager : MonoBehaviour
             float t = timer / fadeOutTime;
             foreach (Graphic graphic in targetGraphics)
             {
-                graphic.color = new Color(1, 1, 1, 1 - t);
+				Color baseColor = graphic.color;
+                graphic.color = new Color(baseColor.r, baseColor.g, baseColor.b, 1 - t);
             }
             timer += Time.deltaTime;
             yield return null;
@@ -69,7 +72,8 @@ public class UIFadeManager : MonoBehaviour
 
         foreach (Graphic graphic in targetGraphics)
         {
-            graphic.color = Color.white;
+			Color baseColor = graphic.color;
+            graphic.color = new Color(baseColor.r, baseColor.g, baseColor.b, 1);
         }
         
         gameObject.SetActive(false);
