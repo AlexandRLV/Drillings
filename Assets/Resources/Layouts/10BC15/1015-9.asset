@@ -18,8 +18,7 @@ MonoBehaviour:
   miniatureAnim: {fileID: 7400000, guid: 229fac1e25e66bb4081cdbe614c1bff7, type: 2}
   infoImage: {fileID: 0}
   infoTextStrings:
-  - "\u0414\u043B\u0438\u043D\u0430: 8,35 \u043C\n\u0428\u0438\u0440\u0438\u043D\u0430:
-    2,5 \u043C\n\u0412\u044B\u0441\u043E\u0442\u0430: 1,75 \u043C"
+  - 
   pointerReferenceId: 0
   sizes:
   - "8,35 \u043C"

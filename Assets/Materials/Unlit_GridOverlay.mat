@@ -24,6 +24,6 @@ Material:
     - _DistFromCenter: 0.15
     - _Grid2Size: 0.5
     - _Grid3Size: 0.5
-    - _GridSize: 0.01
+    - _GridSize: 0.05
     - _Offset: 0
     m_Colors: []
