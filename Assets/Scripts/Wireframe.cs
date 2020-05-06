@@ -19,8 +19,13 @@ public class Wireframe : MonoBehaviour
     private Renderer renderer;
 
 
-    void Start()
+    private void Start()
     {
+        #if UNITY_ANDROID
+            enabled = false;
+            return;
+        #endif
+        
         renderer = gameObject.GetComponent<Renderer>();
         renderer.material = meshMaterial;
         lines_List = new ArrayList();
