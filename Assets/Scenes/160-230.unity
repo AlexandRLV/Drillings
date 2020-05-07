@@ -548,7 +548,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cd1136c0b70cc454081a04bc8ef3102e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d644c92e349a99a4b99cb3944ea3e12c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2613,7 +2613,7 @@ MonoBehaviour:
   backgroundColor: {r: 1, g: 0.9858491, b: 0.9858491, a: 1}
   lineWidth: 1
   lineMaterial: {fileID: 2100000, guid: 29900f7ed1019a94e9cee7862490c13a, type: 2}
-  meshMaterial: {fileID: 0}
+  meshMaterial: {fileID: 2100000, guid: 889b5fb31315bd94d8b1f65705b58c65, type: 2}
 --- !u!1 &2129609284
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: 10BC15
   m_EditorClassIdentifier: 
   objectName: "10\u0412\u0421 15"
+  delayBetweenVoicesInUnit: 1
   units:
   - {fileID: 11400000, guid: 368debfa459d1d44cb47b34de64e6a69, type: 2}
   - {fileID: 11400000, guid: b9c477422ea85354aa2fe0ed77ac59eb, type: 2}
   - {fileID: 11400000, guid: 95049dfacdac2a340ac393d279ddcbef, type: 2}
-  - {fileID: 11400000, guid: 589590f4c4fabb44992d3f166d15bdea, type: 2}
   - {fileID: 11400000, guid: 57d5d03a4c3e98549a98eb21e4870c13, type: 2}
   - {fileID: 11400000, guid: e70a6ecf66cd5e742bd5ec3c0d459edb, type: 2}
   - {fileID: 11400000, guid: e319f43fb5c1ff047841dfdf54c71270, type: 2}
