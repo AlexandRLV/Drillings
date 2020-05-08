@@ -106,6 +106,7 @@ public class LayoutController : MonoBehaviour
         currentUnitVoiceId = 0;
         
         //SetUpUnitWorldContent(unit);
+		layoutUI.DisableArrows();
         
         UIManager.UpdateUnit(unit);
     }

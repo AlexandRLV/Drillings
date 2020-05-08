@@ -25,7 +25,9 @@ public class LayoutWorldUI : MonoBehaviour
     [SerializeField] private Text verticalText;
 
     private bool pointerEnabled;
-    private bool arrowsEnabled;
+    private bool longArrowEnabled;
+	private bool shortArrowEnabled;
+	private bool vertArrowEnabled;
     private RectTransform imageRect;
     private RectTransform pointerRect;
     private RectTransform hLTextRect;
@@ -75,25 +77,31 @@ public class LayoutWorldUI : MonoBehaviour
             SetUpRect(pointerRect, imageCorner, pointerTarget);
         }
 
-        if (arrowsEnabled)
-        {
-            arrowsManager.CalculateArrowPoints();
-            
+        arrowsManager.CalculateArrowPoints();
+		
+        if (longArrowEnabled)
+        {            
             // set up long arrow
             Vector2 arrowPoint1 = GetReferencePoint(arrowsManager.LongArrowPoint1);
             Vector2 arrowPoint2 = GetReferencePoint(arrowsManager.LongArrowPoint2);
             SetUpRect(horizontalLongArrow, arrowPoint1, arrowPoint2);
             SetUpTextRect(hLTextRect, horizontalLongArrow);
-            
+		}
+		
+		if (shortArrowEnabled)
+        {
             // set up short arrow
-            arrowPoint1 = GetReferencePoint(arrowsManager.ShortArrowPoint1);
-            arrowPoint2 = GetReferencePoint(arrowsManager.ShortArrowPoint2);
+            Vector2 arrowPoint1 = GetReferencePoint(arrowsManager.ShortArrowPoint1);
+            Vector2 arrowPoint2 = GetReferencePoint(arrowsManager.ShortArrowPoint2);
             SetUpRect(horizontalShortArrow, arrowPoint1, arrowPoint2);
             SetUpTextRect(hsTextRect, horizontalShortArrow);
-            
+        }
+		
+		if (vertArrowEnabled)
+        {
             // set up vertical arrow
-            arrowPoint1 = GetReferencePoint(arrowsManager.VertArrowPoint1);
-            arrowPoint2 = GetReferencePoint(arrowsManager.VertArrowPoint2);
+            Vector2 arrowPoint1 = GetReferencePoint(arrowsManager.VertArrowPoint1);
+            Vector2 arrowPoint2 = GetReferencePoint(arrowsManager.VertArrowPoint2);
             SetUpRect(verticalArrow, arrowPoint1, arrowPoint2);
             SetUpTextRect(vTextRect, verticalArrow);
         }
@@ -155,16 +163,54 @@ public class LayoutWorldUI : MonoBehaviour
 
     public void EnableArrows(string longSize, string shortSize, string vertSize)
     {
-        arrowsEnabled = true;
+		if (!string.IsNullOrWhiteSpace(longSize))
+		{
+			longArrowEnabled = true;
+			horizontalLongText.text = longSize;
+			horizontalLongText.gameObject.SetActive(true);
+			horizontalLongArrow.gameObject.SetActive(true);
+		}
+		else
+		{
+			longArrowEnabled = false;
+			horizontalLongText.gameObject.SetActive(false);
+			horizontalLongArrow.gameObject.SetActive(false);
+		}
+		if (!string.IsNullOrWhiteSpace(shortSize))
+		{
+			shortArrowEnabled = true;
+			horizontalShortText.text = shortSize;
+			horizontalShortText.gameObject.SetActive(true);
+			horizontalShortArrow.gameObject.SetActive(true);
+		}
+		else
+		{
+			shortArrowEnabled = false;
+			horizontalShortText.gameObject.SetActive(false);
+			horizontalShortArrow.gameObject.SetActive(false);
+		}
+		if (!string.IsNullOrWhiteSpace(vertSize))
+		{
+			vertArrowEnabled = true;
+			verticalText.text = shortSize;
+			verticalText.gameObject.SetActive(true);
+			verticalArrow.gameObject.SetActive(true);
+		}
+		else
+		{
+			vertArrowEnabled = false;
+			verticalText.gameObject.SetActive(false);
+			verticalArrow.gameObject.SetActive(false);
+		}
+		
         arrowsParent.SetActive(true);
-        horizontalLongText.text = longSize;
-        horizontalShortText.text = shortSize;
-        verticalText.text = vertSize;
     }
 
     public void DisableArrows()
     {
-        arrowsEnabled = false;
+        vertArrowEnabled = false;
+		shortArrowEnabled = false;
+		longArrowEnabled = false;
         arrowsParent.SetActive(false);
     }
 

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Wireframe : MonoBehaviour
 {
-	public int skipTriangles;
     public bool render_mesh_normaly = true;
     public bool render_lines_1st = false;
     public bool render_lines_2nd = false;
@@ -36,7 +35,7 @@ public class Wireframe : MonoBehaviour
         Vector3[] vertices = mesh.vertices;
         int[] triangles = mesh.triangles;
 
-        for (int i = 0; i + 2 < triangles.Length; i += 3 * skipTriangles)
+        for (int i = 0; i + 2 < triangles.Length; i += 3)
         {
             lines_List.Add(vertices[triangles[i]]);
             lines_List.Add(vertices[triangles[i + 1]]);
@@ -46,8 +45,6 @@ public class Wireframe : MonoBehaviour
         //arrays are faster than array lists
         lines = (Vector3[]) lines_List.ToArray(typeof(Vector3));
         lines_List.Clear(); //free memory from the arraylist
-
-        //Invoke("DrawObject", 2f);
     }
 
     // to simulate thickness, draw line as a quad scaled along the camera's vertical axis.

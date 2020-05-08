@@ -83,11 +83,14 @@ public class AppManager : MonoBehaviour
 
     private IEnumerator LoadScene(Transform targetTransform)
     {
+		Debug.Log("Started loading scene");
         AsyncOperation loading = SceneManager.LoadSceneAsync(CurrentScene, LoadSceneMode.Additive);
         while (!loading.isDone)
-			yield return new WaitForEndOfFrame();
+			yield return null;
 
+		Debug.Log("Loaded scene");
         CurrentLayout = FindObjectOfType<LayoutController>();
+		Debug.Log("Found LayoutController");
         CurrentLayout.UIManager = uiManager;
         CurrentLayout.gameObject.SetActive(false);
         uiManager.StopLoadingAnimation();
