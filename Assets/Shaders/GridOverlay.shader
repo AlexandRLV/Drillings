@@ -1,9 +1,9 @@
-﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
-
-Shader "Unlit/GridOverlay"
+﻿Shader "Unlit/GridOverlay"
 {
 	Properties
 	{
+		_GridColor ("Grid Color", Color) = (1,1,1,1)
+		_BackColor ("Background Color", Color) = (0,0,0,1)
       	_GridSize("Grid Size", Float) = 1
       	_Alpha ("Alpha", Range(0,1)) = 1
       	_DistFromCenter ("Dist From Center", Float) = 1
@@ -32,6 +32,8 @@ Shader "Unlit/GridOverlay"
             float _DistFromCenter;
             float _Offset;
             float4 _CenterPoint;
+			float4 _GridColor;
+			float4 _BackColor;
 
 	        struct appdata
    	        {
@@ -83,15 +85,16 @@ Shader "Unlit/GridOverlay"
 
 	    	fixed4 frag (v2f i) : SV_Target
     		{       
-    			fixed col = DrawGrid(i.uv, _GridSize, 0.05);
+    			fixed col = DrawGrid(i.uv, _GridSize, 0.1);
     			float d = dist(i.wPos);
     			if (d > _DistFromCenter)
-    			    return float4(col, col, col, 0);
+    			    return float4(0, 0, 0, 0);
     			else
     			{
+					float4 tCol = lerp(_BackColor, _GridColor, col);
     			    float t = 1 - d / _DistFromCenter;
     			    t = t * t;
-    			    return float4(col, col, col, _Alpha * t);
+    			    return float4(tCol.rgb, _Alpha * t);
     			}
     		}
 	    	ENDCG

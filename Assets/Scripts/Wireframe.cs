@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Wireframe : MonoBehaviour
 {
+	public int skipTriangles;
     public bool render_mesh_normaly = true;
     public bool render_lines_1st = false;
     public bool render_lines_2nd = false;
@@ -35,7 +36,7 @@ public class Wireframe : MonoBehaviour
         Vector3[] vertices = mesh.vertices;
         int[] triangles = mesh.triangles;
 
-        for (int i = 0; i + 2 < triangles.Length; i += 3)
+        for (int i = 0; i + 2 < triangles.Length; i += 3 * skipTriangles)
         {
             lines_List.Add(vertices[triangles[i]]);
             lines_List.Add(vertices[triangles[i + 1]]);

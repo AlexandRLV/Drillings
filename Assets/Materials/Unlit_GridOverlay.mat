@@ -26,4 +26,6 @@ Material:
     - _Grid3Size: 0.5
     - _GridSize: 0.05
     - _Offset: 0
-    m_Colors: []
+    m_Colors:
+    - _BackColor: {r: 0, g: 0, b: 0, a: 1}
+    - _GridColor: {r: 1, g: 1, b: 1, a: 1}

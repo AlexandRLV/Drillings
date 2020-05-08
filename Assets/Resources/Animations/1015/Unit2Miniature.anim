@@ -27,7 +27,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: 10VS
+    path: 1015
   m_CompressedRotationCurves: []
   m_EulerCurves: []
   m_PositionCurves:
@@ -325,20 +325,11 @@ AnimationClip:
         weightedMode: 0
         inWeight: 0
         outWeight: 0
-      - serializedVersion: 3
-        time: 2
-        value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: 10VS/Rocks
+    path: Land
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -357,7 +348,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Land
+    path: 1015/Rocks
     classID: 1
     script: {fileID: 0}
   m_PPtrCurves: []
@@ -800,20 +791,11 @@ AnimationClip:
         weightedMode: 0
         inWeight: 0
         outWeight: 0
-      - serializedVersion: 3
-        time: 2
-        value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: 10VS/Rocks
+    path: Land
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -832,7 +814,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalRotation.x
-    path: 10VS
+    path: 1015
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -851,7 +833,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalRotation.y
-    path: 10VS
+    path: 1015
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -870,7 +852,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalRotation.z
-    path: 10VS
+    path: 1015
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -889,7 +871,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalRotation.w
-    path: 10VS
+    path: 1015
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -908,7 +890,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Land
+    path: 1015/Rocks
     classID: 1
     script: {fileID: 0}
   m_EulerEditorCurves:
@@ -928,7 +910,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesBaked.x
-    path: 10VS
+    path: 1015
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -947,7 +929,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesBaked.y
-    path: 10VS
+    path: 1015
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -966,7 +948,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesBaked.z
-    path: 10VS
+    path: 1015
     classID: 4
     script: {fileID: 0}
   m_HasGenericRootTransform: 0
