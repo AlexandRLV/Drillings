@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91e8e616c37b7b24a83c71b8d4970dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sizeTextOffset: 2
+  sizeTextOffset: {fileID: 11400000, guid: 385c5ae71e6debf4390f2bbe1527506c, type: 2}
   canvas: {fileID: 782084222}
   arrowsManager: {fileID: 712502104}
   arrowsParent: {fileID: 541707451}
@@ -1311,6 +1311,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 331a2b0e856ca7841a73d672530e7729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayBetweenVoicesInUnit: {fileID: 11400000, guid: aaa8bba2bd54e2645ab2bbe2606e24c5,
+    type: 2}
   miniatureAnimation: {fileID: 281261990}
   objectBackingAnimation: {fileID: 648254232}
   voiceSource: {fileID: 1179395767}
@@ -2609,8 +2611,8 @@ MonoBehaviour:
   render_lines_1st: 0
   render_lines_2nd: 1
   render_lines_3rd: 0
-  lineColor: {r: 0, g: 0, b: 1, a: 1}
-  backgroundColor: {r: 1, g: 0.9858491, b: 0.9858491, a: 1}
+  lineColor: {fileID: 11400000, guid: 0edbceb45082ced4dbc85abadf8e1b13, type: 2}
+  backgroundColor: {fileID: 11400000, guid: 05c6d176bb299434cafc0f18beb98d8e, type: 2}
   lineWidth: 1
   lineMaterial: {fileID: 2100000, guid: 29900f7ed1019a94e9cee7862490c13a, type: 2}
   meshMaterial: {fileID: 2100000, guid: 889b5fb31315bd94d8b1f65705b58c65, type: 2}

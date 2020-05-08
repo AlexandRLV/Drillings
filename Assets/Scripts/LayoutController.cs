@@ -8,6 +8,8 @@ public class LayoutController : MonoBehaviour
     public bool IsPlaying { get; private set; }
     public Transform ObjectTransform => objectBackingAnimation.transform;
     
+	[SerializeField] private FloatVariable delayBetweenVoicesInUnit;
+	
     [Header("References")]
     [SerializeField] private Animation miniatureAnimation;
     [SerializeField] private Animation objectBackingAnimation;
@@ -40,7 +42,7 @@ public class LayoutController : MonoBehaviour
         }
 
         if (currentRoutine == null)
-            currentRoutine = StartCoroutine(WaitAndPlayNextUnitVoice(LayoutData.delayBetweenVoicesInUnit, unit));
+            currentRoutine = StartCoroutine(WaitAndPlayNextUnitVoice(delayBetweenVoicesInUnit, unit));
     }
 
 

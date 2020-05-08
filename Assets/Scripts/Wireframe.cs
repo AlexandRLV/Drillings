@@ -8,8 +8,8 @@ public class Wireframe : MonoBehaviour
     public bool render_lines_1st = false;
     public bool render_lines_2nd = false;
     public bool render_lines_3rd = false;
-    public Color lineColor = new Color(0.0f, 1.0f, 1.0f);
-    public Color backgroundColor = new Color(0.0f, 0.5f, 0.5f);
+    public ColorVariable lineColor;
+    public ColorVariable backgroundColor;
     public float lineWidth = 3;
 
     private Vector3[] lines;

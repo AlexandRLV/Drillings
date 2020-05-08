@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class LayoutWorldUI : MonoBehaviour
 {
-    [SerializeField] private float sizeTextOffset;
+    [SerializeField] private FloatVariable sizeTextOffset;
     
     [Header("References")]
     [SerializeField] private Canvas canvas;
@@ -192,7 +192,7 @@ public class LayoutWorldUI : MonoBehaviour
 		if (!string.IsNullOrWhiteSpace(vertSize))
 		{
 			vertArrowEnabled = true;
-			verticalText.text = shortSize;
+			verticalText.text = vertSize;
 			verticalText.gameObject.SetActive(true);
 			verticalArrow.gameObject.SetActive(true);
 		}
