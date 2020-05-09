@@ -621,6 +621,8 @@ MonoBehaviour:
   referencePoints:
   - {fileID: 1267864198}
   - {fileID: 552555724}
+  emptyMiniature: {fileID: 7400000, guid: be440199e98b4f94a819bf862f196e1c, type: 2}
+  emptyObject: {fileID: 7400000, guid: 096b4bddbe6682d45971b7b51f34a69f, type: 2}
 --- !u!1 &533364158
 GameObject:
   m_ObjectHideFlags: 0

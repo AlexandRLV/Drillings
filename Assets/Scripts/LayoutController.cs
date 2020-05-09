@@ -16,6 +16,10 @@ public class LayoutController : MonoBehaviour
     [SerializeField] private AudioSource voiceSource;
     [SerializeField] private LayoutWorldUI layoutUI;
     [SerializeField] private Transform[] referencePoints;
+	
+	[Header("Assets")]
+	[SerializeField] private AnimationClip emptyMiniature;
+	[SerializeField] private AnimationClip emptyObject;
     
     private int currentUnitVoiceId;
     private Coroutine currentRoutine;
@@ -102,8 +106,24 @@ public class LayoutController : MonoBehaviour
     {
         ObjectInfoUnitData unit = LayoutData.CurrentUnit;
         
-        miniatureAnimation.clip = unit.miniatureAnim;
-        objectBackingAnimation.clip = unit.objectAnim;
+		if (unit.miniatureAnim != null)
+			miniatureAnimation.clip = unit.miniatureAnim;
+		else
+		{
+			miniatureAnimation.clip = emptyMiniature;
+			if (emptyMiniature != null)
+				miniatureAnimation.Play();
+		}
+		
+		if (unit.objectAnim != null)
+			objectBackingAnimation.clip = unit.objectAnim;
+		else
+		{
+			objectBackingAnimation.clip = emptyObject;
+			if (emptyObject != null)
+				objectBackingAnimation.Play();
+		}
+		
         voiceSource.clip = unit.voices[0];
         currentUnitVoiceId = 0;
         

@@ -15,10 +15,11 @@ MonoBehaviour:
   unitName: "\u0423\u0433\u043B\u044B \u0431\u0443\u0440\u0435\u043D\u0438\u044F"
   voices:
   - {fileID: 8300000, guid: 149a87fcb12f42948b8bd6cdad027566, type: 3}
-  miniatureAnim: {fileID: 7400000, guid: be440199e98b4f94a819bf862f196e1c, type: 2}
+  miniatureAnim: {fileID: 0}
   infoImage: {fileID: 0}
   infoTextStrings:
   - "\u0423\u0433\u043B\u044B \u0431\u0443\u0440\u0435\u043D\u0438\u044F: 0, 15,
     30 \u0433\u0440\u0430\u0434\u0443\u0441\u043E\u0432"
   pointerReferenceId: 0
+  sizes: []
   objectAnim: {fileID: 7400000, guid: 267921576b0d755409f1f261c2c422aa, type: 2}

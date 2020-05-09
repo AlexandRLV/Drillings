@@ -15,9 +15,10 @@ MonoBehaviour:
   unitName: "\u0412\u0435\u0441"
   voices:
   - {fileID: 8300000, guid: 352493ec407eb9a46a0f0c6893e8aaf1, type: 3}
-  miniatureAnim: {fileID: 7400000, guid: c2cf1257f62248449bcd3349c0d00ee7, type: 2}
+  miniatureAnim: {fileID: 0}
   infoImage: {fileID: 0}
   infoTextStrings:
   - "\u0412\u0435\u0441: 55\u0442"
   pointerReferenceId: 0
-  objectAnim: {fileID: 7400000, guid: 365e6abe10a73b2439fd31ff784bee9f, type: 2}
+  sizes: []
+  objectAnim: {fileID: 0}

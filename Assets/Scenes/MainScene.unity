@@ -3459,6 +3459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e5359ec8fb38247be81fd60eb164ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noInputReloadTime: 600
   uiManager: {fileID: 1599249778}
   compass: {fileID: 144333852}
   scenesLayoutDataAssets:

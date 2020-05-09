@@ -26,6 +26,10 @@ public class AppManager : MonoBehaviour
 	
 	private void Update()
 	{
+		#if UNITY_EDITOR
+		return;
+		#endif
+		
 		if (CurrentLayout == null || CurrentLayout.IsPlaying)
 			return;
 		

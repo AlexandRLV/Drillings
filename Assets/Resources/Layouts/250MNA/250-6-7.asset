@@ -17,7 +17,7 @@ MonoBehaviour:
   voices:
   - {fileID: 8300000, guid: 2da699fde33fdca4c8ca529b1a1f2bcb, type: 3}
   - {fileID: 8300000, guid: 3741f14f1f23dbd48a4cdaaa0779698e, type: 3}
-  miniatureAnim: {fileID: 7400000, guid: be440199e98b4f94a819bf862f196e1c, type: 2}
+  miniatureAnim: {fileID: 0}
   infoImage: {fileID: 0}
   infoTextStrings:
   - "\u0427\u0430\u0441\u0442\u043E\u0442\u0430 \u0432\u0440\u0430\u0449\u0435\u043D\u0438\u044F

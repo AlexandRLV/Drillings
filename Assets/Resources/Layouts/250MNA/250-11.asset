@@ -22,4 +22,4 @@ MonoBehaviour:
     \n1,2 \u043A\u043C/\u043C"
   pointerReferenceId: 0
   sizes: []
-  objectAnim: {fileID: 7400000, guid: 096b4bddbe6682d45971b7b51f34a69f, type: 2}
+  objectAnim: {fileID: 0}

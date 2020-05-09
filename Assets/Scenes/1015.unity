@@ -1786,6 +1786,8 @@ MonoBehaviour:
   layoutUI: {fileID: 817787768}
   referencePoints:
   - {fileID: 803859321}
+  emptyMiniature: {fileID: 7400000, guid: 229fac1e25e66bb4081cdbe614c1bff7, type: 2}
+  emptyObject: {fileID: 0}
 --- !u!4 &1579065735
 Transform:
   m_ObjectHideFlags: 0

@@ -20,4 +20,5 @@ MonoBehaviour:
   infoTextStrings:
   - 
   pointerReferenceId: 0
-  objectAnim: {fileID: 7400000, guid: 096b4bddbe6682d45971b7b51f34a69f, type: 2}
+  sizes: []
+  objectAnim: {fileID: 0}

@@ -15,7 +15,7 @@ MonoBehaviour:
   unitName: "\u0413\u0430\u0431\u0430\u0440\u0438\u0442\u044B"
   voices:
   - {fileID: 8300000, guid: 9129d4901628ec64196de707e58622bc, type: 3}
-  miniatureAnim: {fileID: 7400000, guid: 229fac1e25e66bb4081cdbe614c1bff7, type: 2}
+  miniatureAnim: {fileID: 0}
   infoImage: {fileID: 0}
   infoTextStrings:
   - 

@@ -9,7 +9,6 @@ public class LayoutData : ScriptableObject
     public int CurrentUnitId { get; private set; }
 
     public string objectName;
-    public float delayBetweenVoicesInUnit;
     public ObjectInfoUnitData[] units;
 
     public bool NextUnit()

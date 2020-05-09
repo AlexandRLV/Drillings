@@ -15,9 +15,10 @@ MonoBehaviour:
   unitName: "\u0414\u0438\u0430\u043C\u0435\u0442\u0440 \u0441\u043A\u0432\u0430\u0436\u0438\u043D\u044B"
   voices:
   - {fileID: 8300000, guid: dfdf1328a577a71458c89055e73cb013, type: 3}
-  miniatureAnim: {fileID: 7400000, guid: c2cf1257f62248449bcd3349c0d00ee7, type: 2}
+  miniatureAnim: {fileID: 0}
   infoImage: {fileID: 21300000, guid: d644c92e349a99a4b99cb3944ea3e12c, type: 3}
   infoTextStrings:
   - 
   pointerReferenceId: 0
-  objectAnim: {fileID: 7400000, guid: 365e6abe10a73b2439fd31ff784bee9f, type: 2}
+  sizes: []
+  objectAnim: {fileID: 0}

@@ -20,4 +20,5 @@ MonoBehaviour:
   infoTextStrings:
   - "\u0414\u043B\u0438\u043D\u0430 \u0448\u0442\u0430\u043D\u0433\u0438: 9,7 \u043C"
   pointerReferenceId: 1
-  objectAnim: {fileID: 7400000, guid: 365e6abe10a73b2439fd31ff784bee9f, type: 2}
+  sizes: []
+  objectAnim: {fileID: 0}
