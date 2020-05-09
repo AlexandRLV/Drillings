@@ -41,7 +41,7 @@ public class Compass : MonoBehaviour
     }
     
     
-    private void StopFollow()
+    public void StopFollow()
     {
         if (!appManager.DeactivateCurrentLayout())
             return;

@@ -10,6 +10,8 @@ public class AppManager : MonoBehaviour
     public LayoutController CurrentLayout { get; private set; }
     public string CurrentScene { get; private set; }
 
+	[SerializeField] private float noInputReloadTime;
+	
     [Header("References")]
     [SerializeField] private UIManager uiManager;
     [SerializeField] private Compass compass;
@@ -17,16 +19,25 @@ public class AppManager : MonoBehaviour
     [Header("Layouts")]
     [SerializeField] private List<LayoutDataContainer> scenesLayoutDataAssets;
 
+	private float timer;
     private Coroutine currentRunningRoutine;
 
-
-    // private void Start()
-    // {
-    //     foreach (LayoutDataContainer layoutData in scenesLayoutDataAssets)
-    //     {
-    //         layoutData.data.ResetUnit();
-    //     }
-    // }
+	
+	
+	private void Update()
+	{
+		if (CurrentLayout == null || CurrentLayout.IsPlaying)
+			return;
+		
+		if (Input.touchCount > 0)
+			timer = noInputReloadTime;
+		
+		timer -= Time.deltaTime;
+		if (timer <= 0)
+		{
+			compass.StopFollow();
+		}
+	}
 
     
 
