@@ -76,13 +76,15 @@ public class LayoutController : MonoBehaviour
         voiceSource.clip = LayoutData.CurrentUnit.voices[0];
         currentUnitVoiceId = 0;
         
-        miniatureAnimation.Play();
-        objectBackingAnimation.Play();
+        SetUpUnitContent(LayoutData.CurrentUnit);
+        
+		if (miniatureAnimation.clip != null)
+			miniatureAnimation.Play();
+		if (objectBackingAnimation.clip != null)
+			objectBackingAnimation.Play();
         voiceSource.Play();
 
         IsPlaying = true;
-        
-        SetUpUnitWorldContent(LayoutData.CurrentUnit);
     }
 
     public void Stop()
@@ -99,36 +101,17 @@ public class LayoutController : MonoBehaviour
 
         IsPlaying = false;
         
-        DisableUnitWorldContent();
+        DisableUnitContent();
     }
 
     public void SetUpUnit()
     {
         ObjectInfoUnitData unit = LayoutData.CurrentUnit;
-        
-		if (unit.miniatureAnim != null)
-			miniatureAnimation.clip = unit.miniatureAnim;
-		else
-		{
-			miniatureAnimation.clip = emptyMiniature;
-			if (emptyMiniature != null)
-				miniatureAnimation.Play();
-		}
-		
-		if (unit.objectAnim != null)
-			objectBackingAnimation.clip = unit.objectAnim;
-		else
-		{
-			objectBackingAnimation.clip = emptyObject;
-			if (emptyObject != null)
-				objectBackingAnimation.Play();
-		}
 		
         voiceSource.clip = unit.voices[0];
         currentUnitVoiceId = 0;
         
-        //SetUpUnitWorldContent(unit);
-		layoutUI.DisableArrows();
+        DisableUnitContent();
         
         UIManager.UpdateUnit(unit);
     }
@@ -136,8 +119,9 @@ public class LayoutController : MonoBehaviour
     
     
     
-    private void SetUpUnitWorldContent(ObjectInfoUnitData unit)
+    private void SetUpUnitContent(ObjectInfoUnitData unit)
     {
+		// UI
         if (unit.infoImage != null)
             layoutUI.SetUpImage(unit.infoImage);
         else
@@ -152,12 +136,33 @@ public class LayoutController : MonoBehaviour
             layoutUI.EnableArrows(unit.sizes[0], unit.sizes[1], unit.sizes[2]);
         else
             layoutUI.DisableArrows();
+		
+		
+		// animations
+		if (unit.miniatureAnim != null)
+			miniatureAnimation.clip = unit.miniatureAnim;
+		else
+			miniatureAnimation.clip = emptyMiniature;
+		
+		if (unit.objectAnim != null)
+			objectBackingAnimation.clip = unit.objectAnim;
+		else
+			objectBackingAnimation.clip = emptyObject;
     }
 
-    private void DisableUnitWorldContent()
+    private void DisableUnitContent()
     {
         layoutUI.DisableInfo();
         layoutUI.DisablePointer();
+		layoutUI.DisableArrows();
+		
+		miniatureAnimation.clip = emptyMiniature;
+		if (emptyMiniature != null)
+			miniatureAnimation.Play();
+		
+		objectBackingAnimation.clip = emptyObject;
+		if (emptyObject != null)
+			objectBackingAnimation.Play();
     }
 
     private IEnumerator WaitAndPlayNextUnitVoice(float time, ObjectInfoUnitData unit)

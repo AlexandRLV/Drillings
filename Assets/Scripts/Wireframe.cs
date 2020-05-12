@@ -25,6 +25,10 @@ public class Wireframe : MonoBehaviour
             enabled = false;
             return;
         #endif
+		#if UNITY_EDITOR
+            enabled = false;
+            return;
+        #endif
         
         renderer = gameObject.GetComponent<Renderer>();
         renderer.material = meshMaterial;

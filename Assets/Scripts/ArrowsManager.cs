@@ -12,7 +12,7 @@ public class ArrowsManager : MonoBehaviour
 	public Vector3 VertArrowPoint1 { get; private set; }
 	public Vector3 VertArrowPoint2 { get; private set; }
 
-	[SerializeField] private float vertArrowLength;
+	[SerializeField] private Transform heightPoint;
 	[SerializeField] private Transform[] referencePoints;
 	
 	private Transform camTransform;
@@ -29,7 +29,7 @@ public class ArrowsManager : MonoBehaviour
 	public void CalculateArrowPoints()
 	{
 		VertArrowPoint1 = GetVerticalPoint();
-		VertArrowPoint2 = VertArrowPoint1 + Vector3.up * vertArrowLength;
+		VertArrowPoint2 = new Vector3(VertArrowPoint1.x, heightPoint.position.y, VertArrowPoint1.z);
 
 		int longArrowId = GetHorizontalLongPointId();
 		int arrowId = longArrowId - 1;
