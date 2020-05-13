@@ -24,9 +24,9 @@ public class AppManager : MonoBehaviour
 	private float timer;
     private Coroutine currentRunningRoutine;
 
-	
-	
-	private void Update()
+
+
+    private void Update()
 	{
 		#if UNITY_EDITOR
 		return;
@@ -36,12 +36,13 @@ public class AppManager : MonoBehaviour
 			return;
 		
 		if (Input.touchCount > 0)
-			timer = noInputReloadTime;
+			timer = 0;
 		
-		timer -= Time.deltaTime;
-		if (timer <= 0)
+		timer += Time.deltaTime;
+		if (timer >= noInputReloadTime)
 		{
 			compass.StopFollow();
+			timer = 0;
 		}
 	}
 
@@ -52,7 +53,7 @@ public class AppManager : MonoBehaviour
         if (CurrentLayout != null || currentRunningRoutine != null || scenesLayoutDataAssets.All(x => x.sceneName != sceneName))
             return;
         
-		timer = noInputReloadTime;
+		timer = 0;
         uiManager.StartLoadingAnimation();
         CurrentScene = sceneName;
         currentRunningRoutine = StartCoroutine(LoadScene(targetTransform));
