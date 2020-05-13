@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: 250MNA
   m_EditorClassIdentifier: 
   objectName: "\u0421\u0411\u0428-250\u041C\u041D\u0410-32"
-  delayBetweenVoicesInUnit: 1
   units:
   - {fileID: 11400000, guid: 8290fdef530dadc4da41fead3cc79435, type: 2}
   - {fileID: 11400000, guid: e8b7d1ce814db9b4e9a5d6e36cddd0ad, type: 2}

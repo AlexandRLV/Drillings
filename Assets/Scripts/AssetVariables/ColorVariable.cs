@@ -1,5 +1,7 @@
-﻿using AssetVariables;
-using UnityEngine;
+﻿using UnityEngine;
 
-[CreateAssetMenu]
-public class ColorVariable : AssetVariable<Color> {}
+namespace AssetVariables
+{
+    [CreateAssetMenu]
+    public class ColorVariable : AssetVariable<Color> {}
+}

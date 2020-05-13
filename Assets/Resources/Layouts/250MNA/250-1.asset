@@ -14,11 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitName: "\u0422\u0438\u043F \u0438 \u043F\u0440\u0435\u0434\u043D\u0430\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435"
   voices:
-  - {fileID: 8300000, guid: a4dbcf92be6b2ae46839f99e04309eda, type: 3}
-  miniatureAnim: {fileID: 0}
+  - {fileID: 8300000, guid: 21ddf5e19e7334d48abf7551bd2efe05, type: 3}
+  - {fileID: 8300000, guid: c719023c73d15594194b1d7bb74f5806, type: 3}
+  miniatureAnim: {fileID: 7400000, guid: 3346446d461660b46b0795ed520e82ee, type: 2}
+  disableMiniatureAnimOnSecondVoice: 1
+  delayBetweenVoices: 0
   infoImage: {fileID: 0}
   infoTextStrings:
   - 
+  - "\r\u041A\u043E\u044D\u0444. \u043A\u0440\u0435\u043F\u043E\u0441\u0442\u0438
+    6-20"
   pointerReferenceId: 0
   sizes: []
   objectAnim: {fileID: 0}

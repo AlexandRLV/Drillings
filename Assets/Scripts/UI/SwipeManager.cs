@@ -1,53 +1,54 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class SwipeManager : MonoBehaviour
+namespace UI
 {
-    [Header("Settings")]
-    [SerializeField] private float swipeThreshold;
-    
-    [Header("References")]
-    [SerializeField] private UIManager uiManager;
-
-    private Vector2 deltaPos;
-    
-    
-    
-    private void Update()
+    public class SwipeManager : MonoBehaviour
     {
-        if (Input.touchCount == 0)
-            return;
+        [Header("Settings")]
+        [SerializeField] private float swipeThreshold;
+    
+        [Header("References")]
+        [SerializeField] private UIManager uiManager;
 
-        Touch touch = Input.GetTouch(0);
-        if (touch.phase == TouchPhase.Began)
+        private Vector2 deltaPos;
+    
+    
+    
+        private void Update()
         {
-            deltaPos = Vector2.zero;
+            if (Input.touchCount == 0)
+                return;
+
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Began)
+            {
+                deltaPos = Vector2.zero;
+            }
+            else if (touch.phase == TouchPhase.Ended)
+            {
+                deltaPos += touch.deltaPosition;
+                Swipe();
+            }
+            else
+            {
+                deltaPos += touch.deltaPosition;
+            }
         }
-        else if (touch.phase == TouchPhase.Ended)
-        {
-            deltaPos += touch.deltaPosition;
-            Swipe();
-        }
-        else
-        {
-            deltaPos += touch.deltaPosition;
-        }
-    }
 
 
 
-    private void Swipe()
-    {
-        float diff = deltaPos.x;
-        if (diff < -swipeThreshold)
+        private void Swipe()
         {
-            uiManager.NextUnit();
-        }
+            float diff = deltaPos.x;
+            if (diff < -swipeThreshold)
+            {
+                uiManager.NextUnit();
+            }
 
-        if (diff > swipeThreshold)
-        {
-            uiManager.PrevUnit();
+            if (diff > swipeThreshold)
+            {
+                uiManager.PrevUnit();
+            }
         }
     }
 }

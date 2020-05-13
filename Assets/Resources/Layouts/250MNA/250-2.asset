@@ -16,6 +16,8 @@ MonoBehaviour:
   voices:
   - {fileID: 8300000, guid: 884d79cc29474d843ab351929e363156, type: 3}
   miniatureAnim: {fileID: 7400000, guid: 5a9a002947bd7d943868f3b17b963dad, type: 2}
+  miniatureAnims:
+  - {fileID: 7400000, guid: 5a9a002947bd7d943868f3b17b963dad, type: 2}
   infoImage: {fileID: 0}
   infoTextStrings:
   - 

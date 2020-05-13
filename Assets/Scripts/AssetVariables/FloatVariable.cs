@@ -1,5 +1,7 @@
-﻿using AssetVariables;
-using UnityEngine;
+﻿using UnityEngine;
 
-[CreateAssetMenu]
-public class FloatVariable : AssetVariable<float> {}
+namespace AssetVariables
+{
+    [CreateAssetMenu]
+    public class FloatVariable : AssetVariable<float> {}
+}

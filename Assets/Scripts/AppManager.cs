@@ -2,6 +2,8 @@
 using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
+using Drillings.Data;
+using UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -30,7 +32,7 @@ public class AppManager : MonoBehaviour
 		return;
 		#endif
 		
-		if (CurrentLayout == null || CurrentLayout.IsPlaying)
+		if (CurrentLayout == null || CurrentLayout.IsPlaying || currentRunningRoutine != null)
 			return;
 		
 		if (Input.touchCount > 0)
@@ -50,6 +52,7 @@ public class AppManager : MonoBehaviour
         if (CurrentLayout != null || currentRunningRoutine != null || scenesLayoutDataAssets.All(x => x.sceneName != sceneName))
             return;
         
+		timer = noInputReloadTime;
         uiManager.StartLoadingAnimation();
         CurrentScene = sceneName;
         currentRunningRoutine = StartCoroutine(LoadScene(targetTransform));

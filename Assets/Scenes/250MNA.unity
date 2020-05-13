@@ -612,8 +612,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 331a2b0e856ca7841a73d672530e7729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayBetweenVoicesInUnit: {fileID: 11400000, guid: aaa8bba2bd54e2645ab2bbe2606e24c5,
-    type: 2}
   miniatureAnimation: {fileID: 1834879225}
   objectBackingAnimation: {fileID: 258425042}
   voiceSource: {fileID: 468377192}
@@ -1316,8 +1314,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 200}
+  m_AnchoredPosition: {x: 0, y: 0.00814}
+  m_SizeDelta: {x: 100, y: 127.27042}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &918806044
 MonoBehaviour:
@@ -2929,7 +2927,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1834879223}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.0224, y: 0.0719, z: 0}
+  m_LocalPosition: {x: -0.0183, y: 0.0582, z: 0}
   m_LocalScale: {x: 0.004, y: 0.004, z: 0.004}
   m_Children:
   - {fileID: 47037814}
@@ -2955,6 +2953,7 @@ Animation:
   - {fileID: 7400000, guid: be440199e98b4f94a819bf862f196e1c, type: 2}
   - {fileID: 7400000, guid: 381361b5099d1cc49869ce36a097e368, type: 2}
   - {fileID: 7400000, guid: dffe926b9755a6b46a8cfd4d5db04d8f, type: 2}
+  - {fileID: 7400000, guid: 3346446d461660b46b0795ed520e82ee, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0

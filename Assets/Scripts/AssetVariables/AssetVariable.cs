@@ -1,6 +1,4 @@
-﻿using AssetVariables.Base;
-
-namespace AssetVariables
+﻿namespace AssetVariables
 {
     public abstract class AssetVariable<T> : BaseAssetVariable
     {

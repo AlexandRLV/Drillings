@@ -40,7 +40,7 @@ public class Compass : MonoBehaviour
         isFollowing = true;
     }
     
-    
+    [ContextMenu("Stop Follow")]
     public void StopFollow()
     {
         if (!appManager.DeactivateCurrentLayout())

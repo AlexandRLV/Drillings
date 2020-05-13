@@ -1,93 +1,94 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
-public class TrackableImage : BaseTrackable<ARTrackedImage>
+namespace AR
 {
-#region Params
+    public class TrackableImage : BaseTrackable<ARTrackedImage>
+    {
+        #region Params
 
-    [Header("Settings")]
-    [SerializeField] private string referenceImageName;
+        [Header("Settings")]
+        [SerializeField] private string referenceImageName;
     
-    [Header("References")]
-    [SerializeField] private ARTrackedImageManager arTrackedImageManager;
+        [Header("References")]
+        [SerializeField] private ARTrackedImageManager arTrackedImageManager;
 
-    private TrackingState currentTrackingState = TrackingState.None;
+        private TrackingState currentTrackingState = TrackingState.None;
 
-#endregion
-
-
-#region MonoMethods
-
-    private void OnEnable()
-    {
-        arTrackedImageManager.trackedImagesChanged += OnTrackedImagesChanged;
-    }
-
-    private void OnDisable()
-    {
-        arTrackedImageManager.trackedImagesChanged -= OnTrackedImagesChanged;
-    }
-
-#endregion
+        #endregion
 
 
-#region PrivateMethods
+        #region MonoMethods
 
-    private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs args)
-    {
-        ProcessAddedImages(args.added);
-        ProcessUpdatedImages(args.updated);
-        ProcessRemovedImages(args.removed);
-    }
-
-    private void ProcessAddedImages(List<ARTrackedImage> addedImages)
-    {
-        foreach (ARTrackedImage image in addedImages)
+        private void OnEnable()
         {
-            if (!image.referenceImage.name.Equals(referenceImageName))
-                continue;
-            
-            currentTrackingState = image.trackingState;
-            InvokeOnTrackableFound(image);
+            arTrackedImageManager.trackedImagesChanged += OnTrackedImagesChanged;
         }
-    }
 
-    private void ProcessUpdatedImages(List<ARTrackedImage> updatedImages)
-    {
-        foreach (ARTrackedImage image in updatedImages)
+        private void OnDisable()
         {
-            if (!image.referenceImage.name.Equals(referenceImageName))
-                continue;
+            arTrackedImageManager.trackedImagesChanged -= OnTrackedImagesChanged;
+        }
 
-            TrackingState prevTrackingState = currentTrackingState;
-            currentTrackingState = image.trackingState;
+        #endregion
 
-            if (currentTrackingState != prevTrackingState)
+
+        #region PrivateMethods
+
+        private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs args)
+        {
+            ProcessAddedImages(args.added);
+            ProcessUpdatedImages(args.updated);
+            ProcessRemovedImages(args.removed);
+        }
+
+        private void ProcessAddedImages(List<ARTrackedImage> addedImages)
+        {
+            foreach (ARTrackedImage image in addedImages)
             {
-                if (currentTrackingState == TrackingState.Tracking)
-                    InvokeOnTrackableFound(image);
-                else
-                    InvokeOnTrackableLost();
-            }
+                if (!image.referenceImage.name.Equals(referenceImageName))
+                    continue;
             
-            if (currentTrackingState != TrackingState.None)
-                InvokeOnTrackableUpdated(image);
+                currentTrackingState = image.trackingState;
+                InvokeOnTrackableFound(image);
+            }
         }
-    }
 
-    private void ProcessRemovedImages(List<ARTrackedImage> removedImages)
-    {
-        foreach (ARTrackedImage image in removedImages.Where(image => image.referenceImage.name.Equals(referenceImageName)))
+        private void ProcessUpdatedImages(List<ARTrackedImage> updatedImages)
         {
-            currentTrackingState = image.trackingState;
-            InvokeOnTrackableLost();
-        }
-    }
+            foreach (ARTrackedImage image in updatedImages)
+            {
+                if (!image.referenceImage.name.Equals(referenceImageName))
+                    continue;
 
-#endregion
+                TrackingState prevTrackingState = currentTrackingState;
+                currentTrackingState = image.trackingState;
+
+                if (currentTrackingState != prevTrackingState)
+                {
+                    if (currentTrackingState == TrackingState.Tracking)
+                        InvokeOnTrackableFound(image);
+                    else
+                        InvokeOnTrackableLost();
+                }
+            
+                if (currentTrackingState != TrackingState.None)
+                    InvokeOnTrackableUpdated(image);
+            }
+        }
+
+        private void ProcessRemovedImages(List<ARTrackedImage> removedImages)
+        {
+            foreach (ARTrackedImage image in removedImages.Where(image => image.referenceImage.name.Equals(referenceImageName)))
+            {
+                currentTrackingState = image.trackingState;
+                InvokeOnTrackableLost();
+            }
+        }
+
+        #endregion
+    }
 }

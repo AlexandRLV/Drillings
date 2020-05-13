@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace AssetVariables.Base
+namespace AssetVariables
 {
     public abstract class BaseAssetVariable : ScriptableObject { }
 }

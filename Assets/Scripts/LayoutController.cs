@@ -1,4 +1,8 @@
 ﻿using System.Collections;
+using AssetVariables;
+using Data;
+using Drillings.Data;
+using UI;
 using UnityEngine;
 
 public class LayoutController : MonoBehaviour
@@ -7,8 +11,6 @@ public class LayoutController : MonoBehaviour
     public LayoutData LayoutData { get; set; }
     public bool IsPlaying { get; private set; }
     public Transform ObjectTransform => objectBackingAnimation.transform;
-    
-	[SerializeField] private FloatVariable delayBetweenVoicesInUnit;
 	
     [Header("References")]
     [SerializeField] private Animation miniatureAnimation;
@@ -46,7 +48,7 @@ public class LayoutController : MonoBehaviour
         }
 
         if (currentRoutine == null)
-            currentRoutine = StartCoroutine(WaitAndPlayNextUnitVoice(delayBetweenVoicesInUnit, unit));
+            currentRoutine = StartCoroutine(WaitAndPlayNextUnitVoice(unit.delayBetweenVoices, unit));
     }
 
 
@@ -172,6 +174,12 @@ public class LayoutController : MonoBehaviour
         currentUnitVoiceId++;
         voiceSource.clip = unit.voices[currentUnitVoiceId];
         layoutUI.SetUpText(unit.infoTextStrings[currentUnitVoiceId]);
+        if (unit.disableMiniatureAnimOnSecondVoice)
+        {
+            miniatureAnimation.clip = emptyMiniature;
+            if (emptyMiniature != null)
+                miniatureAnimation.Play();
+        }
         
         voiceSource.Play();
         IsPlaying = true;

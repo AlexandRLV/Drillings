@@ -1,24 +1,27 @@
 ﻿using System;
 using UnityEngine;
 
-public class BaseTrackable<T> : MonoBehaviour
+namespace AR
 {
-    public event Action<T> OnTrackableFound;
-    public event Action<T> OnTrackableUpdated;
-    public event Action OnTrackableLost;
-
-    protected void InvokeOnTrackableFound(T obj)
+    public class BaseTrackable<T> : MonoBehaviour
     {
-        OnTrackableFound?.Invoke(obj);
-    }
+        public event Action<T> OnTrackableFound;
+        public event Action<T> OnTrackableUpdated;
+        public event Action OnTrackableLost;
 
-    protected void InvokeOnTrackableUpdated(T obj)
-    {
-        OnTrackableUpdated?.Invoke(obj);
-    }
+        protected void InvokeOnTrackableFound(T obj)
+        {
+            OnTrackableFound?.Invoke(obj);
+        }
 
-    protected void InvokeOnTrackableLost()
-    {
-        OnTrackableLost?.Invoke();
+        protected void InvokeOnTrackableUpdated(T obj)
+        {
+            OnTrackableUpdated?.Invoke(obj);
+        }
+
+        protected void InvokeOnTrackableLost()
+        {
+            OnTrackableLost?.Invoke();
+        }
     }
 }

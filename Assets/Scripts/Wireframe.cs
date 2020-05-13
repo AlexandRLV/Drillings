@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using AssetVariables;
 using UnityEngine;
 
 public class Wireframe : MonoBehaviour
@@ -16,7 +17,7 @@ public class Wireframe : MonoBehaviour
     private ArrayList lines_List;
     public Material lineMaterial;
     public Material meshMaterial;
-    private Renderer renderer;
+    private Renderer targetRenderer;
 
 
     private void Start()
@@ -30,8 +31,8 @@ public class Wireframe : MonoBehaviour
             return;
         #endif
         
-        renderer = gameObject.GetComponent<Renderer>();
-        renderer.material = meshMaterial;
+        targetRenderer = gameObject.GetComponent<Renderer>();
+        targetRenderer.material = meshMaterial;
         lines_List = new ArrayList();
 
         MeshFilter filter = gameObject.GetComponent<MeshFilter>();
@@ -73,8 +74,8 @@ public class Wireframe : MonoBehaviour
 
     private void OnRenderObject()
     {
-        renderer.enabled = render_mesh_normaly;
-        renderer.sharedMaterial.color = backgroundColor;
+        targetRenderer.enabled = render_mesh_normaly;
+        targetRenderer.sharedMaterial.color = backgroundColor;
         if (lines == null || lines.Length < lineWidth)
         {
             print("No lines");
