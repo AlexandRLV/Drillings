@@ -16,9 +16,11 @@ MonoBehaviour:
   voices:
   - {fileID: 8300000, guid: 8732b076d19808b49bac42b9be831c53, type: 3}
   miniatureAnim: {fileID: 0}
+  disableMiniatureAnimOnSecondVoice: 0
+  delayBetweenVoices: 0
   infoImage: {fileID: 0}
   infoTextStrings:
-  - "\r\u0412\u0435\u0441: 85\u0442"
+  - "\r\u0412\u0435\u0441: 85 \u0442"
   pointerReferenceId: 0
   sizes: []
   objectAnim: {fileID: 0}
