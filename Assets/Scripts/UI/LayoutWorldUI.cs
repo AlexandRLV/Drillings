@@ -66,9 +66,7 @@ namespace UI
 				// Calculate reference points for pointer
 				// reference point on info image
 				float x = imageRect.anchoredPosition.x + imageRect.rect.width * imageRect.localScale.x / 2;
-				//x *= transform.localScale.x;
 				float y = imageRect.anchoredPosition.y - imageRect.rect.height * imageRect.localScale.y / 2;
-				//y *= transform.localScale.y;
 				Vector2 imageCorner = new Vector2(x, y);
 
 				// reference point on target object, relative to camera view
@@ -216,16 +214,21 @@ namespace UI
 		}
 
 
+		
 		private void SetUpRect(RectTransform rect, Vector2 point1, Vector2 point2)
 		{
 			Vector2 l = point1 - point2;
+			
 			float x = Vector2.Angle(Vector2.left, l);
+			
 			x = l.y < 0 ? x : -x;
-			if (x > 90)
-				x -= 180;
-			else if (x < -90)
-				x += 180;
+			// if (x > 90)
+			// 	x -= 180;
+			// else if (x < -90)
+			// 	x += 180;
+			
 			float y = l.magnitude;
+			
 			rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, y / pointerRect.localScale.x);
 
 			rect.anchoredPosition = (point1 + point2) / 2;

@@ -180,6 +180,7 @@ public class LayoutController : MonoBehaviour
             if (emptyMiniature != null)
                 miniatureAnimation.Play();
         }
+        layoutUI.DisableArrows();
         
         voiceSource.Play();
         IsPlaying = true;
