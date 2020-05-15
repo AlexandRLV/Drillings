@@ -228,6 +228,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sizeTextOffset: {fileID: 11400000, guid: 385c5ae71e6debf4390f2bbe1527506c, type: 2}
+  maxCanvasDistance: {fileID: 11400000, guid: 096ce0a2e7cb9eb479a762d74ffec5ae, type: 2}
+  minCanvasDistance: {fileID: 11400000, guid: b41e425662bb3aa448347e2f58c2b2c5, type: 2}
+  canvasToCameraDistanceMultiplier: {fileID: 11400000, guid: 075f699d79659bf4e8aff47a33435e2b,
+    type: 2}
   canvas: {fileID: 782084222}
   arrowsManager: {fileID: 712502104}
   arrowsParent: {fileID: 541707451}
@@ -529,7 +533,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19.74, y: 13.6}
+  m_AnchoredPosition: {x: -26.6, y: 13.7}
   m_SizeDelta: {x: 326, y: 326}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &369371682
@@ -960,7 +964,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0.0099}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 123.63071}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &782084220
@@ -1552,7 +1556,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18, y: -5.2}
+  m_AnchoredPosition: {x: -25.7, y: 0.1}
   m_SizeDelta: {x: 422, y: 73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1258011312

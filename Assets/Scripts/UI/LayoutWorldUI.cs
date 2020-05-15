@@ -6,7 +6,11 @@ namespace UI
 {
 	public class LayoutWorldUI : MonoBehaviour
 	{
+		[Header("Settings")]
 		[SerializeField] private FloatVariable sizeTextOffset;
+		[SerializeField] private FloatVariable maxCanvasDistance;
+		[SerializeField] private FloatVariable minCanvasDistance;
+		[SerializeField] private FloatVariable canvasToCameraDistanceMultiplier;
     
 		[Header("References")]
 		[SerializeField] private Canvas canvas;
@@ -35,6 +39,7 @@ namespace UI
 		private RectTransform hsTextRect;
 		private RectTransform vTextRect;
 		private Transform cameraTransform;
+		private Transform canvasTransform;
 		private Transform pointerTargetTransform;
     
     
@@ -44,6 +49,7 @@ namespace UI
 			imageRect = infoImage.GetComponent<RectTransform>();
 			canvas.worldCamera = Camera.main;
 			cameraTransform = Camera.main.transform;
+			canvasTransform = canvas.transform;
 			pointer.gameObject.SetActive(pointerEnabled);
 			pointerRect = pointer.GetComponent<RectTransform>();
 			hLTextRect = horizontalLongText.GetComponent<RectTransform>();
@@ -59,7 +65,19 @@ namespace UI
 		{
 			// Rotate to camera
 			transform.forward = cameraTransform.forward;
-
+			
+			// Calculate canvas distance
+			float canvasDistance = (cameraTransform.position - transform.position).magnitude;
+			canvasDistance *= canvasToCameraDistanceMultiplier;
+			if (canvasDistance > maxCanvasDistance)
+				canvasDistance = maxCanvasDistance;
+			else if (canvasDistance < minCanvasDistance)
+				canvasDistance = minCanvasDistance;
+			
+			// Apply canvas distance
+			canvasTransform.position = transform.position - (transform.forward * canvasDistance);
+			
+			
 
 			if (pointerEnabled)
 			{
