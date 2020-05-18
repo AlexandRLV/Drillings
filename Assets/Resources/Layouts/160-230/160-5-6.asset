@@ -29,3 +29,4 @@ MonoBehaviour:
   pointerReferenceId: 0
   sizes: []
   objectAnim: {fileID: 7400000, guid: 696c0439a6208c448853fe8d704a957a, type: 2}
+  canvasAnim: {fileID: 7400000, guid: d098722dd6f230540b10190d215555ff, type: 2}

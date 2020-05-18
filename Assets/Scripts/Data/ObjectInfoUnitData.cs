@@ -15,5 +15,6 @@ namespace Data
         public int pointerReferenceId;
         public string[] sizes;
         public AnimationClip objectAnim;
+        public AnimationClip canvasAnim;
     }
 }

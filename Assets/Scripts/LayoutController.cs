@@ -15,6 +15,7 @@ public class LayoutController : MonoBehaviour
     [Header("References")]
     [SerializeField] private Animation miniatureAnimation;
     [SerializeField] private Animation objectBackingAnimation;
+    [SerializeField] private Animation canvasAnimation;
     [SerializeField] private AudioSource voiceSource;
     [SerializeField] private LayoutWorldUI layoutUI;
     [SerializeField] private Transform[] referencePoints;
@@ -22,6 +23,7 @@ public class LayoutController : MonoBehaviour
 	[Header("Assets")]
 	[SerializeField] private AnimationClip emptyMiniature;
 	[SerializeField] private AnimationClip emptyObject;
+    [SerializeField] private AnimationClip emptyCanvas;
     
     private int currentUnitVoiceId;
     private Coroutine currentRoutine;
@@ -84,6 +86,8 @@ public class LayoutController : MonoBehaviour
 			miniatureAnimation.Play();
 		if (objectBackingAnimation.clip != null)
 			objectBackingAnimation.Play();
+        if (canvasAnimation.clip != null)
+            canvasAnimation.Play();
         voiceSource.Play();
 
         IsPlaying = true;
@@ -99,6 +103,7 @@ public class LayoutController : MonoBehaviour
         
         miniatureAnimation.Stop();
         objectBackingAnimation.Stop();
+        canvasAnimation.Stop();
         voiceSource.Stop();
 
         IsPlaying = false;
@@ -141,15 +146,11 @@ public class LayoutController : MonoBehaviour
 		
 		
 		// animations
-		if (unit.miniatureAnim != null)
-			miniatureAnimation.clip = unit.miniatureAnim;
-		else
-			miniatureAnimation.clip = emptyMiniature;
+		miniatureAnimation.clip = unit.miniatureAnim != null ? unit.miniatureAnim : emptyMiniature;
 		
-		if (unit.objectAnim != null)
-			objectBackingAnimation.clip = unit.objectAnim;
-		else
-			objectBackingAnimation.clip = emptyObject;
+		objectBackingAnimation.clip = unit.objectAnim != null ? unit.objectAnim : emptyObject;
+
+        canvasAnimation.clip = unit.canvasAnim != null ? unit.canvasAnim : emptyCanvas;
     }
 
     private void DisableUnitContent()
@@ -165,6 +166,10 @@ public class LayoutController : MonoBehaviour
 		objectBackingAnimation.clip = emptyObject;
 		if (emptyObject != null)
 			objectBackingAnimation.Play();
+
+        canvasAnimation.clip = emptyCanvas;
+        if (emptyCanvas != null)
+            canvasAnimation.Play();
     }
 
     private IEnumerator WaitAndPlayNextUnitVoice(float time, ObjectInfoUnitData unit)

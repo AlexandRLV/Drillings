@@ -614,6 +614,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   miniatureAnimation: {fileID: 1834879225}
   objectBackingAnimation: {fileID: 258425042}
+  canvasAnimation: {fileID: 918806047}
   voiceSource: {fileID: 468377192}
   layoutUI: {fileID: 545225207}
   referencePoints:
@@ -621,6 +622,7 @@ MonoBehaviour:
   - {fileID: 552555724}
   emptyMiniature: {fileID: 7400000, guid: be440199e98b4f94a819bf862f196e1c, type: 2}
   emptyObject: {fileID: 7400000, guid: 096b4bddbe6682d45971b7b51f34a69f, type: 2}
+  emptyCanvas: {fileID: 7400000, guid: ab7d107bf27a4364b8d4c24b20070885, type: 2}
 --- !u!1 &533364158
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,6 +1293,7 @@ GameObject:
   - component: {fileID: 918806046}
   - component: {fileID: 918806045}
   - component: {fileID: 918806044}
+  - component: {fileID: 918806047}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -1381,6 +1384,26 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!111 &918806047
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918806042}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: ab7d107bf27a4364b8d4c24b20070885, type: 2}
+  - {fileID: 7400000, guid: 2822feda20ff30d4eb5e1fadbd1006d6, type: 2}
+  - {fileID: 7400000, guid: 9d634f2c6f794c140adc7b758f17a75c, type: 2}
+  - {fileID: 7400000, guid: 4868cd6ddaa09f649bb998731144a4c9, type: 2}
+  - {fileID: 7400000, guid: 5a3bbb9a8cfbe0f4fbef0c35fddad136, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &944266053
 GameObject:
   m_ObjectHideFlags: 0
