@@ -397,7 +397,7 @@ GameObject:
   - component: {fileID: 222980129}
   - component: {fileID: 222980128}
   - component: {fileID: 222980127}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SelectionCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -449,7 +449,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0f7b7fd0bb8a8914b9e0d3c2bdda9c4f, type: 2}
+  - {fileID: 2100000, guid: 5fffba32852856a4c90dba86f315878a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

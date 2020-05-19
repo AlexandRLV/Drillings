@@ -2018,6 +2018,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1417663820 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5408207607793220101, guid: ca46050cd94fb8841a1be37d790ad049,
+    type: 3}
+  m_PrefabInstance: {fileID: 5408207607196680144}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1417663821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417663820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9441d5450817c342a45e4b8dd66de6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showEditorMainBehavior: 1
+  showEditorBloomBehavior: 0
+  showEditorLensSurfaceBehavior: 0
+  showEditorLensFlareBehavior: 0
+  showEditorGlareBehavior: 0
+  debugView: 0
+  workflow: 1
+  selectiveRenderLayerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  bloomThreshold:
+    minValue: 1
+    maxValue: 10
+  bloomScattering: 5
+  bloomIntensity: 1
 --- !u!1 &1465752763
 GameObject:
   m_ObjectHideFlags: 0

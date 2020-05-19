@@ -1458,13 +1458,13 @@ GameObject:
   - component: {fileID: 1218220920}
   - component: {fileID: 1218220919}
   - component: {fileID: 1218220918}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SelectionCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1218220917
 Transform:
   m_ObjectHideFlags: 0
@@ -1473,7 +1473,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1218220916}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.078, y: 0.03, z: -0.25}
+  m_LocalPosition: {x: 2.078, y: 1.37, z: -0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 281261991}
@@ -1510,7 +1510,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0f7b7fd0bb8a8914b9e0d3c2bdda9c4f, type: 2}
+  - {fileID: 2100000, guid: 5fffba32852856a4c90dba86f315878a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2694,7 +2694,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 1f78ef8a91a01ae48acbbbc08fbb0ce4,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 11.960015
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 1f78ef8a91a01ae48acbbbc08fbb0ce4,
         type: 3}
