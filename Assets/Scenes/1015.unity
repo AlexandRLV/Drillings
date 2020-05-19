@@ -2327,6 +2327,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1591131846}
     m_Modifications:
+    - target: {fileID: 3565741893348083507, guid: 004896a9a1aabd04ab31a2f14de1ac15,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 889b5fb31315bd94d8b1f65705b58c65, type: 2}
     - target: {fileID: 4244572259459514968, guid: 004896a9a1aabd04ab31a2f14de1ac15,
         type: 3}
       propertyPath: backgroundColor
@@ -2530,6 +2535,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8711014197251826185, guid: 004896a9a1aabd04ab31a2f14de1ac15,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 889b5fb31315bd94d8b1f65705b58c65, type: 2}
     - target: {fileID: 9195518339459737960, guid: 004896a9a1aabd04ab31a2f14de1ac15,
         type: 3}
       propertyPath: m_LocalPosition.x
