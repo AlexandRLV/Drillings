@@ -9,7 +9,6 @@ namespace AR
 {
     public class TrackableImageBehaviour : MonoBehaviour
     {
-        #region Params
 
         [Header("Settings")]
         [SerializeField] private string sceneToLoad;
@@ -20,10 +19,8 @@ namespace AR
 
         private Transform imageTransform;
 
-        #endregion
 
 
-        #region MonoMethods
 
         private void OnEnable()
         {
@@ -39,10 +36,8 @@ namespace AR
             trackableImage.OnTrackableUpdated -= OnTrackableUpdated;
         }
 
-        #endregion
 
 
-        #region PublicMethods
 
         [ContextMenu("Enable behaviour")]
         public void EnableBehaviour()
@@ -75,10 +70,8 @@ namespace AR
 #endif
         }
 
-        #endregion
     
     
-        #region PrivateMethods
 
         private void OnTrackableFound(ARTrackedImage arTrackedImage)
         {
@@ -92,7 +85,6 @@ namespace AR
                 return;
 
             imageTransform = arTrackedImage.transform; 
-            //appManager.UpdateRootTransform(imageTransform);
         }
 
         private void OnTrackableLost()
@@ -100,6 +92,5 @@ namespace AR
             imageTransform = null;
         }
 
-        #endregion
     }
 }
