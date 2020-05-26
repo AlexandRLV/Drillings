@@ -8,7 +8,6 @@ namespace AR
 {
     public class TrackableImage : BaseTrackable<ARTrackedImage>
     {
-        #region Params
 
         [Header("Settings")]
         [SerializeField] private string referenceImageName;
@@ -18,10 +17,8 @@ namespace AR
 
         private TrackingState currentTrackingState = TrackingState.None;
 
-        #endregion
 
 
-        #region MonoMethods
 
         private void OnEnable()
         {
@@ -33,10 +30,8 @@ namespace AR
             arTrackedImageManager.trackedImagesChanged -= OnTrackedImagesChanged;
         }
 
-        #endregion
 
 
-        #region PrivateMethods
 
         private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs args)
         {
@@ -88,7 +83,5 @@ namespace AR
                 InvokeOnTrackableLost();
             }
         }
-
-        #endregion
     }
 }
