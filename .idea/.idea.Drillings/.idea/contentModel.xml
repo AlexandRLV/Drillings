@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Evgenia\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Evgenia\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_Drillings.-1036847138.00" t="ExcludeRecursive" />
+    <e p="D:\My\Projects\Drillings" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="EmbedPackage" t="Include">
+          <e p="EmbedPackages.asmdef" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="EmbedPackage.cs" t="Include" />
+          </e>
+        </e>
+        <e p="MKGlowFree" t="Include">
+          <e p="Editor" t="Include">
+            <e p="EditorHelper.cs" t="Include" />
+            <e p="EditorHelper.EditorUIContent.cs" t="Include" />
+            <e p="MinMaxRangeDrawer.cs" t="Include" />
+            <e p="MKGlowEditor.cs" t="Include" />
+            <e p="SelectiveStandardShaderGUI.cs" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="Common.cs" t="Include" />
+            <e p="Compatibility.cs" t="Include" />
+            <e p="Effect.cs" t="Include" />
+            <e p="IDimension.cs" t="Include" />
+            <e p="MinMaxRange.cs" t="Include" />
+            <e p="MipBuffer.cs" t="Include" />
+            <e p="MKGlowFree.cs" t="Include" />
+            <e p="PipelineExtensions.cs" t="Include" />
+            <e p="PipelineProperties.cs" t="Include" />
+            <e p="RenderContext.cs" t="Include" />
+            <e p="RenderTargetContext.cs" t="Include" />
+            <e p="Resources.cs" t="Include" />
+            <e p="Settings.cs" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="Effect" t="Include">
+              <e p="MKGlowSelectiveRender.shader" t="Include" />
+              <e p="MKGlowSM20.shader" t="Include" />
+              <e p="MKGlowSM25.shader" t="Include" />
+              <e p="MKGlowSM30.shader" t="Include" />
+              <e p="MKGlowSM35.shader" t="Include" />
+              <e p="MKGlowSM40.shader" t="Include" />
+            </e>
+            <e p="Inc" t="Include">
+              <e p="Common.hlsl" t="Include" />
+              <e p="Composite.hlsl" t="Include" />
+              <e p="CompositeSample.hlsl" t="Include" />
+              <e p="Copy.hlsl" t="Include" />
+              <e p="Debug.hlsl" t="Include" />
+              <e p="Downsample.hlsl" t="Include" />
+              <e p="Presample.hlsl" t="Include" />
+              <e p="Sprite.hlsl" t="Include" />
+              <e p="UI.hlsl" t="Include" />
+              <e p="Upsample.hlsl" t="Include" />
+            </e>
+            <e p="Sprites" t="Include">
+              <e p="Sprites-Default.shader" t="Include" />
+              <e p="Sprites-Diffuse.shader" t="Include" />
+            </e>
+            <e p="UI" t="Include">
+              <e p="UI-Default.shader" t="Include" />
+              <e p="UI-DefaultETC1.shader" t="Include" />
+              <e p="UI-DefaultFont.shader" t="Include" />
+              <e p="UI-Lit-Bumped.shader" t="Include" />
+              <e p="UI-Lit-Detail.shader" t="Include" />
+              <e p="UI-Lit-Refraction.shader" t="Include" />
+              <e p="UI-Lit-RefractionDetail.shader" t="Include" />
+              <e p="UI-Lit-Transparent.shader" t="Include" />
+              <e p="UI-Unlit-Detail.shader" t="Include" />
+              <e p="UI-Unlit-Text.shader" t="Include" />
+              <e p="UI-Unlit-TextDetail.shader" t="Include" />
+              <e p="UI-Unlit-Transparent.shader" t="Include" />
+            </e>
+            <e p="VariantsSelective" t="Include">
+              <e p="Legacy" t="Include">
+                <e p="Cutout" t="Include">
+                  <e p="MK_Cutout-Diffuse.shader" t="Include" />
+                  <e p="MK_Cutout-DiffuseBumped.shader" t="Include" />
+                  <e p="MK_Cutout-DiffuseBumpSpec.shader" t="Include" />
+                  <e p="MK_Cutout-Glossy.shader" t="Include" />
+                </e>
+                <e p="Illumin" t="Include">
+                  <e p="MK_Illumin-Diffuse.shader" t="Include" />
+                  <e p="MK_Illumin-DiffuseBumped.shader" t="Include" />
+                  <e p="MK_Illumin-DiffuseBumpSpec.shader" t="Include" />
+                  <e p="MK_Illumin-Glossy.shader" t="Include" />
+                </e>
+                <e p="MKGlowStandard.shader" t="Include" />
+                <e p="MKGlowStandardSpecular.shader" t="Include" />
+                <e p="Normal" t="Include">
+                  <e p="MK_Normal-Diffuse.shader" t="Include" />
+                  <e p="MK_Normal-DiffuseBumped.shader" t="Include" />
+                  <e p="MK_Normal-DiffuseBumpSpec.shader" t="Include" />
+                  <e p="MK_Normal-Glossy.shader" t="Include" />
+                </e>
+                <e p="Other" t="Include">
+                  <e p="MK_Illumin-Diffuse.shader" t="Include" />
+                  <e p="MK_Mobile-Diffuse.shader" t="Include" />
+                  <e p="MK_Unlit-Normal.shader" t="Include" />
+                </e>
+                <e p="Particle" t="Include">
+                  <e p="MK_Particle Add.shader" t="Include" />
+                  <e p="MK_Particle AddMultiply.shader" t="Include" />
+                  <e p="MK_Particle Alpha Blend.shader" t="Include" />
+                  <e p="MK_Particle Multiply.shader" t="Include" />
+                </e>
+                <e p="Transparent" t="Include">
+                  <e p="MK_Transparent-Diffuse.shader" t="Include" />
+                  <e p="MK_Transparent-DiffuseBumped.shader" t="Include" />
+                  <e p="MK_Transparent-DiffuseBumpSpec.shader" t="Include" />
+                  <e p="MK_Transparent-Glossy.shader" t="Include" />
+                </e>
+              </e>
+              <e p="Sprites" t="Include">
+                <e p="Sprites-Default.shader" t="Include" />
+                <e p="Sprites-Diffuse.shader" t="Include" />
+              </e>
+              <e p="UI" t="Include">
+                <e p="UI-Default.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="AppManager.cs" t="Include" />
+          <e p="AR" t="Include">
+            <e p="BaseTrackable.cs" t="Include" />
+            <e p="LightEstimator.cs" t="Include" />
+            <e p="TrackableImage.cs" t="Include" />
+            <e p="TrackableImageBehaviour.cs" t="Include" />
+            <e p="TrackableObject.cs" t="Include" />
+            <e p="TrackableObjectBehavior.cs" t="Include" />
+          </e>
+          <e p="ArrowsManager.cs" t="Include" />
+          <e p="AssetVariables" t="Include">
+            <e p="AssetVariable.cs" t="Include" />
+            <e p="BaseVariable.cs" t="Include" />
+            <e p="ColorVariable.cs" t="Include" />
+            <e p="FloatVariable.cs" t="Include" />
+          </e>
+          <e p="Compass.cs" t="Include" />
+          <e p="Data" t="Include">
+            <e p="LayoutData.cs" t="Include" />
+            <e p="ObjectInfoUnitData.cs" t="Include" />
+          </e>
+          <e p="DrillController.cs" t="Include" />
+          <e p="ImageToCameraRotator.cs" t="Include" />
+          <e p="LayoutController.cs" t="Include" />
+          <e p="SelectionBlink.cs" t="Include" />
+          <e p="SetUpMaterial.cs" t="Include" />
+          <e p="UI" t="Include">
+            <e p="LayoutWorldUI.cs" t="Include" />
+            <e p="ObjectUIController.cs" t="Include" />
+            <e p="Rotator.cs" t="Include" />
+            <e p="SearchingCircles.cs" t="Include" />
+            <e p="SwipeManager.cs" t="Include" />
+            <e p="UIFadeManager.cs" t="Include" />
+            <e p="UIManager.cs" t="Include" />
+          </e>
+          <e p="Wireframe.cs" t="Include" />
+          <e p="WorldPoseToGridMaterial.cs" t="Include" />
+        </e>
+        <e p="Shaders" t="Include">
+          <e p="1" t="Include">
+            <e p="Background.shader" t="Include" />
+            <e p="Resources" t="Include">
+              <e p="Wireframe-Global.shader" t="Include" />
+              <e p="WireframeShaded-Unlit-Global.shader" t="Include" />
+              <e p="WireframeTransparent-Global.shader" t="Include" />
+              <e p="WireframeTransparentCulled-Global.shader" t="Include" />
+            </e>
+            <e p="Wireframe.cginc" t="Include" />
+            <e p="WireframeShaded-Unlit.shader" t="Include" />
+            <e p="WireframeTransparent.shader" t="Include" />
+            <e p="WireframeTransparentCulled.shader" t="Include" />
+          </e>
+          <e p="AlwaysVisible1.shader" t="Include" />
+          <e p="AlwaysVisibleSprites.shader" t="Include" />
+          <e p="ColoredBlended.shader" t="Include" />
+          <e p="GridMiniature.shader" t="Include" />
+          <e p="GridOverlay.shader" t="Include" />
+        </e>
+      </e>
+      <e p="Drillings.sln" t="IncludeFlat" />
+      <e p="EmbedPackages.csproj" t="IncludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive">
+        <e p="com.unity.xr.arkit" t="Include">
+          <e p="Editor" t="Include">
+            <e p="ARKitBuildProcessor.cs" t="Include" />
+            <e p="ARKitPackageMetadata.cs" t="Include" />
+            <e p="ARKitReferenceImageLibraryBuildProcessor.cs" t="Include" />
+            <e p="ARKitSettings.cs" t="Include" />
+            <e p="ARKitSettingsProvider.cs" t="Include" />
+            <e p="ARReferenceImage.cs" t="Include" />
+            <e p="ARReferenceObject.cs" t="Include" />
+            <e p="ARResource.cs" t="Include" />
+            <e p="ARResourceGroup.cs" t="Include" />
+            <e p="csc.rsp" t="Include" />
+            <e p="GuidExtensions.cs" t="Include" />
+            <e p="Json.cs" t="Include" />
+            <e p="LibUtil.cs" t="Include" />
+            <e p="ObjectTracking" t="Include">
+              <e p="ARKitReferenceObjectEntryEditor.cs" t="Include" />
+              <e p="ARKitReferenceObjectLibraryBuildProcessor.cs" t="Include" />
+              <e p="ARObject.cs" t="Include" />
+              <e p="ARObjectImporter.cs" t="Include" />
+              <e p="ARObjectInfo.cs" t="Include" />
+            </e>
+            <e p="Unity.XR.ARKit.Editor.asmdef" t="Include" />
+            <e p="XcodeAssetCatalog.cs" t="Include" />
+          </e>
+          <e p="Runtime" t="Include">
+            <e p="ARCoachingGoal.cs" t="Include" />
+            <e p="ARCoachingOverlayTransition.cs" t="Include" />
+            <e p="ARCollaborationData.cs" t="Include" />
+            <e p="ARCollaborationDataBuilder.cs" t="Include" />
+            <e p="ARCollaborationDataPriority.cs" t="Include" />
+            <e p="ARKitAnchorSubsystem.cs" t="Include" />
+            <e p="ARKitApi.cs" t="Include" />
+            <e p="ARKitCameraSubsystem.cs" t="Include" />
+            <e p="ARKitEnvironmentProbeSubsystem.cs" t="Include" />
+            <e p="ARKitLoader.cs" t="Include" />
+            <e p="ARKitLoaderConstants.cs" t="Include" />
+            <e p="ARKitLoaderSettings.cs" t="Include" />
+            <e p="ARKitMeshSubsystemExtensions.cs" t="Include" />
+            <e p="ARKitRaycastSubsystem.cs" t="Include" />
+            <e p="ARKitSessionSubsystem.cs" t="Include" />
+            <e p="ARMeshClassification.cs" t="Include" />
+            <e p="ARWorldMap.cs" t="Include" />
+            <e p="ARWorldMappingStatus.cs" t="Include" />
+            <e p="ARWorldMapRequest.cs" t="Include" />
+            <e p="ARWorldMapRequestStatus.cs" t="Include" />
+            <e p="Assembly.cs" t="Include" />
+            <e p="Depth" t="Include">
+              <e p="ARKitXRDepthSubsystem.cs" t="Include" />
+            </e>
+            <e p="EnvironmentProbeApi.cs" t="Include" />
+            <e p="HumanBody" t="Include">
+              <e p="ARKitXRHumanBodySubsystem.cs" t="Include" />
+            </e>
+            <e p="ImageTracking" t="Include">
+              <e p="ARKitImageDatabase.cs" t="Include" />
+              <e p="ARKitImageTrackingProvider.cs" t="Include" />
+              <e p="ManagedReferenceImage.cs" t="Include" />
+            </e>
+            <e p="Input" t="Include">
+              <e p="InputLayoutLoader.cs" t="Include" />
+            </e>
+            <e p="MemoryLayout.cs" t="Include" />
+            <e p="NativeChanges.cs" t="Include" />
+            <e p="NSData.cs" t="Include" />
+            <e p="NSMutableData.cs" t="Include" />
+            <e p="ObjectTracking" t="Include">
+              <e p="ARKitReferenceObjectEntry.cs" t="Include" />
+              <e p="ARKitXRObjectTrackingSubsystem.cs" t="Include" />
+            </e>
+            <e p="Occlusion" t="Include">
+              <e p="ARKitXROcclusionSubsystem.cs" t="Include" />
+            </e>
+            <e p="OSVersion.cs" t="Include" />
+            <e p="Participant" t="Include">
+              <e p="ARKitParticipantSubsystem.cs" t="Include" />
+            </e>
+            <e p="PlaneTracking" t="Include">
+              <e p="ARKitXRPlaneSubsystem.cs" t="Include" />
+            </e>
+            <e p="SerializedARCollaborationData.cs" t="Include" />
+            <e p="SetReferenceLibraryResult.cs" t="Include" />
+            <e p="Unity.XR.ARKit.asmdef" t="Include" />
+          </e>
+          <e p="Tests" t="Include">
+            <e p="Runtime" t="Include">
+              <e p="OSVersionTests.cs" t="Include" />
+              <e p="Unity.XR.ARKit.Runtime.Tests.asmdef" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Unity.XR.ARKit.csproj" t="IncludeRecursive" />
+      <e p="Unity.XR.ARKit.Editor.csproj" t="IncludeRecursive" />
+      <e p="Unity.XR.ARKit.Runtime.Tests.csproj" t="IncludeRecursive" />
+    </e>
+  </component>
+</project>
