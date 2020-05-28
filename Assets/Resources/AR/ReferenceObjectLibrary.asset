@@ -17,16 +17,6 @@ MonoBehaviour:
   m_ReferenceObjects:
   - m_GuidLow: 5740562145721904318
     m_GuidHigh: 2724479852866539910
-    m_Name: 1015_1
+    m_Name: 1015
     m_Entries:
     - {fileID: -6831329414088302235, guid: be6de76b0c2d7354ab371668ff215e67, type: 3}
-  - m_GuidLow: 4934996487285758619
-    m_GuidHigh: 8435664846753002174
-    m_Name: 1015_2
-    m_Entries:
-    - {fileID: -6831329414088302235, guid: 9888c51d884e12a4b9fa41f372cd13af, type: 3}
-  - m_GuidLow: 5160372926429626036
-    m_GuidHigh: 4598014790569196935
-    m_Name: 160_1
-    m_Entries:
-    - {fileID: -6831329414088302235, guid: 7bd46aa9e69c8474bb759ca802310aa9, type: 3}
