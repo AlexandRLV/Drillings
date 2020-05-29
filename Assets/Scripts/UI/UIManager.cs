@@ -20,6 +20,7 @@ namespace UI
         [SerializeField] private AppManager appManager;
         [SerializeField] private SearchingCircles searchingCircles;
         [SerializeField] private ARTrackedImageManager arTrackedImageManager;
+        [SerializeField] private ARTrackedObjectManager arTrackedObjectManager;
         [SerializeField] private ObjectUIController objectLayout;
         [SerializeField] private GameObject introLayout;
         [SerializeField] private GameObject loadingIndicator;
@@ -32,12 +33,19 @@ namespace UI
         public void Start()
         {
             fadeInOutTime = uiFadeInOutTime;
-        
+
             introLayout.SetActive(true);
             startButton.SetActive(false);
             loadingIndicator.SetActive(true);
             loadingText.SetActive(true);
-            arTrackedImageManager.enabled = false;
+
+            if (arTrackedImageManager != null)
+                arTrackedImageManager.enabled = false;
+            
+            if (arTrackedObjectManager != null)
+                arTrackedObjectManager.enabled = false;
+            
+            
             searchingCircles.gameObject.SetActive(false);
             objectLayout.gameObject.SetActive(false);
         
@@ -124,7 +132,13 @@ namespace UI
         public void DisableIntroLayout()
         {
             introLayout.SetActive(false);
-            arTrackedImageManager.enabled = true;
+            
+            if (arTrackedImageManager != null)
+                arTrackedImageManager.enabled = true;
+            
+            if (arTrackedObjectManager != null)
+                arTrackedObjectManager.enabled = true;
+            
             objectLayout.gameObject.SetActive(false);
             searchingCircles.gameObject.SetActive(true);
         }

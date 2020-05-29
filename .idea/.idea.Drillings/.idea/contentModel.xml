@@ -192,7 +192,7 @@
         <e p="com.unity.xr.arkit" t="Include">
           <e p="Editor" t="Include">
             <e p="ARKitBuildProcessor.cs" t="Include" />
-            <e p="ARKitPackageMetadata.cs" t="Include" />
+            <e p="ARKitLoaderBuildProcessor.cs" t="Include" />
             <e p="ARKitReferenceImageLibraryBuildProcessor.cs" t="Include" />
             <e p="ARKitSettings.cs" t="Include" />
             <e p="ARKitSettingsProvider.cs" t="Include" />
@@ -200,6 +200,7 @@
             <e p="ARReferenceObject.cs" t="Include" />
             <e p="ARResource.cs" t="Include" />
             <e p="ARResourceGroup.cs" t="Include" />
+            <e p="Assembly.cs" t="Include" />
             <e p="csc.rsp" t="Include" />
             <e p="GuidExtensions.cs" t="Include" />
             <e p="Json.cs" t="Include" />
@@ -220,17 +221,15 @@
             <e p="ARCollaborationData.cs" t="Include" />
             <e p="ARCollaborationDataBuilder.cs" t="Include" />
             <e p="ARCollaborationDataPriority.cs" t="Include" />
-            <e p="ARKitAnchorSubsystem.cs" t="Include" />
             <e p="ARKitApi.cs" t="Include" />
             <e p="ARKitCameraSubsystem.cs" t="Include" />
             <e p="ARKitEnvironmentProbeSubsystem.cs" t="Include" />
             <e p="ARKitLoader.cs" t="Include" />
             <e p="ARKitLoaderConstants.cs" t="Include" />
             <e p="ARKitLoaderSettings.cs" t="Include" />
-            <e p="ARKitMeshSubsystemExtensions.cs" t="Include" />
             <e p="ARKitRaycastSubsystem.cs" t="Include" />
+            <e p="ARKitReferencePointSubsystem.cs" t="Include" />
             <e p="ARKitSessionSubsystem.cs" t="Include" />
-            <e p="ARMeshClassification.cs" t="Include" />
             <e p="ARWorldMap.cs" t="Include" />
             <e p="ARWorldMappingStatus.cs" t="Include" />
             <e p="ARWorldMapRequest.cs" t="Include" />
@@ -258,9 +257,6 @@
             <e p="ObjectTracking" t="Include">
               <e p="ARKitReferenceObjectEntry.cs" t="Include" />
               <e p="ARKitXRObjectTrackingSubsystem.cs" t="Include" />
-            </e>
-            <e p="Occlusion" t="Include">
-              <e p="ARKitXROcclusionSubsystem.cs" t="Include" />
             </e>
             <e p="OSVersion.cs" t="Include" />
             <e p="Participant" t="Include">
