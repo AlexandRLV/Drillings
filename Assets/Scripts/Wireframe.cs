@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using AssetVariables;
 using UnityEngine;
 
-public class Wireframe : MonoBehaviour
+namespace Wireframes
+{
+    public class Wireframe : MonoBehaviour
 {
     public bool render_mesh_normaly = true;
     public bool render_lines_1st = false;
@@ -131,4 +133,5 @@ public class Wireframe : MonoBehaviour
             GL.End();
         }
     }
+}
 }

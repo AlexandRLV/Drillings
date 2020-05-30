@@ -162,6 +162,7 @@
             <e p="UIManager.cs" t="Include" />
           </e>
           <e p="Wireframe.cs" t="Include" />
+          <e p="Wireframe1.cs" t="Include" />
           <e p="WorldPoseToGridMaterial.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">
