@@ -10,20 +10,19 @@ namespace UI
     public class ObjectUIController : MonoBehaviour
     {
         [Header("Settings")]
-        [SerializeField] private float controlsDefaultWidth;
-        [SerializeField] private float controlsWidthPerUnit;
-        [SerializeField] private float controlsButtonOffset;
+        [SerializeField] private float controlsButtonsOffset;
+        [SerializeField] private float controlsUnitWidthMultiplier;
         [SerializeField] private float delayBeforePlay;
         [SerializeField] private Color defaultUnitColor;
         [SerializeField] private Color selectedUnitColor;
     
         [Header("References")]
         [SerializeField] private UIManager uiManager;
+        [SerializeField] private Compass compass;
         [SerializeField] private Text objectNameText;
         [SerializeField] private Text unitNameText;
         [SerializeField] private Text loadingText;
         [SerializeField] private Image playButtonImage;
-        [SerializeField] private RectTransform controlsBackground;
         [SerializeField] private RectTransform nextUnitButton;
         [SerializeField] private RectTransform prevUnitButton;
     
@@ -39,7 +38,6 @@ namespace UI
         private List<Image> selections;
 
 
-    
         private void OnEnable()
         {
             loadingTextFade = loadingText.GetComponent<UIFadeManager>();
@@ -47,42 +45,37 @@ namespace UI
         }
 
 
-    
         public void SetUpLayout(LayoutData layoutData)
         {
             // Set layout main info
             objectNameText.text = layoutData.objectName;
             unitNameText.text = layoutData.CurrentUnit.unitName;
             currentUnitId = layoutData.CurrentUnitId;
-        
-            // Set controls panel position and size
+            
+            // Calculate unit selections values
             int unitCount = layoutData.UnitsCount;
-            float width = controlsDefaultWidth + controlsWidthPerUnit * unitCount;
-            float yPosition = controlsBackground.anchoredPosition.y;
-        
-            Rect rect = controlsBackground.rect;
-            rect.Set(rect.x, rect.y, width, rect.height);
-            controlsBackground.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Left, 0, width);
+            float yPosition = nextUnitButton.anchoredPosition.y;
+
+            float diff = nextUnitButton.anchoredPosition.x - prevUnitButton.anchoredPosition.x;
+            float unitsOffset = diff / 2 + prevUnitButton.anchoredPosition.x;
+            float widthPerUnit = (diff - controlsButtonsOffset * 2) / unitCount;
+            float unitLength = widthPerUnit * controlsUnitWidthMultiplier;
+            
+            // Set unit selections
         
             Vector2 anchors = new Vector2(0.5f, 0);
-            controlsBackground.anchorMax = anchors;
-            controlsBackground.anchorMin = anchors;
-            controlsBackground.anchoredPosition = new Vector2(0, yPosition);
-        
-            nextUnitButton.anchoredPosition = new Vector2(width / 2 - controlsButtonOffset, yPosition);
-            prevUnitButton.anchoredPosition = new Vector2(-(width / 2 - controlsButtonOffset), yPosition);
-        
-            // Set unit selections
+            
             float a = unitCount % 2 == 0 ? unitCount / 2 - 0.5f : (unitCount - 1) / 2;
             selections = new List<Image>();
             for (float i = -a; i <= a; i += 1)
             {
-                Image unitSelection = Instantiate(unitSelectionImage, controlsBackground.parent);
+                Image unitSelection = Instantiate(unitSelectionImage, nextUnitButton.parent);
             
                 RectTransform selectionTransform = unitSelection.rectTransform;
+                selectionTransform.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Left, 0, unitLength);
                 selectionTransform.anchorMax = anchors;
                 selectionTransform.anchorMin = anchors;
-                selectionTransform.anchoredPosition = new Vector2(controlsWidthPerUnit * i, yPosition);
+                selectionTransform.anchoredPosition = new Vector2(widthPerUnit * i + unitsOffset, yPosition);
 
                 int id = selections.Count;
                 unitSelection.GetComponent<Button>().onClick.AddListener(() => OpenUnit(id));
@@ -152,6 +145,11 @@ namespace UI
         public void PrevUnit()
         {
             uiManager.PrevUnit();
+        }
+
+        public void GoHome()
+        {
+            compass.StopFollow();
         }
 
         public void ActivateNextUnitSelection()

@@ -121,6 +121,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!224 &38180620 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5751776492610249624, guid: c97a69ff63d9fce438c670fa966c9223,
+    type: 3}
+  m_PrefabInstance: {fileID: 5751776490962693784}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &530806158
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,6 +590,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &1411986099 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5751776492309558337, guid: c97a69ff63d9fce438c670fa966c9223,
+    type: 3}
+  m_PrefabInstance: {fileID: 5751776490962693784}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1417663820 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5408207607793220101, guid: ca46050cd94fb8841a1be37d790ad049,
@@ -1127,5 +1139,25 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5751776492554183475, guid: c97a69ff63d9fce438c670fa966c9223,
+        type: 3}
+      propertyPath: compass
+      value: 
+      objectReference: {fileID: 899190114681837577}
+    - target: {fileID: 5751776492554183475, guid: c97a69ff63d9fce438c670fa966c9223,
+        type: 3}
+      propertyPath: controlsButtonsOffset
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5751776492554183475, guid: c97a69ff63d9fce438c670fa966c9223,
+        type: 3}
+      propertyPath: nextUnitButton
+      value: 
+      objectReference: {fileID: 38180620}
+    - target: {fileID: 5751776492554183475, guid: c97a69ff63d9fce438c670fa966c9223,
+        type: 3}
+      propertyPath: prevUnitButton
+      value: 
+      objectReference: {fileID: 1411986099}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c97a69ff63d9fce438c670fa966c9223, type: 3}
