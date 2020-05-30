@@ -1159,5 +1159,10 @@ PrefabInstance:
       propertyPath: prevUnitButton
       value: 
       objectReference: {fileID: 1411986099}
+    - target: {fileID: 5751776492554183475, guid: c97a69ff63d9fce438c670fa966c9223,
+        type: 3}
+      propertyPath: controlsUnitWidthMultiplier
+      value: 0.8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c97a69ff63d9fce438c670fa966c9223, type: 3}

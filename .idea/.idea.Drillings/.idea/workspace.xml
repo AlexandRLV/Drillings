@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49960220-d93b-408e-9856-921e14d7901d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Drillings/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Drillings/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Drillings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Drillings/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ScreenCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ScreenCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/UnitsControls/pause.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/UnitsControls/pause.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/UnitsControls/pause.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/UnitsControls/pause.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/UnitsControls/play.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/UnitsControls/play.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/UnitsControls/play.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/UnitsControls/play.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ObjectUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ObjectUIController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/iOS/UnityARKit.m.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/iOS/UnityARKit.m.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/iOS/Xcode1000/UnityARKit.a.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/iOS/Xcode1000/UnityARKit.a.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/iOS/Xcode1100/UnityARKit.a.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/iOS/Xcode1100/UnityARKit.a.meta" afterDir="false" />
-    </list>
+    <list default="true" id="49960220-d93b-408e-9856-921e14d7901d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +83,7 @@
       <workItem from="1590747677017" duration="1734000" />
       <workItem from="1590756484852" duration="1049000" />
       <workItem from="1590758075180" duration="1093000" />
-      <workItem from="1590855735457" duration="7071000" />
+      <workItem from="1590855735457" duration="7604000" />
     </task>
     <servers />
   </component>
