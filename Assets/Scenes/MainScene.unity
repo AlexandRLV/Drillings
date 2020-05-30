@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f815663630c0dd342a681a68e41c32c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: 1015
+  sceneToLoad: 160-230
   trackableObject: {fileID: 530806160}
   appManager: {fileID: 2021286671}
 --- !u!114 &530806160
@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f815663630c0dd342a681a68e41c32c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: 1015
+  sceneToLoad: 250MNA
   trackableObject: {fileID: 667639674}
   appManager: {fileID: 2021286671}
 --- !u!114 &667639674
