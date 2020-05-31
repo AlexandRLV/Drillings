@@ -16,11 +16,12 @@ MonoBehaviour:
   voices:
   - {fileID: 8300000, guid: 884d79cc29474d843ab351929e363156, type: 3}
   miniatureAnim: {fileID: 7400000, guid: 5a9a002947bd7d943868f3b17b963dad, type: 2}
-  miniatureAnims:
-  - {fileID: 7400000, guid: 5a9a002947bd7d943868f3b17b963dad, type: 2}
+  disableMiniatureAnimOnSecondVoice: 0
+  delayBetweenVoices: 0
   infoImage: {fileID: 0}
   infoTextStrings:
   - 
   pointerReferenceId: 0
   sizes: []
-  objectAnim: {fileID: 0}
+  objectAnim: {fileID: 7400000, guid: e4a5d116d5c3a3a48991a39457dfa25a, type: 2}
+  canvasAnim: {fileID: 0}
