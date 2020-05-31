@@ -2576,10 +2576,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06f6a86706d140844bcf475cc771c830, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlsDefaultWidth: 400
-  controlsExtraWidth: 300
-  controlsWidthPerUnit: 110
-  controlsButtonOffset: 70
+  controlsButtonsOffset: 100
+  controlsUnitWidthMultiplier: 0.8
   delayBeforePlay: 3
   defaultUnitColor: {r: 1, g: 1, b: 1, a: 1}
   selectedUnitColor: {r: 0, g: 0.38431376, b: 0.65882355, a: 1}
@@ -2589,10 +2587,8 @@ MonoBehaviour:
   unitNameText: {fileID: 5751776492432689331}
   loadingText: {fileID: 5751776491551982539}
   playButtonImage: {fileID: 5751776490941430435}
-  controlsBackground: {fileID: 5751776492649567254}
   nextUnitButton: {fileID: 5751776492610249624}
   prevUnitButton: {fileID: 5751776492309558337}
-  playButton: {fileID: 3478037290492877126}
   playSprite: {fileID: 21300000, guid: 9ab43f06e5e7a51498e3366114fbe8a5, type: 3}
   pauseSprite: {fileID: 21300000, guid: 3dd96242ade35d849a684d1a9c7381d1, type: 3}
   unitSelectionImage: {fileID: 6918864964378460723, guid: 37443ef8fa2e58845b303ff91160f3b6,

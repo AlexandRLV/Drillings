@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitName: "\u0422\u0438\u043F \u0438 \u043F\u0440\u0435\u0434\u043D\u0430\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435"
   voices:
+  - {fileID: 8300000, guid: 90fe3b633e930bc4da795023341acfb6, type: 3}
   - {fileID: 8300000, guid: 21ddf5e19e7334d48abf7551bd2efe05, type: 3}
   - {fileID: 8300000, guid: c719023c73d15594194b1d7bb74f5806, type: 3}
   miniatureAnim: {fileID: 7400000, guid: 3346446d461660b46b0795ed520e82ee, type: 2}
@@ -22,6 +23,11 @@ MonoBehaviour:
   infoImage: {fileID: 0}
   infoTextStrings:
   - 
+  - "\u042D\u043B\u0435\u043A\u0442\u0440\u0438\u0447\u0435\u0441\u043A\u0438\u0439
+    \u0431\u0443\u0440\u043E\u0432\u043E\u0439 \u0441\u0442\u0430\u043D\u043E\u043A\n\u0434\u043B\u044F
+    \u0431\u0443\u0440\u0435\u043D\u0438\u044F \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0447\u0435\u0441\u043A\u0438\u0445\n\u0432\u0437\u0440\u044B\u0432\u043D\u044B\u0445
+    \u0441\u043A\u0432\u0430\u0436\u0438\u043D \u043D\u0430 \u043E\u0442\u043A\u0440\u044B\u0442\u044B\u0445\n\u0433\u043E\u0440\u043D\u044B\u0445
+    \u0440\u0430\u0431\u043E\u0442\u0430\u0445\r"
   - "\r\u041A\u043E\u044D\u0444. \u043A\u0440\u0435\u043F\u043E\u0441\u0442\u0438
     6-20"
   pointerReferenceId: 0

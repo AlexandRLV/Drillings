@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noInputReloadTime: 600
   uiManager: {fileID: 0}
-  compass: {fileID: 0}
+  compass: {fileID: 8565269307577557366}
   scenesLayoutDataAssets:
   - sceneName: 250MNA
     data: {fileID: 11400000, guid: 23e32da96f37ff94d94d9641b739c23d, type: 2}
