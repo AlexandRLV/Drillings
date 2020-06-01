@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\pc\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_Drillings.-1872859084.00" t="ExcludeRecursive" />
-    <e p="D:\Projects\Drillings" t="IncludeRecursive">
+    <e p="C:\Users\Evgenia\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Evgenia\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_Drillings.-1036847138.00" t="ExcludeRecursive" />
+    <e p="D:\My\Projects\Drillings" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -149,6 +150,7 @@
           <e p="DrillController.cs" t="Include" />
           <e p="ImageToCameraRotator.cs" t="Include" />
           <e p="LayoutController.cs" t="Include" />
+          <e p="ReferenceLibraryManager.cs" t="Include" />
           <e p="SelectionBlink.cs" t="Include" />
           <e p="SetUpMaterial.cs" t="Include" />
           <e p="UI" t="Include">
