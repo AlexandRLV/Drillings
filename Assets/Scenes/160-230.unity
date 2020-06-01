@@ -636,7 +636,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 1f78ef8a91a01ae48acbbbc08fbb0ce4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1f78ef8a91a01ae48acbbbc08fbb0ce4,
         type: 3}
@@ -886,9 +886,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 712502102}
-  m_LocalRotation: {x: -0, y: -0.0000001490116, z: -0, w: -1}
-  m_LocalPosition: {x: -0.019485, y: -0.020151, z: 0.018531}
-  m_LocalScale: {x: 0.010565, y: 0.010565, z: 0.010565}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.74008524, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1383362788}
   - {fileID: 554470264}
@@ -899,8 +899,8 @@ Transform:
   - {fileID: 1721491004}
   - {fileID: 2030090097}
   - {fileID: 1622208854}
-  m_Father: {fileID: 1179395769}
-  m_RootOrder: 5
+  m_Father: {fileID: 519908835}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 360, z: 0}
 --- !u!114 &712502104
 MonoBehaviour:
@@ -1396,6 +1396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   miniatureAnimation: {fileID: 281261990}
   objectBackingAnimation: {fileID: 648254232}
+  objectTransform: {fileID: 519908835}
   voiceSource: {fileID: 1179395767}
   layoutUI: {fileID: 173990293}
   referencePoints:
@@ -1419,7 +1420,6 @@ Transform:
   - {fileID: 1448601703}
   - {fileID: 173990294}
   - {fileID: 648254231}
-  - {fileID: 712502103}
   - {fileID: 519908835}
   m_Father: {fileID: 0}
   m_RootOrder: 0

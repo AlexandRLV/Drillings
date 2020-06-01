@@ -10,11 +10,11 @@ public class LayoutController : MonoBehaviour
     public UIManager UIManager { get; set; }
     public LayoutData LayoutData { get; set; }
     public bool IsPlaying { get; private set; }
-    public Transform ObjectTransform => objectBackingAnimation.transform;
+    public Transform ObjectTransform => objectAnimation.transform;
 	
     [Header("References")]
     [SerializeField] private Animation miniatureAnimation;
-    [SerializeField] private Animation objectBackingAnimation;
+    [SerializeField] private Animation objectAnimation;
     [SerializeField] private AudioSource voiceSource;
     [SerializeField] private LayoutWorldUI layoutUI;
     [SerializeField] private Transform[] referencePoints;
@@ -82,8 +82,8 @@ public class LayoutController : MonoBehaviour
         
 		if (miniatureAnimation.clip != null)
 			miniatureAnimation.Play();
-		if (objectBackingAnimation.clip != null)
-			objectBackingAnimation.Play();
+		if (objectAnimation.clip != null)
+			objectAnimation.Play();
         voiceSource.Play();
 
         IsPlaying = true;
@@ -98,7 +98,7 @@ public class LayoutController : MonoBehaviour
         }
         
         miniatureAnimation.Stop();
-        objectBackingAnimation.Stop();
+        objectAnimation.Stop();
         voiceSource.Stop();
 
         IsPlaying = false;
@@ -143,7 +143,7 @@ public class LayoutController : MonoBehaviour
 		// animations
 		miniatureAnimation.clip = unit.miniatureAnim != null ? unit.miniatureAnim : emptyMiniature;
 		
-		objectBackingAnimation.clip = unit.objectAnim != null ? unit.objectAnim : emptyObject;
+		objectAnimation.clip = unit.objectAnim != null ? unit.objectAnim : emptyObject;
     }
 
     private void DisableUnitContent()
@@ -156,9 +156,9 @@ public class LayoutController : MonoBehaviour
 		if (emptyMiniature != null)
 			miniatureAnimation.Play();
 		
-		objectBackingAnimation.clip = emptyObject;
+		objectAnimation.clip = emptyObject;
 		if (emptyObject != null)
-			objectBackingAnimation.Play();
+			objectAnimation.Play();
     }
 
     private IEnumerator WaitAndPlayNextUnitVoice(float time, ObjectInfoUnitData unit)

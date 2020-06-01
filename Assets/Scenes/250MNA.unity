@@ -513,7 +513,6 @@ Transform:
   - {fileID: 650539108}
   - {fileID: 545225206}
   - {fileID: 258425041}
-  - {fileID: 778029875}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -627,6 +626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   miniatureAnimation: {fileID: 1834879225}
   objectBackingAnimation: {fileID: 258425042}
+  objectTransform: {fileID: 650539108}
   voiceSource: {fileID: 468377192}
   layoutUI: {fileID: 545225207}
   referencePoints:
@@ -1116,9 +1116,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 778029874}
-  m_LocalRotation: {x: -0, y: -1, z: -0, w: -0.00000037252897}
-  m_LocalPosition: {x: -0.005, y: -0.009199999, z: 0.0167}
-  m_LocalScale: {x: 0.012280178, y: 0.012280178, z: 0.012280178}
+  m_LocalRotation: {x: -0, y: -0.7071069, z: -0, w: 0.70710665}
+  m_LocalPosition: {x: 0, y: -2.745064, z: 0}
+  m_LocalScale: {x: 1.0634034, y: 1.063403, z: 1.0634034}
   m_Children:
   - {fileID: 971479165}
   - {fileID: 294328756}
@@ -1129,8 +1129,8 @@ Transform:
   - {fileID: 535906635}
   - {fileID: 944266054}
   - {fileID: 1860862612}
-  m_Father: {fileID: 468377191}
-  m_RootOrder: 6
+  m_Father: {fileID: 650539108}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: -179.99998, z: 0}
 --- !u!114 &778029876
 MonoBehaviour:
