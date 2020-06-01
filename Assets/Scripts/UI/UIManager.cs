@@ -18,6 +18,7 @@ namespace UI
     
         [Header("References")]
         [SerializeField] private AppManager appManager;
+        [SerializeField] private GameObject homeButton;
         [SerializeField] private SearchingCircles searchingCircles;
         [SerializeField] private ARTrackedImageManager arTrackedImageManager;
         [SerializeField] private ARTrackedObjectManager arTrackedObjectManager;
@@ -38,6 +39,7 @@ namespace UI
             startButton.SetActive(false);
             loadingIndicator.SetActive(true);
             loadingText.SetActive(true);
+            homeButton.SetActive(false);
 
             if (arTrackedImageManager != null)
                 arTrackedImageManager.enabled = false;
@@ -196,6 +198,7 @@ namespace UI
         {
             searchingCircles.gameObject.SetActive(false);
             appManager.ShowLoadedLayout();
+            homeButton.SetActive(true);
         }
 
     

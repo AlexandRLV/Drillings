@@ -6,6 +6,7 @@ using Drillings.Data;
 using UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.XR.ARFoundation;
 
 public class AppManager : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class AppManager : MonoBehaviour
     [Header("References")]
     [SerializeField] private UIManager uiManager;
     [SerializeField] private Compass compass;
+    [SerializeField] private ARSession arSession;
 
     [Header("Layouts")]
     [SerializeField] private List<LayoutDataContainer> scenesLayoutDataAssets;
@@ -64,18 +66,19 @@ public class AppManager : MonoBehaviour
         if (CurrentLayout == null || currentRunningRoutine != null)
             return false;
         
-        CurrentLayout.Stop();
+        //CurrentLayout.Stop();
         CurrentLayout.transform.parent = null;
         SceneManager.MoveGameObjectToScene(CurrentLayout.gameObject, SceneManager.GetSceneByName(CurrentScene));
         uiManager.DisableControlElements();
         currentRunningRoutine = StartCoroutine(UnloadScene());
+        arSession.Reset();
         return true;
     }
 
     public void ShowLoadedLayout()
     {
         CurrentLayout.gameObject.SetActive(true);
-        SetUpLayoutData();
+        //SetUpLayoutData();
     }
     
 

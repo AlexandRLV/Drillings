@@ -8,15 +8,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/250MNA.unity
     guid: 068511101cc02e3438abed08d880190c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/160-230.unity
     guid: d360996ead7c1b541ac0c23adbc22588
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/1015.unity
     guid: b1134a08e3b62b143916c050d2d4bde3
+  - enabled: 1
+    path: Assets/Scenes/160_test.unity
+    guid: 08271862cc27414479007ced4422a2a2
+  - enabled: 1
+    path: Assets/Scenes/250_test.unity
+    guid: 8a59141b5cbcc2741b03484659d329a8
+  - enabled: 1
+    path: Assets/Scenes/1015_test.unity
+    guid: 3a26570b1dba49748abde7ab33865b3f
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: b23b6e1703217ae4fb9564bfa8be5f8e,
       type: 2}
