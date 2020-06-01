@@ -135,4 +135,5 @@ public class LayoutDataContainer
 {
     public string sceneName;
     public LayoutData data;
+    public GameObject sceneRoot;
 }
