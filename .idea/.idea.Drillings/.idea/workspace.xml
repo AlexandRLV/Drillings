@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49960220-d93b-408e-9856-921e14d7901d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Drillings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Drillings/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/iOS/Xcode1000/UnityARKit.a.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/iOS/Xcode1000/UnityARKit.a.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/iOS/Xcode1100/UnityARKit.a.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/iOS/Xcode1100/UnityARKit.a.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/250-32.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/250-32.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/InfoCircle1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/InfoCircle1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/Materials/Line.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/Materials/Line.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Textures/Land.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Textures/Land.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Textures/New Render Texture.renderTexture" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Textures/New Render Texture.renderTexture.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Textures/StandText2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Textures/StandText2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/250MNA.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/250MNA.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,19 +25,23 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AppManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.arfoundation@3.0.0-preview.4/Runtime/AR/ARTrackedImageManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ObjectUIController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.unity.xr.arkit/Editor/ObjectTracking/ARObjectInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.arsubsystems@3.0.0-preview.4/Runtime/ObjectTrackingSubsystem/XRReferenceObjectLibrary.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ObjectUIController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.arsubsystems@3.0.0-preview.4/Runtime/ObjectTrackingSubsystem/XRReferenceObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AppManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/com.unity.xr.arkit/Editor/ObjectTracking/ARKitReferenceObjectLibraryBuildProcessor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/com.unity.xr.arkit/Editor/ObjectTracking/ARObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/com.unity.xr.arkit/Editor/ObjectTracking/ARObjectInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.arfoundation@3.0.0-preview.4/Runtime/AR/ARTrackedImageManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Wireframe1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/com.unity.xr.arkit/Editor/ARReferenceObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LayoutController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.unity.xr.arkit/Editor/ObjectTracking/ARKitReferenceObjectEntryEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Wireframe.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.arsubsystems@3.0.0-preview.4/Runtime/ObjectTrackingSubsystem/XRReferenceObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Compass.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AR/TrackableObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Wireframe1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.unity.xr.arkit/Editor/ARReferenceObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.unity.xr.arkit/Editor/ObjectTracking/ARObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AR/TrackableObjectBehavior.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.unity.xr.arkit/Editor/ObjectTracking/ARKitReferenceObjectLibraryBuildProcessor.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -41,6 +54,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ObjectUIController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AppManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AR/TrackableObjectBehavior.cs" />
       </list>
     </option>
   </component>
