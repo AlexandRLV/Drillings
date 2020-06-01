@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49960220-d93b-408e-9856-921e14d7901d" name="Default Changelist" comment="" />
+    <list default="true" id="49960220-d93b-408e-9856-921e14d7901d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Drillings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Drillings/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/iOS/Xcode1000/UnityARKit.a.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/iOS/Xcode1000/UnityARKit.a.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/iOS/Xcode1100/UnityARKit.a.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/iOS/Xcode1100/UnityARKit.a.meta" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,24 +16,31 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Wireframe.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.arsubsystems@3.0.0-preview.4/Runtime/ObjectTrackingSubsystem/XRReferenceObjectLibrary.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ObjectUIController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.arsubsystems@3.0.0-preview.4/Runtime/ObjectTrackingSubsystem/XRReferenceObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AppManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.unity.xr.arkit/Editor/ObjectTracking/ARKitReferenceObjectLibraryBuildProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.unity.xr.arkit/Editor/ObjectTracking/ARObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.unity.xr.arkit/Editor/ObjectTracking/ARObjectInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.arfoundation@3.0.0-preview.4/Runtime/AR/ARTrackedImageManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Wireframe1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.unity.xr.arkit/Editor/ARReferenceObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.unity.xr.arkit/Editor/ObjectTracking/ARKitReferenceObjectEntryEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Wireframe.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.xr.arkit@4.0.0-preview.3/Editor/ObjectTracking/ARObjectInfo.cs" />
         <option value="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Editor/ObjectTracking/ARObjectInfo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/WireframeRenderer/Scripts/WireframeRenderer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Wireframe.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Wireframe1.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ObjectUIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AppManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" />
       </list>
     </option>
   </component>
@@ -84,6 +96,7 @@
       <workItem from="1590756484852" duration="1049000" />
       <workItem from="1590758075180" duration="1093000" />
       <workItem from="1590855735457" duration="7604000" />
+      <workItem from="1590950249564" duration="1454000" />
     </task>
     <servers />
   </component>
