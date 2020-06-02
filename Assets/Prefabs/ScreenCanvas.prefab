@@ -348,7 +348,7 @@ MonoBehaviour:
   pulseTime: 0.5
   waitTime: 0
   scaleMultiplier: 0.05
-  extraAnimationTime: 1
+  loadingAnimationTime: 1
   pulseCurve:
     serializedVersion: 2
     m_Curve:
@@ -2062,7 +2062,6 @@ MonoBehaviour:
   uiFadeInOutTime: 0.3
   appManager: {fileID: 0}
   searchingCircles: {fileID: 5751776490869907712}
-  arTrackedImageManager: {fileID: 0}
   arTrackedObjectManager: {fileID: 0}
   objectLayout: {fileID: 5751776492554183475}
   introLayout: {fileID: 5751776490948108460}

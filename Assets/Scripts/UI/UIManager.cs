@@ -19,7 +19,6 @@ namespace UI
         [Header("References")]
         [SerializeField] private AppManager appManager;
         [SerializeField] private SearchingCircles searchingCircles;
-        [SerializeField] private ARTrackedImageManager arTrackedImageManager;
         [SerializeField] private ARTrackedObjectManager arTrackedObjectManager;
         [SerializeField] private ObjectUIController objectLayout;
         [SerializeField] private GameObject introLayout;
@@ -38,9 +37,6 @@ namespace UI
             startButton.SetActive(false);
             loadingIndicator.SetActive(true);
             loadingText.SetActive(true);
-
-            if (arTrackedImageManager != null)
-                arTrackedImageManager.enabled = false;
             
             if (arTrackedObjectManager != null)
                 arTrackedObjectManager.enabled = false;
@@ -132,9 +128,6 @@ namespace UI
         public void DisableIntroLayout()
         {
             introLayout.SetActive(false);
-            
-            if (arTrackedImageManager != null)
-                arTrackedImageManager.enabled = true;
             
             if (arTrackedObjectManager != null)
                 arTrackedObjectManager.enabled = true;

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5408207606566312848}
   - component: {fileID: 5408207606566312850}
   - component: {fileID: 5408207606566312849}
-  - component: {fileID: 5408207607196680147}
   - component: {fileID: 5408207607196680148}
   m_Layer: 0
   m_Name: ARSessionOrigin
@@ -60,22 +59,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5408207607196680147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5408207606566312943}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dea56a9eaadd1c439095de4f9a371cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SerializedLibrary: {fileID: 11400000, guid: 0c88641185f39c6439cf188baaac18af,
-    type: 2}
-  m_MaxNumberOfMovingImages: 0
-  m_TrackedImagePrefab: {fileID: 0}
 --- !u!114 &5408207607196680148
 MonoBehaviour:
   m_ObjectHideFlags: 0

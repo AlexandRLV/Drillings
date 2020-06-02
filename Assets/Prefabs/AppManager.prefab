@@ -48,12 +48,18 @@ MonoBehaviour:
   uiManager: {fileID: 0}
   compass: {fileID: 8565269307577557366}
   scenesLayoutDataAssets:
-  - sceneName: 250MNA
+  - objectName: 250MNA
     data: {fileID: 11400000, guid: 23e32da96f37ff94d94d9641b739c23d, type: 2}
-  - sceneName: 160-230
+    sceneRoot: {fileID: 2933742778110247381, guid: a34902de94e2a4940bd001465059454b,
+      type: 3}
+  - objectName: 160-230
     data: {fileID: 11400000, guid: 99fab098819bbe242b07528501ed0ffe, type: 2}
-  - sceneName: 1015
+    sceneRoot: {fileID: 7730432128333070565, guid: 10413cc317d58d644bb39c0019d7ff9f,
+      type: 3}
+  - objectName: 1015
     data: {fileID: 11400000, guid: cacd176863303264aa0adbdae9f44fa1, type: 2}
+    sceneRoot: {fileID: 3624298142976920906, guid: 771bf8e645e5a57438a172818417afa9,
+      type: 3}
 --- !u!114 &8565269307577557366
 MonoBehaviour:
   m_ObjectHideFlags: 0

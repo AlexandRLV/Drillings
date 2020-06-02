@@ -572,29 +572,6 @@ PrefabInstance:
       propertyPath: uiManager
       value: 
       objectReference: {fileID: 1599249778}
-    - target: {fileID: 899190115356457735, guid: c12b55e1c3b04ba4595bb12b984736a9,
-        type: 3}
-      propertyPath: objectMover
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 899190115356457735, guid: c12b55e1c3b04ba4595bb12b984736a9,
-        type: 3}
-      propertyPath: scenesLayoutDataAssets.Array.data[1].sceneRoot
-      value: 
-      objectReference: {fileID: 7730432128333070565, guid: 10413cc317d58d644bb39c0019d7ff9f,
-        type: 3}
-    - target: {fileID: 899190115356457735, guid: c12b55e1c3b04ba4595bb12b984736a9,
-        type: 3}
-      propertyPath: scenesLayoutDataAssets.Array.data[0].sceneRoot
-      value: 
-      objectReference: {fileID: 2933742778110247381, guid: a34902de94e2a4940bd001465059454b,
-        type: 3}
-    - target: {fileID: 899190115356457735, guid: c12b55e1c3b04ba4595bb12b984736a9,
-        type: 3}
-      propertyPath: scenesLayoutDataAssets.Array.data[2].sceneRoot
-      value: 
-      objectReference: {fileID: 3624298142976920906, guid: 771bf8e645e5a57438a172818417afa9,
-        type: 3}
     - target: {fileID: 899190115356457752, guid: c12b55e1c3b04ba4595bb12b984736a9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -736,8 +713,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: ARSessionOrigin
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5408207607196680147, guid: ca46050cd94fb8841a1be37d790ad049, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca46050cd94fb8841a1be37d790ad049, type: 3}
 --- !u!4 &5408207607196680145 stripped
 Transform:
@@ -764,11 +740,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5751776490869907712, guid: c97a69ff63d9fce438c670fa966c9223,
-        type: 3}
-      propertyPath: loadingAnimationTime
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5751776492184187881, guid: c97a69ff63d9fce438c670fa966c9223,
         type: 3}
       propertyPath: m_Name
@@ -779,11 +750,6 @@ PrefabInstance:
       propertyPath: appManager
       value: 
       objectReference: {fileID: 2021286671}
-    - target: {fileID: 5751776492184187882, guid: c97a69ff63d9fce438c670fa966c9223,
-        type: 3}
-      propertyPath: arTrackedImageManager
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 5751776492184187882, guid: c97a69ff63d9fce438c670fa966c9223,
         type: 3}
       propertyPath: arTrackedObjectManager
