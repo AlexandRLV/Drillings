@@ -40,9 +40,6 @@ namespace AR
         [ContextMenu("Enable behaviour")]
         public void EnableBehaviour()
         {
-            if (appManager.CurrentLayout != null)
-                return;
-        
             Debug.Log("Enabling behaviour");
 
 #if UNITY_EDITOR
@@ -79,7 +76,7 @@ namespace AR
 
         private void OnTrackableUpdated(ARTrackedObject trackedObject)
         {
-            if (!sceneToLoad.Equals(appManager.CurrentScene))
+            if (!sceneToLoad.Equals(appManager.CurrentObjectName))
                 return;
 
             objectTransform = trackedObject.transform; 

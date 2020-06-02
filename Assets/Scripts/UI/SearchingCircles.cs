@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace UI
@@ -19,7 +20,7 @@ namespace UI
         [SerializeField] private float pulseTime;
         [SerializeField] private float waitTime;
         [SerializeField] private float scaleMultiplier;
-        [SerializeField] private float extraAnimationTime;
+        [SerializeField] private float loadingAnimationTime;
         [SerializeField] private AnimationCurve pulseCurve;
 
         [Header("Sprites")]
@@ -28,11 +29,11 @@ namespace UI
         [SerializeField] private Sprite outerCircleFinal;
         [SerializeField] private Sprite innerCircleFinal;
     
-        private bool active;
+        private bool hasRunningAnimation;
         private bool isAnimating;
-        private bool isExtraTime;
+        private bool activeLoadingAnimation;
         private float timer;
-        private float extraAnimationTimer;
+        private float loadingAnimationTimer;
 
 
         private void Start()
@@ -42,7 +43,7 @@ namespace UI
 
         private void Update()
         {
-            if (!active)
+            if (!hasRunningAnimation)
                 return;
 
             if (isAnimating)
@@ -54,6 +55,7 @@ namespace UI
                 outerCircle.transform.localScale = Vector3.one * (scale + 1);
             }
 
+            
             if (timer > 0)
                 timer -= Time.deltaTime;
             else
@@ -70,14 +72,15 @@ namespace UI
                 isAnimating = !isAnimating;
             }
         
-            if (!isExtraTime)
+            
+            if (!activeLoadingAnimation)
                 return;
 
-            if (extraAnimationTimer > 0)
-                extraAnimationTimer -= Time.deltaTime;
+            if (loadingAnimationTimer > 0)
+                loadingAnimationTimer -= Time.deltaTime;
             else
             {
-                StopAnimation();
+                StopLoadingAnimation();
             }
         }
 
@@ -85,7 +88,7 @@ namespace UI
         public void Play()
         {
             Debug.Log("Playing");
-            active = true;
+            hasRunningAnimation = true;
             outerCircle.sprite = outerCircleStart;
             innerCircle.sprite = innerCircleStart;
             loadingImage.SetActive(false);
@@ -99,17 +102,8 @@ namespace UI
         {
             Debug.Log("Show loading");
             loadingImage.SetActive(true);
-        }
-
-        public void Stop()
-        {
-            if (extraAnimationTime > 0)
-            {
-                isExtraTime = true;
-                extraAnimationTimer = extraAnimationTime;
-            }
-            else
-                StopAnimation();
+            activeLoadingAnimation = true;
+            loadingAnimationTimer = loadingAnimationTime;
         }
 
         public void ShowRestartButton()
@@ -154,10 +148,10 @@ namespace UI
         }
 
 
-        private void StopAnimation()
+        private void StopLoadingAnimation()
         {
-            active = false;
-            isExtraTime = false;
+            hasRunningAnimation = false;
+            activeLoadingAnimation = false;
             loadingImage.SetActive(false);
             startButton.SetActive(true);
             innerCircle.transform.localScale = Vector3.one;

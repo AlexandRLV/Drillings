@@ -6,11 +6,12 @@ using Drillings.Data;
 using UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class AppManager : MonoBehaviour
 {
     public LayoutController CurrentLayout { get; private set; }
-    public string CurrentScene { get; private set; }
+    public string CurrentObjectName { get; private set; }
 
 	[SerializeField] private float noInputReloadTime;
 	
@@ -21,119 +22,85 @@ public class AppManager : MonoBehaviour
     [Header("Layouts")]
     [SerializeField] private List<LayoutDataContainer> scenesLayoutDataAssets;
 
-	private float timer;
-    private Coroutine currentRunningRoutine;
+	private float reloadWhenInactiveTimer;
 
 
 
     private void Update()
 	{
 		#if UNITY_EDITOR
-		return;
+		//return;
 		#endif
 		
-		if (CurrentLayout == null || CurrentLayout.IsPlaying || currentRunningRoutine != null)
+		if (CurrentLayout == null || CurrentLayout.IsPlaying)
 			return;
 		
 		if (Input.touchCount > 0)
-			timer = 0;
+			reloadWhenInactiveTimer = 0;
 		
-		timer += Time.deltaTime;
-		if (timer >= noInputReloadTime)
+		reloadWhenInactiveTimer += Time.deltaTime;
+		if (reloadWhenInactiveTimer >= noInputReloadTime)
 		{
 			compass.StopFollow();
-			timer = 0;
+			reloadWhenInactiveTimer = 0;
 		}
 	}
 
     
 
-    public void ActivateLayout(string sceneName, Transform targetTransform)
+    public void ActivateLayout(string objectName, Transform targetTransform)
     {
-        if (CurrentLayout != null || currentRunningRoutine != null || scenesLayoutDataAssets.All(x => x.sceneName != sceneName))
-            return;
+        if (CurrentLayout != null)
+        {
+	        compass.StopFollow();
+        }
+
+        LayoutDataContainer layoutContainer = scenesLayoutDataAssets.SingleOrDefault(x => x.objectName.Equals(objectName));
+
+        if (layoutContainer == null)
+	        return;
         
-		timer = 0;
-        uiManager.StartLoadingAnimation();
-        CurrentScene = sceneName;
-        currentRunningRoutine = StartCoroutine(LoadScene(targetTransform));
+		reloadWhenInactiveTimer = 0;
+		
+		CurrentObjectName = layoutContainer.objectName;
+		
+		CurrentLayout = Instantiate(layoutContainer.sceneRoot, targetTransform).GetComponent<LayoutController>();
+		CurrentLayout.UIManager = uiManager;
+		CurrentLayout.LayoutData = layoutContainer.data;
+		CurrentLayout.gameObject.SetActive(false);
+		CurrentLayout.LayoutData.ResetUnit();
+		
+		compass.StartFollow(CurrentLayout.ObjectTransform);
+		
+        uiManager.ShowLoadingAnimation();
     }
     
     public bool DeactivateCurrentLayout()
     {
-        if (CurrentLayout == null || currentRunningRoutine != null)
+        if (CurrentLayout == null)
             return false;
         
         CurrentLayout.Stop();
-        CurrentLayout.transform.parent = null;
-        SceneManager.MoveGameObjectToScene(CurrentLayout.gameObject, SceneManager.GetSceneByName(CurrentScene));
+        Destroy(CurrentLayout.gameObject);
+        CurrentLayout = null;
+        CurrentObjectName = null;
         uiManager.DisableControlElements();
-        currentRunningRoutine = StartCoroutine(UnloadScene());
+        
         return true;
     }
 
     public void ShowLoadedLayout()
     {
         CurrentLayout.gameObject.SetActive(true);
-        SetUpLayoutData();
-    }
-    
-
-
-    private void UpdateRootTransform(Transform targetTransform)
-    {
-        if (CurrentLayout == null)
-            return;
-
-        Transform rootTransform = CurrentLayout.transform;
-        rootTransform.SetParent(targetTransform);
-        rootTransform.localPosition = Vector3.zero;
-        rootTransform.localRotation = Quaternion.identity;
-    }
-
-    private void SetUpLayoutData()
-    {
-        CurrentLayout.LayoutData = scenesLayoutDataAssets.Single(x => x.sceneName == CurrentScene).data;
-        CurrentLayout.LayoutData.ResetUnit();
         uiManager.EnableControlElements(CurrentLayout.LayoutData);
         CurrentLayout.SetUpUnit();
-        compass.StartFollow(CurrentLayout.ObjectTransform);
-    }
-
-    private IEnumerator LoadScene(Transform targetTransform)
-    {
-		Debug.Log("Started loading scene");
-        AsyncOperation loading = SceneManager.LoadSceneAsync(CurrentScene, LoadSceneMode.Additive);
-        while (!loading.isDone)
-			yield return null;
-
-		Debug.Log("Loaded scene");
-        CurrentLayout = FindObjectOfType<LayoutController>();
-		Debug.Log("Found LayoutController");
-        CurrentLayout.UIManager = uiManager;
-        CurrentLayout.gameObject.SetActive(false);
-        uiManager.StopLoadingAnimation();
-        UpdateRootTransform(targetTransform);
-        currentRunningRoutine = null;
-    }
-
-    private IEnumerator UnloadScene()
-    {
-        AsyncOperation unloading = SceneManager.UnloadSceneAsync(CurrentScene);
-        while (!unloading.isDone)
-            yield return new WaitForEndOfFrame();
-
-        Resources.UnloadUnusedAssets();
-        CurrentLayout = null;
-        CurrentScene = null;
-        currentRunningRoutine = null;
     }
 }
 
 [Serializable]
 public class LayoutDataContainer
 {
-    public string sceneName;
+    public string objectName;
     public LayoutData data;
     public GameObject sceneRoot;
 }

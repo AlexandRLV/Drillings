@@ -66,8 +66,13 @@ namespace UI
                 StopCoroutine(currentRoutine);
                 currentRoutine = null;
             }
-            objectLayout.DisposeSelections();
-            objectLayout.gameObject.SetActive(false);
+            
+            if (objectLayout.gameObject.activeSelf)
+            {
+                objectLayout.DisposeSelections();
+                objectLayout.gameObject.SetActive(false);
+            }
+            
             searchingCircles.gameObject.SetActive(true);
             searchingCircles.Play();
         }
@@ -77,15 +82,10 @@ namespace UI
             objectLayout.SetUpUnit(unit);
         }
 
-        public void StartLoadingAnimation()
+        public void ShowLoadingAnimation()
         {
             searchingCircles.gameObject.SetActive(true);
             searchingCircles.ShowLoading();
-        }
-
-        public void StopLoadingAnimation()
-        {
-            searchingCircles.Stop();
         }
 
         public void AudioFinished(bool isLastUnit)

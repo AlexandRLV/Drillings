@@ -81,7 +81,7 @@ namespace AR
 
         private void OnTrackableUpdated(ARTrackedImage arTrackedImage)
         {
-            if (!sceneToLoad.Equals(appManager.CurrentScene))
+            if (!sceneToLoad.Equals(appManager.CurrentObjectName))
                 return;
 
             imageTransform = arTrackedImage.transform; 

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2dc5d5521fe4b6419a3f50667059bca, type: 3}
   m_Name: Def_WireframeBackgroundColor
   m_EditorClassIdentifier: 
-  value: {r: 1, g: 1, b: 1, a: 1}
+  value: {r: 0.8470589, g: 0.7058824, b: 0.04705883, a: 1}

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2dc5d5521fe4b6419a3f50667059bca, type: 3}
   m_Name: Def_WireframeLineColor
   m_EditorClassIdentifier: 
-  value: {r: 0, g: 0, b: 1, a: 1}
+  value: {r: 0, g: 0, b: 0, a: 1}
