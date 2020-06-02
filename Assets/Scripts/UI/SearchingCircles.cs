@@ -118,11 +118,12 @@ namespace UI
             hasRunningAnimation = false;
             activeLoadingAnimation = false;
             loadingImage.SetActive(false);
-            startButton.SetActive(true);
+            //startButton.SetActive(true);
             innerCircle.transform.localScale = Vector3.one;
             outerCircle.transform.localScale = Vector3.one;
             outerCircle.sprite = outerCircleFinal;
             innerCircle.sprite = innerCircleFinal;
+            uiManager.Show();
         }
     }
 }

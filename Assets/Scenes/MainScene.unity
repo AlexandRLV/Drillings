@@ -701,7 +701,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: ARSessionOrigin
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1417663821, guid: ca46050cd94fb8841a1be37d790ad049, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ca46050cd94fb8841a1be37d790ad049, type: 3}
 --- !u!4 &5408207607196680145 stripped
 Transform:

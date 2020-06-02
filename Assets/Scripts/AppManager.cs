@@ -89,7 +89,6 @@ public class AppManager : MonoBehaviour
     public void ShowLoadedLayout()
     {
         CurrentLayout.gameObject.SetActive(true);
-        uiManager.EnableControlElements();
         CurrentLayout.SetUpUnit();
     }
 }

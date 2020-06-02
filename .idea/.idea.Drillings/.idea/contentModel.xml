@@ -148,6 +148,9 @@
             <e p="ObjectInfoUnitData.cs" t="Include" />
           </e>
           <e p="DrillController.cs" t="Include" />
+          <e p="Editor" t="Include">
+            <e p="TrackableObjectEditor.cs" t="Include" />
+          </e>
           <e p="ImageToCameraRotator.cs" t="Include" />
           <e p="LayoutController.cs" t="Include" />
           <e p="ObjectMover.cs" t="Include" />
@@ -161,6 +164,7 @@
             <e p="SwipeManager.cs" t="Include" />
             <e p="UIFadeManager.cs" t="Include" />
             <e p="UIManager.cs" t="Include" />
+            <e p="WorldImageSizeController.cs" t="Include" />
           </e>
           <e p="Wireframe.cs" t="Include" />
           <e p="Wireframe1.cs" t="Include" />
@@ -169,7 +173,6 @@
         </e>
         <e p="Shaders" t="Include">
           <e p="1" t="Include">
-            <e p="Background.shader" t="Include" />
             <e p="Resources" t="Include">
               <e p="Wireframe-Global.shader" t="Include" />
               <e p="WireframeShaded-Unlit-Global.shader" t="Include" />
@@ -183,9 +186,11 @@
           </e>
           <e p="AlwaysVisible1.shader" t="Include" />
           <e p="AlwaysVisibleSprites.shader" t="Include" />
+          <e p="Background.shader" t="Include" />
           <e p="ColoredBlended.shader" t="Include" />
           <e p="GridMiniature.shader" t="Include" />
           <e p="GridOverlay.shader" t="Include" />
+          <e p="SimpleTransparent.shader" t="Include" />
         </e>
       </e>
       <e p="Drillings.sln" t="IncludeFlat" />

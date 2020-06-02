@@ -38,6 +38,7 @@ namespace UI
         {
             loadingTextFade = loadingText.GetComponent<UIFadeManager>();
             loadingTextFade.gameObject.SetActive(false);
+            buttonHome.SetActive(false);
         }
 
 

@@ -18,8 +18,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2da699fde33fdca4c8ca529b1a1f2bcb, type: 3}
   - {fileID: 8300000, guid: 3741f14f1f23dbd48a4cdaaa0779698e, type: 3}
   miniatureAnim: {fileID: 7400000, guid: 9c24134e13b96cc418ac1dfd5359b236, type: 2}
-  disableMiniatureAnimOnSecondVoice: 0
-  delayBetweenVoices: 1
+  delayBetweenVoices: 0.5
   infoImage: {fileID: 0}
   infoTextStrings:
   - "\u0427\u0430\u0441\u0442\u043E\u0442\u0430 \u0432\u0440\u0430\u0449\u0435\u043D\u0438\u044F
@@ -27,7 +26,6 @@ MonoBehaviour:
   - "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u043F\u043E\u0434\u0430\u0447\u0438
     \u0431\u0443\u0440\u0441\u0442\u0430\u0432\u0430\n\u043D\u0430 \u0437\u0430\u0431\u043E\u0439:
     3 \u043C/\u043C\u0438\u043D"
-  pointerReferenceId: 0
+  pointerReferenceIds: 0400000004000000
   sizes: []
   objectAnim: {fileID: 7400000, guid: a725f7322da878441991125d59a960b0, type: 2}
-  canvasAnim: {fileID: 7400000, guid: 2822feda20ff30d4eb5e1fadbd1006d6, type: 2}

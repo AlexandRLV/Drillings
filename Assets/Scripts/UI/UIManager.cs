@@ -94,6 +94,7 @@ namespace UI
         {
             searchingCircles.gameObject.SetActive(false);
             appManager.ShowLoadedLayout();
+            EnableControlElements();
         }
 
     
@@ -101,6 +102,7 @@ namespace UI
         private IEnumerator Loading(float seconds)
         {
             yield return new WaitForSeconds(seconds);
+            
             loadingIndicator.SetActive(false);
             loadingText.SetActive(false);
             startButton.SetActive(true);

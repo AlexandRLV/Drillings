@@ -9,10 +9,10 @@ Shader "Lines/Background"
         Pass 
         {
             Blend SrcAlpha OneMinusSrcAlpha
-            //Colormask RGBA
+            Colormask RGBA
             Lighting Off 
             Offset 1, 1 
-            //Color[_Color] 
+            Color[_Color] 
         }
     }
 }

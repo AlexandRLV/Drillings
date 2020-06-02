@@ -16,16 +16,14 @@ MonoBehaviour:
   voices:
   - {fileID: 8300000, guid: 4f4750c3173705145867acbd19f7d232, type: 3}
   miniatureAnim: {fileID: 7400000, guid: c65530afa5c61ec4285e88411525ee1e, type: 2}
-  disableMiniatureAnimOnSecondVoice: 0
   delayBetweenVoices: 0
   infoImage: {fileID: 0}
   infoTextStrings:
   - "\u0428\u0438\u0440\u0438\u043D\u0430 \u043A\u043E\u043D\u0432\u0435\u0439\u0435\u0440\u0430:
     900 \u043C\u043C"
-  pointerReferenceId: 0
+  pointerReferenceIds: 02000000
   sizes:
   - 
   - "900 \u043C\u043C"
   - 
   objectAnim: {fileID: 7400000, guid: e897b1c906eee914f9d0cf0d5fec279c, type: 2}
-  canvasAnim: {fileID: 0}

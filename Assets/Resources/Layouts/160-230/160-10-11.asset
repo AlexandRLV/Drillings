@@ -10,17 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2ae9834e21801194288990b3190ee58d, type: 3}
-  m_Name: 1015-10
+  m_Name: 160-10-11
   m_EditorClassIdentifier: 
-  unitName: "\u0412\u0435\u0441"
+  unitName: "\u0413\u0430\u0431\u0430\u0440\u0438\u0442\u044B \u0438 \u0432\u0435\u0441"
   voices:
-  - {fileID: 8300000, guid: 4945d05b8f9c4d44bab94309ef6b4fdb, type: 3}
+  - {fileID: 8300000, guid: e84d80203019b5e4f8d1075c73eea5c5, type: 3}
+  - {fileID: 8300000, guid: 352493ec407eb9a46a0f0c6893e8aaf1, type: 3}
   miniatureAnim: {fileID: 0}
-  disableMiniatureAnimOnSecondVoice: 0
   delayBetweenVoices: 0
   infoImage: {fileID: 0}
   infoTextStrings:
-  - "\u0412\u0435\u0441: 17 \u0442"
-  pointerReferenceId: 0
-  sizes: []
+  - 
+  - "\u0412\u0435\u0441: 55\u0442"
+  pointerReferenceIds: 0000000003000000
+  sizes:
+  - "11 \u043C"
+  - "5,5 \u043C "
+  - "17 \u043C"
   objectAnim: {fileID: 0}

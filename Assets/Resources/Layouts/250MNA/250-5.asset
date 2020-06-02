@@ -16,12 +16,11 @@ MonoBehaviour:
   voices:
   - {fileID: 8300000, guid: d18a1722d2bc86744b0824529e887d5c, type: 3}
   miniatureAnim: {fileID: 0}
-  miniatureAnims:
-  - {fileID: 0}
+  delayBetweenVoices: 0
   infoImage: {fileID: 0}
   infoTextStrings:
   - "\u041A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0448\u0442\u0430\u043D\u0433:
     4"
-  pointerReferenceId: 2
+  pointerReferenceIds: 02000000
   sizes: []
   objectAnim: {fileID: 0}

@@ -34,6 +34,7 @@ namespace UI
 		private bool shortArrowEnabled;
 		private bool vertArrowEnabled;
 		private RectTransform imageRect;
+		private RectTransform circleRect;
 		private RectTransform pointerRect;
 		private RectTransform hLTextRect;
 		private RectTransform hsTextRect;
@@ -47,6 +48,7 @@ namespace UI
 		private void OnEnable()
 		{
 			imageRect = infoImage.GetComponent<RectTransform>();
+			circleRect = infoCircle.GetComponent<RectTransform>();
 			canvas.worldCamera = Camera.main;
 			cameraTransform = Camera.main.transform;
 			canvasTransform = canvas.transform;
@@ -82,14 +84,38 @@ namespace UI
 			if (pointerEnabled)
 			{
 				// Calculate reference points for pointer
-				// reference point on info image
-				float x = imageRect.anchoredPosition.x + imageRect.rect.width * imageRect.localScale.x / 2;
-				float y = imageRect.anchoredPosition.y - imageRect.rect.height * imageRect.localScale.y / 2;
-				Vector2 imageCorner = new Vector2(x, y);
-
 				// reference point on target object, relative to camera view
 				Vector2 pointerTarget = GetReferencePoint(pointerTargetTransform.position);
+				
+				// reference point on info image
+				float x, y;
+				if (imageRect.gameObject.activeSelf)
+				{
+					x = imageRect.anchoredPosition.x + imageRect.rect.width * imageRect.localScale.x / 2;
+					y = imageRect.anchoredPosition.y - imageRect.rect.height * imageRect.localScale.y / 2;
+				}
+				else
+				{
+					x = circleRect.rect.width * circleRect.localScale.x / 2;
+					y = 0;
+					
+					Vector2 diff = pointerTarget - circleRect.anchoredPosition;
 
+					float angle = Vector2.Angle(Vector2.right, diff);
+					if (pointerTarget.y < circleRect.anchoredPosition.y)
+						angle = -angle;
+					
+					float cos = Mathf.Cos(angle * Mathf.Deg2Rad);
+					float sin = Mathf.Sin(angle * Mathf.Deg2Rad);
+
+					float rx = x * cos * 1.05f;
+					float ry = x * sin * 1.05f;
+
+					x = rx + circleRect.anchoredPosition.x;
+					y = ry + circleRect.anchoredPosition.y;
+				}
+				Vector2 imageCorner = new Vector2(x, y);
+				
 				// Set pointer length, position and rotation
 				SetUpRect(pointerRect, imageCorner, pointerTarget);
 			}
@@ -246,11 +272,10 @@ namespace UI
 			// 	x += 180;
 			
 			float y = l.magnitude;
-			
-			rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, y / pointerRect.localScale.x);
 
+			rect.localRotation = Quaternion.identity;
+			rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, y / rect.localScale.x);
 			rect.anchoredPosition = (point1 + point2) / 2;
-
 			rect.localRotation = Quaternion.Euler(0, 0, x);
 		}
 

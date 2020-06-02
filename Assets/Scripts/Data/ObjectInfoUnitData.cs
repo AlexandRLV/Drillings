@@ -6,15 +6,19 @@ namespace Data
     public class ObjectInfoUnitData : ScriptableObject
     {
         public string unitName;
+        [Space]
         public AudioClip[] voices;
+        [Space]
         public AnimationClip miniatureAnim;
-        public bool disableMiniatureAnimOnSecondVoice;
         public float delayBetweenVoices;
         public Sprite infoImage;
+        [Space]
         [TextArea(3, 10)] public string[] infoTextStrings;
-        public int pointerReferenceId;
+        [Space]
+        public int[] pointerReferenceIds;
+        [Space]
         public string[] sizes;
+        [Space]
         public AnimationClip objectAnim;
-        public AnimationClip canvasAnim;
     }
 }

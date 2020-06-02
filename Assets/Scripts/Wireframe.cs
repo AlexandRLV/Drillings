@@ -29,10 +29,11 @@ namespace Wireframes
             return;
         #endif
 		#if UNITY_EDITOR
-            enabled = false;
-            return;
+            //enabled = false;
+            //return;
         #endif
         
+        meshMaterial.SetColor("_Color", backgroundColor);
         targetRenderer = gameObject.GetComponent<Renderer>();
         targetRenderer.material = meshMaterial;
         linesList = new ArrayList();
@@ -77,7 +78,6 @@ namespace Wireframes
     private void OnRenderObject()
     {
         targetRenderer.enabled = renderMeshNormaly;
-        targetRenderer.sharedMaterial.color = backgroundColor;
         if (lines == null || lines.Length < lineWidth)
         {
             print("No lines");

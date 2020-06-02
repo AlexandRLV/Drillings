@@ -115,8 +115,11 @@ public class LayoutController : MonoBehaviour
         else
             layoutUI.SetUpText(unit.infoTextStrings[0]);
 
-        if (unit.pointerReferenceId > 0)
-            layoutUI.EnablePointer(referencePoints[unit.pointerReferenceId - 1]);
+        if (unit.pointerReferenceIds.Length > 0)
+        {
+            if (unit.pointerReferenceIds[0] > 0)
+                layoutUI.EnablePointer(referencePoints[unit.pointerReferenceIds[0] - 1]);
+        }
         else
             layoutUI.DisablePointer();
         
@@ -155,6 +158,17 @@ public class LayoutController : MonoBehaviour
         voiceSource.clip = unit.voices[currentUnitVoiceId];
         layoutUI.SetUpText(unit.infoTextStrings[currentUnitVoiceId]);
         layoutUI.DisableArrows();
+        
+        if (unit.pointerReferenceIds.Length > 1)
+        {
+            if (unit.pointerReferenceIds[currentUnitVoiceId] > 0)
+                layoutUI.EnablePointer(referencePoints[unit.pointerReferenceIds[currentUnitVoiceId] - 1]);
+            else
+                layoutUI.DisablePointer();
+        }
+        else
+            layoutUI.DisablePointer();
+            
         
         voiceSource.Play();
         IsPlaying = true;
