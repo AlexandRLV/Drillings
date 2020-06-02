@@ -1,13 +1,12 @@
-﻿using System.Collections;
-using AssetVariables;
-using Data;
-using Drillings.Data;
-using UI;
+﻿using System;
+using System.Collections;
 using UnityEngine;
+using Data;
+using UI;
 
 public class LayoutController : MonoBehaviour
 {
-    public UIManager UIManager { get; set; }
+    public event Action AudioFinished;
     public LayoutData LayoutData { get; set; }
     public bool IsPlaying { get; private set; }
     public Transform ObjectTransform => objectAnimation.transform;
@@ -42,8 +41,8 @@ public class LayoutController : MonoBehaviour
         
         if (currentUnitVoiceId >= unit.voices.Length - 1)
         {
+            AudioFinished?.Invoke();
             Stop();
-            UIManager.AudioFinished(LayoutData.IsLastUnit);
             return;
         }
 
@@ -51,26 +50,15 @@ public class LayoutController : MonoBehaviour
             currentRoutine = StartCoroutine(WaitAndPlayNextUnitVoice(unit.delayBetweenVoices, unit));
     }
 
-
-    public void NextUnit()
+    public ObjectInfoUnitData OpenUnit(int unitId)
     {
         Stop();
-        if (LayoutData.NextUnit())
-            SetUpUnit();
-    }
-
-    public void PrevUnit()
-    {
-        Stop();
-        if (LayoutData.PrevUnit())
-            SetUpUnit();
-    }
-
-    public void OpenUnit(int unitId)
-    {
-        Stop();
-        if (LayoutData.OpenUnit(unitId))
-            SetUpUnit();
+        
+        if (!LayoutData.OpenUnit(unitId)) 
+            return null;
+        
+        SetUpUnit();
+        return LayoutData.CurrentUnit;
     }
 
     public void Play()
@@ -114,8 +102,6 @@ public class LayoutController : MonoBehaviour
         currentUnitVoiceId = 0;
         
         DisableUnitContent();
-        
-        UIManager.UpdateUnit(unit);
     }
 
     

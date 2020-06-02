@@ -1,18 +1,16 @@
 ﻿using System;
 using System.Linq;
-using System.Collections;
 using System.Collections.Generic;
-using Drillings.Data;
-using UI;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
+using Data;
+using UI;
 
 public class AppManager : MonoBehaviour
 {
     public LayoutController CurrentLayout { get; private set; }
     public string CurrentObjectName { get; private set; }
 
+    [Header("Settings")]
 	[SerializeField] private float noInputReloadTime;
 	
     [Header("References")]
@@ -65,7 +63,6 @@ public class AppManager : MonoBehaviour
 		CurrentObjectName = layoutContainer.objectName;
 		
 		CurrentLayout = Instantiate(layoutContainer.sceneRoot, targetTransform).GetComponent<LayoutController>();
-		CurrentLayout.UIManager = uiManager;
 		CurrentLayout.LayoutData = layoutContainer.data;
 		CurrentLayout.gameObject.SetActive(false);
 		CurrentLayout.LayoutData.ResetUnit();
@@ -92,7 +89,7 @@ public class AppManager : MonoBehaviour
     public void ShowLoadedLayout()
     {
         CurrentLayout.gameObject.SetActive(true);
-        uiManager.EnableControlElements(CurrentLayout.LayoutData);
+        uiManager.EnableControlElements();
         CurrentLayout.SetUpUnit();
     }
 }

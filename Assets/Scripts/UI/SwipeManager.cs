@@ -42,12 +42,14 @@ namespace UI
             float diff = deltaPos.x;
             if (diff < -swipeThreshold)
             {
-                uiManager.NextUnit();
+                Debug.Log("Swiped to next unit");
+                //uiManager.NextUnit();
             }
 
             if (diff > swipeThreshold)
             {
-                uiManager.PrevUnit();
+                Debug.Log("Swiped to prev unit");
+                //uiManager.PrevUnit();
             }
         }
     }

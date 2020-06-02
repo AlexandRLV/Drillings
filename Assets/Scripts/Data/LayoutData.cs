@@ -1,7 +1,6 @@
-﻿using Data;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Drillings.Data
+namespace Data
 {
     [CreateAssetMenu(fileName = "New LayoutData", menuName = "Layout Data", order = 52)]
     public class LayoutData : ScriptableObject

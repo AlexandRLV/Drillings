@@ -105,46 +105,11 @@ namespace UI
             activeLoadingAnimation = true;
             loadingAnimationTimer = loadingAnimationTime;
         }
-
-        public void ShowRestartButton()
-        {
-            loadingImage.SetActive(false);
-            startButton.SetActive(false);
-            continueButton.SetActive(false);
-            restartButton.SetActive(true);
-            blackout.SetActive(true);
-            outerCircle.sprite = outerCircleFinal;
-            innerCircle.sprite = innerCircleFinal;
-        }
-
-        public void ShowContinueButton()
-        {
-            loadingImage.SetActive(false);
-            startButton.SetActive(false);
-            restartButton.SetActive(false);
-            blackout.SetActive(false);
-            continueButton.SetActive(true);
-            outerCircle.sprite = outerCircleFinal;
-            innerCircle.sprite = innerCircleFinal;
-        }
     
 
         public void Show()
         {
             uiManager.Show();
-        }
-
-        public void Restart()
-        {
-            restartButton.SetActive(false);
-            blackout.SetActive(false);
-            uiManager.Restart();
-        }
-
-        public void Continue()
-        {
-            continueButton.SetActive(false);
-            uiManager.Continue();
         }
 
 
