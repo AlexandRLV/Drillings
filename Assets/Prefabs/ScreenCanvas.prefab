@@ -233,7 +233,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0.000091552734}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &5751776490792417225
@@ -2484,7 +2484,7 @@ MonoBehaviour:
   layoutController: {fileID: 0}
   scrollViewContentPadding: 280
   buttonsOffset: 470
-  delayBeforePlay: 3
+  delayBeforePlay: 0
   objectNameText: {fileID: 5751776492839508875}
   unitNameText: {fileID: 5751776492432689331}
   loadingText: {fileID: 5751776491551982539}
@@ -2826,7 +2826,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 136.7998}
+  m_AnchoredPosition: {x: 0, y: 180.7998}
   m_SizeDelta: {x: 2160, y: 273.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3016183186602057095
