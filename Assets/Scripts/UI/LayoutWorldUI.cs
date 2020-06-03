@@ -201,6 +201,7 @@ namespace UI
 			videoPlayer.gameObject.SetActive(true);
 			videoPlayer.FadeIn();
 			videoPlayer.GetComponent<VideoPlayer>().clip = clip;
+			videoPlayer.GetComponent<VideoPlayer>().Play();
 			videoPlayer.GetComponent<WorldImageSizeController>().HeightMultiplier = aspectRatio;
 		}
 

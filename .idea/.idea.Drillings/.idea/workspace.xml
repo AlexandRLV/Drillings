@@ -1,68 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="49960220-d93b-408e-9856-921e14d7901d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Drillings/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Drillings/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Drillings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Drillings/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/1015/Unit2Object.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/1015/Unit2Object.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/160/EmptyObject.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/160/EmptyObject.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animations/160/Unit3Object.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/160/Unit3Object.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animations/160/Unit4Object.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/160/Unit4Object.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/250/Unit2Object.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/250/Unit2Object.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/250/Unit4Object.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/250/Unit4Object.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Miniature/MiniatureSelected.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Miniature/MiniatureSelected.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/DefaultMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/DefaultMat.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/1015SceneRoot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scenes/1015SceneRoot.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/160SceneRoot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scenes/160SceneRoot.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/250SceneRoot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scenes/250SceneRoot.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AssetVariables/1015_WireframeBackColor.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AssetVariables/1015_WireframeBackColor.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AssetVariables/1015_WireframeLineColor.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AssetVariables/1015_WireframeLineColor.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AssetVariables/CanvasToCameraDistanceMultiplier.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AssetVariables/CanvasToCameraDistanceMultiplier.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AssetVariables/Def_WireframeBackgroundColor.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AssetVariables/Def_WireframeBackgroundColor.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AssetVariables/Def_WireframeLineColor.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AssetVariables/Def_WireframeLineColor.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AssetVariables/MaxCanvasDistance.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AssetVariables/MaxCanvasDistance.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AssetVariables/MinCanvasDistance.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AssetVariables/MinCanvasDistance.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AssetVariables/SizeTextOffset.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AssetVariables/SizeTextOffset.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AssetVariables/WorldImageHeightMultiplier.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AssetVariables/WorldImageHeightMultiplier.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AssetVariables/WorldImageYOffset.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AssetVariables/WorldImageYOffset.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Layouts/10BC15/1015-1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Layouts/10BC15/1015-1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Layouts/10BC15/1015-3-4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Layouts/10BC15/1015-3-4.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Layouts/10BC15/1015-8.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Layouts/10BC15/1015-8.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Layouts/10BC15/1015-9-10.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Layouts/10BC15/1015-9-10.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Layouts/160-230/160-1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Layouts/160-230/160-1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Layouts/160-230/160-10-11.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Layouts/160-230/160-10-11.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Layouts/160-230/160-5-6.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Layouts/160-230/160-5-6.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Layouts/160-230/160-7.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Layouts/160-230/160-7.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Layouts/160-230/160-8.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Layouts/160-230/160-8.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Layouts/250MNA/250-1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Layouts/250MNA/250-1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Layouts/250MNA/250-10.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Layouts/250MNA/250-10.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Layouts/250MNA/250-11.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Layouts/250MNA/250-11.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Layouts/250MNA/250-13-14.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Layouts/250MNA/250-13-14.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Layouts/250MNA/250-6-7.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Layouts/250MNA/250-6-7.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/160-230.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Models/160-230.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sounds/10-15/1-1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sounds/10-15/1-1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sounds/10-15/1-2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sounds/10-15/1-2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sounds/10-15/1-3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sounds/10-15/1-3.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sounds/160/1-1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sounds/160/1-1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sounds/160/1-2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sounds/160/1-2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sounds/250/1-1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sounds/250/1-1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sounds/250/1-2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sounds/250/1-2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AR/TrackableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AR/TrackableObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AR/TrackableObjectBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AR/TrackableObjectBehavior.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AppManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AppManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/ObjectInfoUnitData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/ObjectInfoUnitData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LayoutController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LayoutController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/160-230.fbx1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/160-230.fbx1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/SBSH-250MNA-32 (2).fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Models/SBSH-250MNA-32 (2).fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectMover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ObjectMover.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LayoutWorldUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LayoutWorldUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ObjectUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ObjectUIController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/WorldImageSizeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/WorldImageSizeController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +87,6 @@
         <option value="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Editor/ObjectTracking/ARObjectInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/WireframeRenderer/Scripts/WireframeRenderer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Wireframe1.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ObjectMover.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WireframeMaterialController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/SwipeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/LayoutData.cs" />
@@ -128,12 +98,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/TrackableObjectEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ObjectUIController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AR/TrackableObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/LayoutWorldUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/ObjectInfoUnitData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LayoutController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/WorldImageSizeController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AR/TrackableObjectBehavior.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AppManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/CreateAssetBundles.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/LayoutWorldUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/TestAssetBundleLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ObjectMover.cs" />
       </list>
     </option>
   </component>
@@ -192,7 +165,7 @@
       <workItem from="1590950249564" duration="1454000" />
       <workItem from="1591081458557" duration="14359000" />
       <workItem from="1591104990214" duration="8979000" />
-      <workItem from="1591167595409" duration="9212000" />
+      <workItem from="1591167595409" duration="16305000" />
     </task>
     <servers />
   </component>
@@ -201,6 +174,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
@@ -209,6 +193,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591098160197" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1591201066733">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591201066733" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1591109833251">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

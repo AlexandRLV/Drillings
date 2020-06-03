@@ -2,58 +2,47 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.UI;
 
 public class ObjectMover : MonoBehaviour
 {
-    public Transform ObjectTransform { get; set; }
+    public int objectId;
+    public Transform objectTransform;
+    public Text messageText;
 
-    [SerializeField] private float moveValue;
-    [SerializeField] private float rotateValue;
-    
-    [SerializeField] private Text posXText;
-    [SerializeField] private Text posYText;
-    [SerializeField] private Text posZText;
-    [SerializeField] private Text rotXText;
-    [SerializeField] private Text rotYText;
-    [SerializeField] private Text rotZText;
+    private string url = @"https://drive.google.com/u/0/uc?id=1wYmurjox2RZkGEXeL8IoYuWiTed-NMIw&export=download";
 
 
-    private void Update()
+    private void OnEnable()
     {
-        if (ObjectTransform == null)
+        StartCoroutine(LoadDataAndMove());
+    }
+    
+    private IEnumerator LoadDataAndMove()
+    {
+        UnityWebRequest request = UnityWebRequest.Get(url);
+        yield return request.SendWebRequest();
+
+        try
         {
-            posXText.text = "x:";
-            posYText.text = "y:";
-            posZText.text = "z:";
-            rotXText.text = "x:";
-            rotYText.text = "y:";
-            rotZText.text = "z:";
-            return;
+            string text = request.downloadHandler.text;
+
+            string[] objectPositions = text.Split('&');
+            string[] position = objectPositions[objectId].Split(':');
+
+            float x = float.Parse(position[0]);
+            float y = float.Parse(position[1]);
+            float z = float.Parse(position[2]);
+            Debug.Log($"Loaded position: {x}, {y}, {z}");
+
+            objectTransform.localPosition = new Vector3(x, y, z);
+
+            messageText.text = "Position loaded";
         }
-
-        posXText.text = $"x: {ObjectTransform.localPosition.x}";
-        posYText.text = $"y: {ObjectTransform.localPosition.y}";
-        posZText.text = $"z: {ObjectTransform.localPosition.z}";
-        rotXText.text = $"x: {ObjectTransform.localRotation.x}";
-        rotYText.text = $"y: {ObjectTransform.localRotation.y}";
-        rotZText.text = $"z: {ObjectTransform.localRotation.z}";
-    }
-
-
-
-    public void MoveX(int increase)
-    {
-        ObjectTransform.localPosition += Vector3.right * increase * moveValue;
-    }
-    
-    public void MoveY(int increase)
-    {
-        ObjectTransform.localPosition += Vector3.up * increase * moveValue;
-    }
-    
-    public void MoveZ(int increase)
-    {
-        ObjectTransform.localPosition += Vector3.forward * increase * moveValue;
+        catch (Exception e)
+        {
+            messageText.text = e.Message;
+        }
     }
 }
