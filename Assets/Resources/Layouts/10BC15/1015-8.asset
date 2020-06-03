@@ -18,8 +18,13 @@ MonoBehaviour:
   miniatureAnim: {fileID: 0}
   delayBetweenVoices: 0
   infoImage: {fileID: 0}
+  video:
+    clip: {fileID: 0}
+    aspectRatio: 0
+  photos: []
   infoTextStrings:
-  - "\u0414\u043B\u0438\u043D\u043A\u0430 \u043A\u0430\u0431\u0435\u043B\u044F: 200\u043C"
+  - "\u0414\u043B\u0438\u043D\u043A\u0430 \u043A\u0430\u0431\u0435\u043B\u044F: 200
+    \u043C"
   pointerReferenceIds: 01000000
   sizes: []
   objectAnim: {fileID: 0}

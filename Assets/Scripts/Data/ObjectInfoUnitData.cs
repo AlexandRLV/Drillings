@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using UnityEngine.Video;
 
 namespace Data
 {
@@ -6,19 +8,29 @@ namespace Data
     public class ObjectInfoUnitData : ScriptableObject
     {
         public string unitName;
-        [Space]
-        public AudioClip[] voices;
-        [Space]
-        public AnimationClip miniatureAnim;
+        [Space] public AudioClip[] voices;
+        [Space] public AnimationClip miniatureAnim;
         public float delayBetweenVoices;
         public Sprite infoImage;
-        [Space]
-        [TextArea(3, 10)] public string[] infoTextStrings;
-        [Space]
-        public int[] pointerReferenceIds;
-        [Space]
-        public string[] sizes;
-        [Space]
-        public AnimationClip objectAnim;
+        public VideoContainer video;
+        [Space] public PhotoContainer[] photos;
+        [Space] [TextArea(3, 10)] public string[] infoTextStrings;
+        [Space] public int[] pointerReferenceIds;
+        [Space] public string[] sizes;
+        [Space] public AnimationClip objectAnim;
+    }
+
+    [Serializable]
+    public struct PhotoContainer
+    {
+        public Sprite photo;
+        public float aspectRatio;
+    }
+
+    [Serializable]
+    public struct VideoContainer
+    {
+        public VideoClip clip;
+        public float aspectRatio;
     }
 }

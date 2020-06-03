@@ -9,6 +9,8 @@ namespace AR
 {
     public class TrackableObject : BaseTrackable<ARTrackedObject>
     {
+        public bool IsManagerEnabled => arTrackedObjectManager.enabled;
+        
         [Header("Settings")]
         [SerializeField] private string referenceObjectName;
 

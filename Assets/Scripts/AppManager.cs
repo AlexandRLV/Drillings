@@ -21,6 +21,7 @@ public class AppManager : MonoBehaviour
     [SerializeField] private List<LayoutDataContainer> scenesLayoutDataAssets;
 
 	private float reloadWhenInactiveTimer;
+	private Transform objectTransform;
 
 
 
@@ -42,6 +43,11 @@ public class AppManager : MonoBehaviour
 			compass.StopFollow();
 			reloadWhenInactiveTimer = 0;
 		}
+
+		if (objectTransform == null)
+			return;
+
+		UpdateRootTransform();
 	}
 
     
@@ -61,8 +67,9 @@ public class AppManager : MonoBehaviour
 		reloadWhenInactiveTimer = 0;
 		
 		CurrentObjectName = layoutContainer.objectName;
+		objectTransform = targetTransform;
 		
-		CurrentLayout = Instantiate(layoutContainer.sceneRoot, targetTransform).GetComponent<LayoutController>();
+		CurrentLayout = Instantiate(layoutContainer.sceneRoot, targetTransform.position, Quaternion.identity).GetComponent<LayoutController>();
 		CurrentLayout.LayoutData = layoutContainer.data;
 		CurrentLayout.gameObject.SetActive(false);
 		CurrentLayout.LayoutData.ResetUnit();
@@ -90,6 +97,14 @@ public class AppManager : MonoBehaviour
     {
         CurrentLayout.gameObject.SetActive(true);
         CurrentLayout.SetUpUnit();
+    }
+
+
+    
+    private void UpdateRootTransform()
+    {
+	    CurrentLayout.transform.position = objectTransform.position;
+	    CurrentLayout.transform.rotation = Quaternion.Euler(0, objectTransform.rotation.eulerAngles.y, 0);
     }
 }
 

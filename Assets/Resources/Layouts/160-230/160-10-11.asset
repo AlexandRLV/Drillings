@@ -19,9 +19,15 @@ MonoBehaviour:
   miniatureAnim: {fileID: 0}
   delayBetweenVoices: 0
   infoImage: {fileID: 0}
+  video:
+    clip: {fileID: 0}
+    aspectRatio: 0
+  photos:
+  - photo: {fileID: 21300000, guid: 5cecfb3265bb4aa45ada13be30594a64, type: 3}
+    aspectRatio: 1.7
   infoTextStrings:
   - 
-  - "\u0412\u0435\u0441: 55\u0442"
+  - "\u0412\u0435\u0441: 55 \u0442                          "
   pointerReferenceIds: 0000000003000000
   sizes:
   - "11 \u043C"

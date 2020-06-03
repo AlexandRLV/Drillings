@@ -19,9 +19,15 @@ MonoBehaviour:
   miniatureAnim: {fileID: 7400000, guid: 4a68effc5fa9adc42a358d06c309444d, type: 2}
   delayBetweenVoices: 0
   infoImage: {fileID: 0}
+  video:
+    clip: {fileID: 0}
+    aspectRatio: 0
+  photos:
+  - photo: {fileID: 21300000, guid: 5eaaf9069ab46df4bb30ff7c425e133c, type: 3}
+    aspectRatio: 0.66
   infoTextStrings:
-  - "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u0441\u043F\u0443\u0441\u043A\u0430/\u043F\u043E\u0434\u044A\u0435\u043C\u0430
-    \u0441\u043D\u0430\u0440\u044F\u0434\u0430: \n15 \u043C/\u043C\u0438\u043D"
+  - "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u0441\u043F\u0443\u0441\u043A\u0430/\u043F\u043E\u0434\u044A\u0435\u043C\u0430\n\u0441\u043D\u0430\u0440\u044F\u0434\u0430:
+    15 \u043C/\u043C\u0438\u043D"
   pointerReferenceIds: 01000000
   sizes: []
   objectAnim: {fileID: 7400000, guid: 6c25755ada2dad6488d97f218fdd7dcc, type: 2}

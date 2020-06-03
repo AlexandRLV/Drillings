@@ -76,8 +76,9 @@ namespace UI
 
         public void DisposeLayout()
         {
-            if (layoutController != null)
-                layoutController.AudioFinished -= GoHome;
+            GoHome();
+            
+            layoutController.AudioFinished -= GoHome;
             
             if (selectionButtons == null || selectionButtons.Count == 0)
                 return;

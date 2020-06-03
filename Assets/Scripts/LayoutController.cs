@@ -115,6 +115,7 @@ public class LayoutController : MonoBehaviour
         else
             layoutUI.SetUpText(unit.infoTextStrings[0]);
 
+        
         if (unit.pointerReferenceIds.Length > 0)
         {
             if (unit.pointerReferenceIds[0] > 0)
@@ -122,6 +123,19 @@ public class LayoutController : MonoBehaviour
         }
         else
             layoutUI.DisablePointer();
+        
+        
+        if (unit.photos.Length > 0)
+        {
+            PhotoContainer photoContainer = unit.photos[0];
+            if (photoContainer.photo != null)
+                layoutUI.SetUpPhoto(photoContainer.photo, photoContainer.aspectRatio);
+        }
+        
+        
+        if (unit.video.clip != null)
+            layoutUI.SetUpVideo(unit.video.clip, unit.video.aspectRatio);
+        
         
         if (unit.sizes != null && unit.sizes.Length > 0)
             layoutUI.EnableArrows(unit.sizes[0], unit.sizes[1], unit.sizes[2]);
@@ -159,6 +173,7 @@ public class LayoutController : MonoBehaviour
         layoutUI.SetUpText(unit.infoTextStrings[currentUnitVoiceId]);
         layoutUI.DisableArrows();
         
+        
         if (unit.pointerReferenceIds.Length > 1)
         {
             if (unit.pointerReferenceIds[currentUnitVoiceId] > 0)
@@ -167,8 +182,18 @@ public class LayoutController : MonoBehaviour
                 layoutUI.DisablePointer();
         }
         else
+        {
             layoutUI.DisablePointer();
-            
+        }
+        
+        
+        if (unit.photos.Length > 1)
+        {
+            PhotoContainer photoContainer = unit.photos[currentUnitVoiceId];
+            if (photoContainer.photo != null)
+                layoutUI.SetUpPhoto(photoContainer.photo, photoContainer.aspectRatio);
+        }
+        
         
         voiceSource.Play();
         IsPlaying = true;

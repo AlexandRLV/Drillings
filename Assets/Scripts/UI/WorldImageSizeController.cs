@@ -6,7 +6,7 @@ namespace UI
 {
     public class WorldImageSizeController : MonoBehaviour
     {
-        [SerializeField] private FloatVariable heightMultiplier;
+        public float HeightMultiplier { get; set; }
         [SerializeField] private FloatVariable yOffset;
         
         [SerializeField] private RectTransform targetRect;
@@ -23,12 +23,13 @@ namespace UI
         {
             // Set size and position relative to target rect
             float width = targetRect.rect.width;
-            float height = targetRect.rect.width * heightMultiplier;
+            float height = width * HeightMultiplier;
             
             rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, width);
             rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);
 
-            rectTransform.anchoredPosition = targetRect.anchoredPosition + Vector2.up * (yOffset + height * rectTransform.localScale.x / 2);
+            rectTransform.anchoredPosition = targetRect.anchoredPosition + Vector2.up * (yOffset +
+                (height * rectTransform.localScale.x + targetRect.rect.height * targetRect.localScale.x) / 2);
         }
     }
 }

@@ -40,6 +40,9 @@ namespace AR
         [ContextMenu("Enable behaviour")]
         public void EnableBehaviour()
         {
+            if (!trackableObject.IsManagerEnabled)
+                return;
+            
             Debug.Log("Enabling behaviour");
 
 #if UNITY_EDITOR

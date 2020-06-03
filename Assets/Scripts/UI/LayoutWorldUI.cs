@@ -1,6 +1,7 @@
 ﻿using AssetVariables;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 namespace UI
 {
@@ -18,6 +19,9 @@ namespace UI
 		[SerializeField] private GameObject arrowsParent;
 		[SerializeField] private UIFadeManager infoImage;
 		[SerializeField] private UIFadeManager infoCircle;
+		[SerializeField] private UIFadeManager photoImageFadeManager;
+		[SerializeField] private Image photoImage;
+		[SerializeField] private UIFadeManager videoPlayer;
 		[SerializeField] private Text infoText;
 		[SerializeField] private UIFadeManager pointer;
 
@@ -174,10 +178,30 @@ namespace UI
 		{
 			if (infoImage.gameObject.activeSelf)
 				infoImage.FadeOut();
+			
+			if (photoImageFadeManager.gameObject.activeSelf)
+				photoImageFadeManager.FadeOut();
         
 			infoCircle.gameObject.SetActive(true);
 			infoCircle.FadeIn();
 			infoCircle.GetComponent<Image>().sprite = image;
+		}
+
+		public void SetUpPhoto(Sprite photo, float aspectRatio)
+		{
+			photoImageFadeManager.gameObject.SetActive(true);
+			photoImageFadeManager.FadeIn();
+			photoImage.sprite = photo;
+
+			photoImageFadeManager.GetComponent<WorldImageSizeController>().HeightMultiplier = aspectRatio;
+		}
+
+		public void SetUpVideo(VideoClip clip, float aspectRatio)
+		{
+			videoPlayer.gameObject.SetActive(true);
+			videoPlayer.FadeIn();
+			videoPlayer.GetComponent<VideoPlayer>().clip = clip;
+			videoPlayer.GetComponent<WorldImageSizeController>().HeightMultiplier = aspectRatio;
 		}
 
 		public void DisableInfo()
@@ -187,6 +211,12 @@ namespace UI
         
 			if (infoCircle.gameObject.activeSelf)
 				infoCircle.FadeOut();
+			
+			if (photoImageFadeManager.gameObject.activeSelf)
+				photoImageFadeManager.FadeOut();
+			
+			if (videoPlayer.gameObject.activeSelf)
+				videoPlayer.FadeOut();
 		}
 
 		public void EnablePointer(Transform target)
