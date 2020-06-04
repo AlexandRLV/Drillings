@@ -16,13 +16,15 @@ public class ObjectMover : MonoBehaviour
 
     private void OnEnable()
     {
-        StartCoroutine(LoadDataAndMove());
+        //StartCoroutine(LoadDataAndMove());
     }
     
     private IEnumerator LoadDataAndMove()
     {
         UnityWebRequest request = UnityWebRequest.Get(url);
+        Debug.Log("Request created");
         yield return request.SendWebRequest();
+        Debug.Log("Request sent");
 
         try
         {

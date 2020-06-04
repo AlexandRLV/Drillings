@@ -21,6 +21,7 @@ MonoBehaviour:
   video:
     clip: {fileID: 32900000, guid: 3b0266c8b76c66a4493b89e04a4e4fa7, type: 3}
     aspectRatio: 0.5625
+    renderTexture: {fileID: 8400000, guid: f26aa8d73bc954141a2911ae509bbca0, type: 2}
   photos: []
   infoTextStrings:
   - "\r\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u043F\u0435\u0440\u0435\u0434\u0432\u0438\u0436\u0435\u043D\u0438\u044F:

@@ -32,7 +32,7 @@ public class Compass : MonoBehaviour
     
 
     public void StartFollow(Transform targetObject)
-    { 
+    {
         if (isFollowing) 
             return;
     

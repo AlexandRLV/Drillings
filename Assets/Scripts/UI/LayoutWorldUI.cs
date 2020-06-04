@@ -193,16 +193,24 @@ namespace UI
 			photoImageFadeManager.FadeIn();
 			photoImage.sprite = photo;
 
-			photoImageFadeManager.GetComponent<WorldImageSizeController>().HeightMultiplier = aspectRatio;
+			WorldImageSizeController imageSize = photoImageFadeManager.GetComponent<WorldImageSizeController>();
+			imageSize.HeightMultiplier = aspectRatio;
+			imageSize.FlipX = infoCircle.gameObject.activeSelf;
 		}
 
 		public void SetUpVideo(VideoClip clip, float aspectRatio)
 		{
 			videoPlayer.gameObject.SetActive(true);
 			videoPlayer.FadeIn();
+			RenderTexture texture = new RenderTexture(640, 360, 24);
+			videoPlayer.GetComponentInChildren<RawImage>().texture = texture;
+			videoPlayer.GetComponent<VideoPlayer>().targetTexture = texture;
 			videoPlayer.GetComponent<VideoPlayer>().clip = clip;
 			videoPlayer.GetComponent<VideoPlayer>().Play();
-			videoPlayer.GetComponent<WorldImageSizeController>().HeightMultiplier = aspectRatio;
+			
+			WorldImageSizeController imageSize = videoPlayer.GetComponent<WorldImageSizeController>();
+			imageSize.HeightMultiplier = aspectRatio;
+			imageSize.FlipX = infoCircle.gameObject.activeSelf;
 		}
 
 		public void DisableInfo()
@@ -217,7 +225,10 @@ namespace UI
 				photoImageFadeManager.FadeOut();
 			
 			if (videoPlayer.gameObject.activeSelf)
+			{
+				videoPlayer.GetComponent<VideoPlayer>().targetTexture.Release();
 				videoPlayer.FadeOut();
+			}
 		}
 
 		public void EnablePointer(Transform target)
