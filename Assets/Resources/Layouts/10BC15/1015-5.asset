@@ -12,14 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ae9834e21801194288990b3190ee58d, type: 3}
   m_Name: 1015-5
   m_EditorClassIdentifier: 
-  unitName: "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u043F\u0435\u0440\u0435\u043C\u0435\u0449\u0435\u043D\u0438\u044F"
+  unitName: "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u043F\u0435\u0440\u0435\u0434\u0432\u0438\u0436\u0435\u043D\u0438\u044F"
   voices:
   - {fileID: 8300000, guid: f5dc709fb03177f4dbfae42dcb8db453, type: 3}
   miniatureAnim: {fileID: 7400000, guid: 4a31f7d8d401e654f9629d3257b6470e, type: 2}
+  delayBetweenVoices: 0
   infoImage: {fileID: 0}
+  video:
+    clip: {fileID: 32900000, guid: 3b0266c8b76c66a4493b89e04a4e4fa7, type: 3}
+    aspectRatio: 0.5625
+  photos: []
   infoTextStrings:
-  - "\r\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u043F\u0435\u0440\u0435\u043C\u0435\u0449\u0435\u043D\u0438\u044F:
+  - "\r\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u043F\u0435\u0440\u0435\u0434\u0432\u0438\u0436\u0435\u043D\u0438\u044F:
     9 \u043A\u043C/\u0447"
-  pointerReferenceId: 0
+  pointerReferenceIds: 
   sizes: []
   objectAnim: {fileID: 0}

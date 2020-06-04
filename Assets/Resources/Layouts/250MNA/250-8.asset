@@ -18,6 +18,12 @@ MonoBehaviour:
   miniatureAnim: {fileID: 7400000, guid: e6b0ede9199be3947adb8763731960aa, type: 2}
   delayBetweenVoices: 0
   infoImage: {fileID: 0}
+  video:
+    clip: {fileID: 0}
+    aspectRatio: 0
+  photos:
+  - photo: {fileID: 21300000, guid: 8812db0944e58b249beee5f34272713a, type: 3}
+    aspectRatio: 1.33
   infoTextStrings:
   - "\u0413\u043B\u0443\u0431\u0438\u043D\u0430 \u0441\u043A\u0432\u0430\u0436\u0438\u043D\u044B:
     32 \u043C"

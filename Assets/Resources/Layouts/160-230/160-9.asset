@@ -18,10 +18,17 @@ MonoBehaviour:
   voices:
   - {fileID: 8300000, guid: 3a409b75ee4463e4590faaa439b48cc3, type: 3}
   miniatureAnim: {fileID: 7400000, guid: b4587189f2cae0a40a5ceed1e19ac4e8, type: 2}
+  delayBetweenVoices: 0
   infoImage: {fileID: 0}
+  video:
+    clip: {fileID: 0}
+    aspectRatio: 0
+  photos:
+  - photo: {fileID: 21300000, guid: f5c1698f1f508f540be77137937e17a1, type: 3}
+    aspectRatio: 1
   infoTextStrings:
   - "\u041C\u0430\u0445 \u043F\u0440\u0435\u043E\u0434\u043E\u043B\u0435\u0432\u0430\u0435\u043C\u044B\u0439
     \u043F\u043E\u0434\u044A\u0435\u043C: 12\xB0"
-  pointerReferenceId: 0
+  pointerReferenceIds: 
   sizes: []
   objectAnim: {fileID: 0}

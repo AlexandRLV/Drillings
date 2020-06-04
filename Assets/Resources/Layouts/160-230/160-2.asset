@@ -18,6 +18,10 @@ MonoBehaviour:
   miniatureAnim: {fileID: 0}
   delayBetweenVoices: 0
   infoImage: {fileID: 21300000, guid: d644c92e349a99a4b99cb3944ea3e12c, type: 3}
+  video:
+    clip: {fileID: 32900000, guid: 2d32e9159338528459409d70a933a7f3, type: 3}
+    aspectRatio: 0.75
+  photos: []
   infoTextStrings:
   - 
   pointerReferenceIds: 04000000
