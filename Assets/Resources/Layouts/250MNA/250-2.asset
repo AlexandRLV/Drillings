@@ -16,12 +16,13 @@ MonoBehaviour:
   voices:
   - {fileID: 8300000, guid: e7f9168176716a94fb649c156f17bdc2, type: 3}
   - {fileID: 8300000, guid: c3952b05af21a9749abd65f5c0ab9b7c, type: 3}
-  miniatureAnim: {fileID: 7400000, guid: 5a9a002947bd7d943868f3b17b963dad, type: 2}
+  miniatureAnim: {fileID: 7400000, guid: 0f6b71243ef704642b81087daf8a38fb, type: 2}
   delayBetweenVoices: 0
   infoImage: {fileID: 0}
   video:
     clip: {fileID: 0}
     aspectRatio: 0
+    renderTexture: {fileID: 0}
   photos:
   - photo: {fileID: 0}
     aspectRatio: 0
@@ -32,4 +33,4 @@ MonoBehaviour:
   - 
   pointerReferenceIds: 
   sizes: []
-  objectAnim: {fileID: 7400000, guid: e4a5d116d5c3a3a48991a39457dfa25a, type: 2}
+  objectAnim: {fileID: 0}

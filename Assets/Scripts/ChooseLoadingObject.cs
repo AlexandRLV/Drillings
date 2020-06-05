@@ -11,16 +11,19 @@ public class ChooseLoadingObject : MonoBehaviour
     
     private void Start()
     {
-        foreach (GameObject obj in loadingObjects)
-        {
-            obj.SetActive(false);
-        }
+        
     }
 
 
 
     public void SelectObject(int id)
     {
-        loadingObjects[id].SetActive(true);
+        for (int i = 0; i < loadingObjects.Length; i++)
+        {
+            if (i != id)
+                loadingObjects[i].SetActive(false);
+        }
+        
+        gameObject.SetActive(false);
     }
 }

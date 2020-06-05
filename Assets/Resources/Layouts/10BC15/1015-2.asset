@@ -15,12 +15,13 @@ MonoBehaviour:
   unitName: "\u0428\u0438\u0440\u0438\u043D\u0430 \u043A\u043E\u043D\u0432\u0435\u0439\u0435\u0440\u0430"
   voices:
   - {fileID: 8300000, guid: 4f4750c3173705145867acbd19f7d232, type: 3}
-  miniatureAnim: {fileID: 7400000, guid: c65530afa5c61ec4285e88411525ee1e, type: 2}
+  miniatureAnim: {fileID: 7400000, guid: b643839c898a8d54e8de9c62ac4fc9e3, type: 2}
   delayBetweenVoices: 0
   infoImage: {fileID: 0}
   video:
     clip: {fileID: 0}
     aspectRatio: 0
+    renderTexture: {fileID: 0}
   photos:
   - photo: {fileID: 21300000, guid: a50010cda14e37441b3f09d0f1e49e6e, type: 3}
     aspectRatio: 0.753
@@ -32,4 +33,4 @@ MonoBehaviour:
   - 
   - "900 \u043C\u043C"
   - 
-  objectAnim: {fileID: 7400000, guid: e897b1c906eee914f9d0cf0d5fec279c, type: 2}
+  objectAnim: {fileID: 0}

@@ -15,12 +15,13 @@ MonoBehaviour:
   unitName: "\u0414\u043B\u0438\u043D\u0430 \u0448\u0442\u0430\u043D\u0433\u0438"
   voices:
   - {fileID: 8300000, guid: 3f3997b8d8a932645ac698909a90beb9, type: 3}
-  miniatureAnim: {fileID: 7400000, guid: 46a1e497757f14348996f8daeaf2d756, type: 2}
+  miniatureAnim: {fileID: 7400000, guid: 21c34b4db8b7bee4f82836871ba141d5, type: 2}
   delayBetweenVoices: 0
   infoImage: {fileID: 0}
   video:
     clip: {fileID: 0}
     aspectRatio: 0
+    renderTexture: {fileID: 0}
   photos:
   - photo: {fileID: 21300000, guid: 10bca2f416c2d5848bcf77ee18314b3d, type: 3}
     aspectRatio: 0.67
@@ -28,4 +29,4 @@ MonoBehaviour:
   - "\u0414\u043B\u0438\u043D\u0430 \u0448\u0442\u0430\u043D\u0433\u0438: 8,2 \u043C"
   pointerReferenceIds: 01000000
   sizes: []
-  objectAnim: {fileID: 7400000, guid: 7ec4d0a3a896fbd47ad61d1fa5a9c997, type: 2}
+  objectAnim: {fileID: 0}
