@@ -198,13 +198,12 @@ namespace UI
 			imageSize.FlipX = infoCircle.gameObject.activeSelf;
 		}
 
-		public void SetUpVideo(VideoClip clip, float aspectRatio)
+		public void SetUpVideo(VideoClip clip, float aspectRatio, RenderTexture renderTexture)
 		{
 			videoPlayer.gameObject.SetActive(true);
 			videoPlayer.FadeIn();
-			RenderTexture texture = new RenderTexture(640, 360, 24);
-			videoPlayer.GetComponentInChildren<RawImage>().texture = texture;
-			videoPlayer.GetComponent<VideoPlayer>().targetTexture = texture;
+			videoPlayer.GetComponentInChildren<RawImage>().texture = renderTexture;
+			videoPlayer.GetComponent<VideoPlayer>().targetTexture = renderTexture;
 			videoPlayer.GetComponent<VideoPlayer>().clip = clip;
 			videoPlayer.GetComponent<VideoPlayer>().Play();
 			
@@ -225,10 +224,7 @@ namespace UI
 				photoImageFadeManager.FadeOut();
 			
 			if (videoPlayer.gameObject.activeSelf)
-			{
-				videoPlayer.GetComponent<VideoPlayer>().targetTexture.Release();
 				videoPlayer.FadeOut();
-			}
 		}
 
 		public void EnablePointer(Transform target)

@@ -37,7 +37,7 @@ namespace UI
                 (height * rectTransform.localScale.x + targetRect.rect.height * targetRect.localScale.x) / 2);
             
             if (FlipX)
-                resultPos = new Vector2(-resultPos.x, resultPos.y);
+                resultPos = new Vector2(-resultPos.x / 2, resultPos.y);
 
             rectTransform.anchoredPosition = resultPos;
         }

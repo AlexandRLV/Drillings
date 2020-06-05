@@ -48,6 +48,7 @@ namespace UI
             
             LayoutData layoutData = layoutController.LayoutData;
             objectNameText.text = layoutData.objectName;
+            unitNameText.gameObject.SetActive(false);
             
             selectionButtons = new List<Button>();
             Vector2 anchors = new Vector2(0, 0.5f);

@@ -21,6 +21,7 @@ MonoBehaviour:
   video:
     clip: {fileID: 32900000, guid: 2d32e9159338528459409d70a933a7f3, type: 3}
     aspectRatio: 0.75
+    renderTexture: {fileID: 8400000, guid: ba2c5bd0370c0914b85f5a072fc2a7dc, type: 2}
   photos: []
   infoTextStrings:
   - 

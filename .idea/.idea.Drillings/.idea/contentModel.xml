@@ -142,6 +142,7 @@
             <e p="ColorVariable.cs" t="Include" />
             <e p="FloatVariable.cs" t="Include" />
           </e>
+          <e p="ChooseLoadingObject.cs" t="Include" />
           <e p="Compass.cs" t="Include" />
           <e p="Data" t="Include">
             <e p="LayoutData.cs" t="Include" />
@@ -166,6 +167,7 @@
             <e p="UIManager.cs" t="Include" />
             <e p="WorldImageSizeController.cs" t="Include" />
           </e>
+          <e p="VideoHolder.cs" t="Include" />
           <e p="Wireframe.cs" t="Include" />
           <e p="Wireframe1.cs" t="Include" />
           <e p="WireframeMaterialController.cs" t="Include" />

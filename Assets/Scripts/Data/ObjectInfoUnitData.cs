@@ -32,5 +32,6 @@ namespace Data
     {
         public VideoClip clip;
         public float aspectRatio;
+        public RenderTexture renderTexture;
     }
 }
