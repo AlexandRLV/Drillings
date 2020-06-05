@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 257d442529a18044fa8ea151f12c5ed8, type: 3}
   m_Name: WorldImageMinWidth
   m_EditorClassIdentifier: 
-  value: 400
+  value: 500

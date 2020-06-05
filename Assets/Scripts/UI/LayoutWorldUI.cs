@@ -46,6 +46,7 @@ namespace UI
 		private Transform cameraTransform;
 		private Transform canvasTransform;
 		private Transform pointerTargetTransform;
+		private VideoPlayer currentPlayer;
     
     
 
@@ -198,14 +199,20 @@ namespace UI
 			imageSize.FlipX = infoCircle.gameObject.activeSelf;
 		}
 
-		public void SetUpVideo(VideoClip clip, float aspectRatio, RenderTexture renderTexture)
+		public void SetUpVideo(int clipId, float aspectRatio, RenderTexture renderTexture)
 		{
 			videoPlayer.gameObject.SetActive(true);
 			videoPlayer.FadeIn();
+
+			currentPlayer = VideoHolder.Instance.players[clipId];
 			videoPlayer.GetComponentInChildren<RawImage>().texture = renderTexture;
-			videoPlayer.GetComponent<VideoPlayer>().targetTexture = renderTexture;
-			videoPlayer.GetComponent<VideoPlayer>().clip = clip;
-			videoPlayer.GetComponent<VideoPlayer>().Play();
+			currentPlayer.targetTexture = renderTexture;
+			currentPlayer.Play();
+			
+			// videoPlayer.GetComponentInChildren<RawImage>().texture = renderTexture;
+			// videoPlayer.GetComponent<VideoPlayer>().targetTexture = renderTexture;
+			// videoPlayer.GetComponent<VideoPlayer>().clip = VideoHolder.Instance.clips[clipId];
+			// videoPlayer.GetComponent<VideoPlayer>().Play();
 			
 			WorldImageSizeController imageSize = videoPlayer.GetComponent<WorldImageSizeController>();
 			imageSize.HeightMultiplier = aspectRatio;
@@ -225,6 +232,9 @@ namespace UI
 			
 			if (videoPlayer.gameObject.activeSelf)
 				videoPlayer.FadeOut();
+			
+			if (currentPlayer != null)
+				currentPlayer.Stop();
 		}
 
 		public void EnablePointer(Transform target)

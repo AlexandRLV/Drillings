@@ -134,7 +134,7 @@ public class LayoutController : MonoBehaviour
         
         
         if (unit.video.clip != null)
-            layoutUI.SetUpVideo(unit.video.clip, unit.video.aspectRatio, unit.video.renderTexture);
+            layoutUI.SetUpVideo(unit.video.clipId, unit.video.aspectRatio, unit.video.renderTexture);
         
         
         if (unit.sizes != null && unit.sizes.Length > 0)

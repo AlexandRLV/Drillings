@@ -25,7 +25,7 @@ namespace UI
         {
             // Set size and position relative to target rect
             float width = targetRect.rect.width;
-            if (width < minWidth)
+            if (width < minWidth || !targetRect.gameObject.activeSelf)
                 width = minWidth;
             
             float height = width * HeightMultiplier;

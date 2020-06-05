@@ -192,6 +192,7 @@
           <e p="ColoredBlended.shader" t="Include" />
           <e p="GridMiniature.shader" t="Include" />
           <e p="GridOverlay.shader" t="Include" />
+          <e p="OverlayNoZTest.shader" t="Include" />
           <e p="SimpleTransparent.shader" t="Include" />
         </e>
       </e>

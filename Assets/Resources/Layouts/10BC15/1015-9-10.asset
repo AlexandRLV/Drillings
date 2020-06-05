@@ -22,12 +22,13 @@ MonoBehaviour:
   video:
     clip: {fileID: 0}
     aspectRatio: 0
+    renderTexture: {fileID: 0}
   photos:
   - photo: {fileID: 21300000, guid: 7d7a1a3dddff62c41bb2650e8ebff917, type: 3}
     aspectRatio: 0.56
   infoTextStrings:
   - 
-  - "\u0412\u0435\u0441: 17 \u0442                      "
+  - "\u0412\u0435\u0441: 17 \u0442                         "
   pointerReferenceIds: 0000000003000000
   sizes:
   - "8,35 \u043C"

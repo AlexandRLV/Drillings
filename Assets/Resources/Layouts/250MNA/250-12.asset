@@ -23,12 +23,13 @@ MonoBehaviour:
   video:
     clip: {fileID: 0}
     aspectRatio: 0
+    renderTexture: {fileID: 0}
   photos:
   - photo: {fileID: 21300000, guid: 418b05bed3a230e43ab1f9a13ced088d, type: 3}
     aspectRatio: 1.33
   infoTextStrings:
-  - "\u041C\u0430\u0445 \u043F\u0440\u0435\u043E\u0434\u043E\u043B\u0435\u0432\u0430\u0435\u043C\u044B\u0439
-    \u043F\u043E\u0434\u044A\u0435\u043C: 12\xB0"
+  - "\u041C\u0430\u0445 \u043F\u0440\u0435\u043E\u0434\u043E\u043B\u0435\u0432\u0430\u0435\u043C\u044B\u0439\n\u043F\u043E\u0434\u044A\u0435\u043C:
+    12\xB0"
   pointerReferenceIds: 
   sizes: []
   objectAnim: {fileID: 0}

@@ -20,6 +20,7 @@ MonoBehaviour:
   infoImage: {fileID: 21300000, guid: d644c92e349a99a4b99cb3944ea3e12c, type: 3}
   video:
     clip: {fileID: 32900000, guid: 6465e736eeba49040b0445e02791ea9a, type: 3}
+    clipId: 4
     aspectRatio: 0.5625
     renderTexture: {fileID: 8400000, guid: f7c225ead46aaa04a99259eeded05bb0, type: 2}
   photos: []

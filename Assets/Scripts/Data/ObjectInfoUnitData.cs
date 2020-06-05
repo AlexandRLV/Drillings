@@ -31,6 +31,7 @@ namespace Data
     public struct VideoContainer
     {
         public VideoClip clip;
+        public int clipId;
         public float aspectRatio;
         public RenderTexture renderTexture;
     }

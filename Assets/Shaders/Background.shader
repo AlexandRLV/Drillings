@@ -11,6 +11,7 @@ Shader "Lines/Background"
             Blend SrcAlpha OneMinusSrcAlpha
             Colormask RGBA
             Lighting Off 
+            Cull off
             Offset 1, 1 
             Color[_Color] 
         }
