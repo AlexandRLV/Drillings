@@ -113,6 +113,7 @@
                   <e p="MK_Transparent-DiffuseBumped.shader" t="Include" />
                   <e p="MK_Transparent-DiffuseBumpSpec.shader" t="Include" />
                   <e p="MK_Transparent-Glossy.shader" t="Include" />
+                  <e p="MK_Transparent-Overlay.shader" t="Include" />
                 </e>
               </e>
               <e p="Sprites" t="Include">
@@ -192,6 +193,7 @@
           <e p="ColoredBlended.shader" t="Include" />
           <e p="GridMiniature.shader" t="Include" />
           <e p="GridOverlay.shader" t="Include" />
+          <e p="InvertColors.shader" t="Include" />
           <e p="OverlayNoZTest.shader" t="Include" />
           <e p="SimpleTransparent.shader" t="Include" />
         </e>
