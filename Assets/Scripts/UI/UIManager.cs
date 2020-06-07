@@ -16,6 +16,7 @@ namespace UI
         [SerializeField] private AppManager appManager;
         [SerializeField] private SearchingCircles searchingCircles;
         [SerializeField] private ARTrackedObjectManager arTrackedObjectManager;
+        [SerializeField] private ARTrackedImageManager arTrackedImageManager;
         [SerializeField] private ObjectUIController objectLayout;
         [SerializeField] private GameObject introLayout;
         [SerializeField] private GameObject loadingIndicator;
@@ -36,6 +37,9 @@ namespace UI
             
             if (arTrackedObjectManager != null)
                 arTrackedObjectManager.enabled = false;
+            
+            if (arTrackedImageManager != null)
+                arTrackedImageManager.enabled = false;
             
             
             searchingCircles.gameObject.SetActive(false);
@@ -85,6 +89,9 @@ namespace UI
             
             if (arTrackedObjectManager != null)
                 arTrackedObjectManager.enabled = true;
+            
+            if (arTrackedImageManager != null)
+                arTrackedImageManager.enabled = true;
             
             objectLayout.gameObject.SetActive(false);
             searchingCircles.gameObject.SetActive(true);

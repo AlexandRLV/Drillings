@@ -9,7 +9,6 @@ namespace AR
 {
     public class TrackableImageBehaviour : MonoBehaviour
     {
-
         [Header("Settings")]
         [SerializeField] private string sceneToLoad;
 
@@ -20,8 +19,7 @@ namespace AR
         private Transform imageTransform;
 
 
-
-
+        
         private void OnEnable()
         {
             trackableImage.OnTrackableFound += OnTrackableFound;

@@ -127,6 +127,67 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 5751776490962693784}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &419329245
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 419329248}
+  - component: {fileID: 419329247}
+  - component: {fileID: 419329246}
+  m_Layer: 0
+  m_Name: TrackableImage-160
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &419329246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419329245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd082db1a5df534db1a05fc6f8d1298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: 160-230
+  trackableImage: {fileID: 419329247}
+  appManager: {fileID: 2021286671}
+--- !u!114 &419329247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419329245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb928939eee58fc4c90d9b0439c07a63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  referenceImageName: 160
+  arTrackedImageManager: {fileID: 644721459}
+--- !u!4 &419329248
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419329245}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.04315264, y: 0.52831435, z: 0.18442321}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &530806158
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,6 +301,28 @@ MonoBehaviour:
   - {fileID: 32900000, guid: 6c173ac1e2d44a2488e239d69b51309d, type: 3}
   - {fileID: 32900000, guid: 5d762632789b7bd41b08ed596a51d3c0, type: 3}
   players: []
+--- !u!1 &644721455 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5408207606566312943, guid: ca46050cd94fb8841a1be37d790ad049,
+    type: 3}
+  m_PrefabInstance: {fileID: 5408207607196680144}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &644721459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644721455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dea56a9eaadd1c439095de4f9a371cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedLibrary: {fileID: 11400000, guid: 8ad47a312849b8549aa39c78a37d27eb,
+    type: 2}
+  m_MaxNumberOfMovingImages: 0
+  m_TrackedImagePrefab: {fileID: 0}
 --- !u!1 &667639672
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,6 +681,67 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40782f6b7bc9be34d9df348ce208020a, type: 3}
+--- !u!1 &1218895301
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1218895304}
+  - component: {fileID: 1218895303}
+  - component: {fileID: 1218895302}
+  m_Layer: 0
+  m_Name: TrackableImage-1015
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1218895302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218895301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd082db1a5df534db1a05fc6f8d1298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: 1015
+  trackableImage: {fileID: 1218895303}
+  appManager: {fileID: 2021286671}
+--- !u!114 &1218895303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218895301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb928939eee58fc4c90d9b0439c07a63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  referenceImageName: 1015
+  arTrackedImageManager: {fileID: 644721459}
+--- !u!4 &1218895304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218895301}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.04315264, y: 0.52831435, z: 0.18442321}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1362105965
 GameObject:
   m_ObjectHideFlags: 0
@@ -874,6 +1018,67 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e5359ec8fb38247be81fd60eb164ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2035807048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2035807051}
+  - component: {fileID: 2035807050}
+  - component: {fileID: 2035807049}
+  m_Layer: 0
+  m_Name: TrackableImage-250
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2035807049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035807048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd082db1a5df534db1a05fc6f8d1298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: 250MNA
+  trackableImage: {fileID: 2035807050}
+  appManager: {fileID: 2021286671}
+--- !u!114 &2035807050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035807048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb928939eee58fc4c90d9b0439c07a63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  referenceImageName: 250
+  arTrackedImageManager: {fileID: 644721459}
+--- !u!4 &2035807051
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035807048}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.04315264, y: 0.52831435, z: 0.18442321}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2061838712
 GameObject:
   m_ObjectHideFlags: 0
@@ -1105,7 +1310,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 5408207607196680144}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 644721455}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f07ca66ce5514fb7a26ab1e51e9bfec, type: 3}
@@ -1133,6 +1338,11 @@ PrefabInstance:
       propertyPath: arTrackedObjectManager
       value: 
       objectReference: {fileID: 5408207607196680148}
+    - target: {fileID: 5751776492184187882, guid: c97a69ff63d9fce438c670fa966c9223,
+        type: 3}
+      propertyPath: arTrackedImageManager
+      value: 
+      objectReference: {fileID: 644721459}
     - target: {fileID: 5751776492184187886, guid: c97a69ff63d9fce438c670fa966c9223,
         type: 3}
       propertyPath: m_LocalPosition.x
