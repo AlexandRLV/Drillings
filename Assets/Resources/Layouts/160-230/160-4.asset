@@ -25,7 +25,7 @@ MonoBehaviour:
     renderTexture: {fileID: 0}
   photos:
   - photo: {fileID: 21300000, guid: df86b96e5657ff145ac2547ba710a137, type: 3}
-    aspectRatio: 2
+    aspectRatio: 1.16
   infoTextStrings:
   - "\r\u041A\u043E\u043B-\u0432\u043E \u0448\u0442\u0430\u043D\u0433: 6"
   pointerReferenceIds: 02000000
