@@ -130,6 +130,7 @@
           <e p="AppManager.cs" t="Include" />
           <e p="AR" t="Include">
             <e p="BaseTrackable.cs" t="Include" />
+            <e p="BaseTrackableBehaviour.cs" t="Include" />
             <e p="LightEstimator.cs" t="Include" />
             <e p="TrackableImage.cs" t="Include" />
             <e p="TrackableImageBehaviour.cs" t="Include" />

@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Data;
-using UnityEngine.Serialization;
 
 namespace UI
 {
@@ -25,10 +24,12 @@ namespace UI
         [SerializeField] private GameObject scrollView;
         [SerializeField] private GameObject scrollBackground;
         [SerializeField] private RectTransform scrollViewContent;
+        [SerializeField] private Compass compass;
     
         [Header("Resources")]
         [SerializeField] private Button unitButton;
-    
+
+        private bool isInMainPage;
         private UIFadeManager loadingTextFade;
         private Coroutine currentRoutine;
         private List<Button> selectionButtons;
@@ -38,13 +39,14 @@ namespace UI
         {
             loadingTextFade = loadingText.GetComponent<UIFadeManager>();
             loadingTextFade.gameObject.SetActive(false);
-            buttonHome.SetActive(false);
+            //buttonHome.SetActive(false);
         }
 
 
         public void SetUpLayout()
         {
             layoutController.AudioFinished += GoHome;
+            isInMainPage = true;
             
             LayoutData layoutData = layoutController.LayoutData;
             objectNameText.text = layoutData.objectName;
@@ -77,7 +79,7 @@ namespace UI
 
         public void DisposeLayout()
         {
-            GoHome();
+            GoToMainPage();
             
             layoutController.AudioFinished -= GoHome;
             
@@ -100,15 +102,26 @@ namespace UI
                 currentRoutine = null;
             }
             
+            if (isInMainPage)
+                compass.StopFollow();
+            else
+            {
+                GoToMainPage();
+            }
+        }
+
+
+
+        private void GoToMainPage()
+        {
             layoutController.Stop();
             unitNameText.gameObject.SetActive(false);
             scrollView.SetActive(true);
             scrollBackground.SetActive(true);
-            buttonHome.SetActive(false);
+            //buttonHome.SetActive(false);
+            isInMainPage = true;
         }
-
-    
-    
+        
         // private button listener
         private void OpenUnit(int unitId)
         {
@@ -120,17 +133,19 @@ namespace UI
                 StopCoroutine(currentRoutine);
                 currentRoutine = null;
             }
-        
-            unitNameText.gameObject.SetActive(true);
-            
-            scrollView.SetActive(false);
-            scrollBackground.SetActive(false);
-            buttonHome.SetActive(true);
 
             ObjectInfoUnitData unit = layoutController.OpenUnit(unitId);
             
             if (unit == null)
                 return;
+
+            isInMainPage = false;
+        
+            unitNameText.gameObject.SetActive(true);
+            
+            scrollView.SetActive(false);
+            scrollBackground.SetActive(false);
+            //buttonHome.SetActive(true);
             
             unitNameText.text = unit.unitName;
 

@@ -17,6 +17,7 @@ namespace AR
         [SerializeField] private AppManager appManager;
 
         private Transform objectTransform;
+        private bool isLoaded;
         
 
 
@@ -43,6 +44,9 @@ namespace AR
             if (!trackableObject.IsManagerEnabled)
                 return;
             
+            if (appManager.CurrentObjectName == sceneToLoad)
+                return;
+
             Debug.Log("Enabling behaviour");
 
 #if UNITY_EDITOR

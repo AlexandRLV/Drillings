@@ -20,7 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49960220-d93b-408e-9856-921e14d7901d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Drillings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Drillings/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/GlowMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/GlowMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/GlowOverlayMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/GlowOverlayMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/160SceneRoot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scenes/160SceneRoot.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/250SceneRoot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scenes/250SceneRoot.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/AssetVariables/WorldUI/WorldImageMinWidth.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/AssetVariables/WorldUI/WorldImageMinWidth.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Layouts/160-230/160-4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Layouts/160-230/160-4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Layouts/160-230/160-9.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Layouts/160-230/160-9.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ObjectUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ObjectUIController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +106,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AR/TrackableObjectBehavior.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectMover.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AppManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ObjectUIController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ChooseLoadingObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/WorldImageSizeController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/ObjectInfoUnitData.cs" />
@@ -109,6 +117,8 @@
         <option value="$PROJECT_DIR$/Assets/Shaders/InvertColors.shader" />
         <option value="$PROJECT_DIR$/Assets/MKGlowFree/Shaders/VariantsSelective/Legacy/Transparent/MK_Transparent-Overlay.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AR/TrackableImageBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ObjectUIController.cs" />
       </list>
     </option>
   </component>
@@ -171,7 +181,7 @@
       <workItem from="1591252576566" duration="587000" />
       <workItem from="1591255363522" duration="599000" />
       <workItem from="1591264201995" duration="9710000" />
-      <workItem from="1591347861711" duration="9078000" />
+      <workItem from="1591347861711" duration="11055000" />
     </task>
     <servers />
   </component>

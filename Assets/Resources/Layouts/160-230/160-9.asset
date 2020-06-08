@@ -22,11 +22,12 @@ MonoBehaviour:
   infoImage: {fileID: 0}
   video:
     clip: {fileID: 0}
+    clipId: 0
     aspectRatio: 0
     renderTexture: {fileID: 0}
   photos:
-  - photo: {fileID: 21300000, guid: 5cecfb3265bb4aa45ada13be30594a64, type: 3}
-    aspectRatio: 1.7
+  - photo: {fileID: 21300000, guid: 4fcb42ff819e71e4886c8db7dd3840ad, type: 3}
+    aspectRatio: 1.2
   infoTextStrings:
   - "\u041C\u0430\u0445 \u043F\u0440\u0435\u043E\u0434\u043E\u043B\u0435\u0432\u0430\u0435\u043C\u044B\u0439\n\u043F\u043E\u0434\u044A\u0435\u043C:
     12\xB0"

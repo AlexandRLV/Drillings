@@ -8,6 +8,7 @@ namespace AR
 {
     public class TrackableImage : BaseTrackable<ARTrackedImage>
     {
+        public bool IsManagerEnabled => arTrackedImageManager.enabled;
 
         [Header("Settings")]
         [SerializeField] private string referenceImageName;

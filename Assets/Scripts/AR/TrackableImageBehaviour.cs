@@ -40,7 +40,10 @@ namespace AR
         [ContextMenu("Enable behaviour")]
         public void EnableBehaviour()
         {
-            if (appManager.CurrentLayout != null)
+            if (!trackableImage.IsManagerEnabled)
+                return;
+            
+            if (appManager.CurrentObjectName == sceneToLoad)
                 return;
         
             Debug.Log("Enabling behaviour");
