@@ -51,6 +51,15 @@ public class Compass : MonoBehaviour
         distance = -1;
         target = null;
     }
+
+    public bool SuitableAngleAndDistance(Transform target)
+    {
+        Vector3 direction = target.position - arCamera.position;
+        float angle = Vector3.Angle(arCamera.forward, direction);
+        float distance = direction.magnitude;
+
+        return angle < maxAngle && distance < maxDistance;
+    }
     
     private void CalculateAngleAndDistance()
     {

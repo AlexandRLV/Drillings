@@ -1,8 +1,4 @@
-﻿#if UNITY_EDITOR
-using UnityEditor.SceneManagement;
-#endif
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 
 namespace AR
@@ -15,6 +11,7 @@ namespace AR
         [Header("References")]
         [SerializeField] private TrackableObject trackableObject;
         [SerializeField] private AppManager appManager;
+        [SerializeField] private Compass compass;
 
         private Transform objectTransform;
         private bool isLoaded;
@@ -55,21 +52,11 @@ namespace AR
 #endif
         
             appManager.ActivateLayout(sceneToLoad, objectTransform);
-
-#if UNITY_EDITOR
-            if (!Application.isPlaying)
-                EditorSceneManager.MarkSceneDirty(SceneManager.GetActiveScene());
-#endif
         }
 
-        public void DisableBehaviour()
+        private void DisableBehaviour()
         {
-            appManager.DeactivateCurrentLayout();
-        
-#if UNITY_EDITOR
-            if (!Application.isPlaying)
-                EditorSceneManager.MarkSceneDirty(SceneManager.GetActiveScene());
-#endif
+            compass.StopFollow();
         }
 
     
@@ -83,15 +70,14 @@ namespace AR
 
         private void OnTrackableUpdated(ARTrackedObject trackedObject)
         {
-            if (!sceneToLoad.Equals(appManager.CurrentObjectName))
-                return;
-
-            objectTransform = trackedObject.transform; 
+            objectTransform = trackedObject.transform;
+            EnableBehaviour();
         }
 
         private void OnTrackableLost()
         {
             objectTransform = null;
+            DisableBehaviour();
         }
     }
 }

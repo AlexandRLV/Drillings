@@ -233,6 +233,7 @@ MonoBehaviour:
   sceneToLoad: 160-230
   trackableObject: {fileID: 530806160}
   appManager: {fileID: 2021286671}
+  compass: {fileID: 229066135}
 --- !u!114 &530806160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -368,6 +369,7 @@ MonoBehaviour:
   sceneToLoad: 250MNA
   trackableObject: {fileID: 667639674}
   appManager: {fileID: 2021286671}
+  compass: {fileID: 229066135}
 --- !u!114 &667639674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -787,6 +789,7 @@ MonoBehaviour:
   sceneToLoad: 1015
   trackableObject: {fileID: 1362105967}
   appManager: {fileID: 2021286671}
+  compass: {fileID: 229066135}
 --- !u!114 &1362105967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -929,6 +932,7 @@ MonoBehaviour:
   sceneToLoad: 250MNA
   trackableObject: {fileID: 1872360556}
   appManager: {fileID: 2021286671}
+  compass: {fileID: 229066135}
 --- !u!114 &1872360556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -990,6 +994,7 @@ MonoBehaviour:
   sceneToLoad: 160-230
   trackableObject: {fileID: 2014930829}
   appManager: {fileID: 2021286671}
+  compass: {fileID: 229066135}
 --- !u!114 &2014930829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1124,6 +1129,7 @@ MonoBehaviour:
   sceneToLoad: 1015
   trackableObject: {fileID: 2061838714}
   appManager: {fileID: 2021286671}
+  compass: {fileID: 229066135}
 --- !u!114 &2061838714
 MonoBehaviour:
   m_ObjectHideFlags: 0
