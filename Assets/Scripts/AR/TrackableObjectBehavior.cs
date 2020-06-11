@@ -77,7 +77,7 @@ namespace AR
         private void OnTrackableLost()
         {
             objectTransform = null;
-            DisableBehaviour();
+            //DisableBehaviour();
         }
     }
 }

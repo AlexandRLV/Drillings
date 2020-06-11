@@ -54,7 +54,7 @@ public class AppManager : MonoBehaviour
 
     public void ActivateLayout(string objectName, Transform targetTransform)
     {
-	    if (CurrentLayout != null || CurrentObjectName != null)
+	    if (CurrentLayout != null || !string.IsNullOrWhiteSpace(CurrentObjectName))
 		    return;
 	    
 	    LayoutDataContainer layoutContainer = scenesLayoutDataAssets.SingleOrDefault(x => x.objectName.Equals(objectName));
@@ -62,8 +62,8 @@ public class AppManager : MonoBehaviour
 	    if (layoutContainer == null)
 		    return;
 
-	    if (!compass.SuitableAngleAndDistance(targetTransform))
-		    return;
+	    // if (!compass.SuitableAngleAndDistance(targetTransform))
+		   //  return;
 
 	    reloadWhenInactiveTimer = 0;
 		

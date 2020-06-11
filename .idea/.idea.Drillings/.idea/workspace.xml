@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49960220-d93b-408e-9856-921e14d7901d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AR/TrackableObjectBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AR/TrackableObjectBehavior.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AppManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AppManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Compass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Compass.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,9 +110,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AR/BaseTrackableBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AR/TrackableImage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AR/TrackableImageBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AppManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AR/TrackableObjectBehavior.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Compass.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AppManager.cs" />
       </list>
     </option>
   </component>
@@ -177,7 +175,7 @@
       <workItem from="1591252576566" duration="587000" />
       <workItem from="1591255363522" duration="599000" />
       <workItem from="1591264201995" duration="9710000" />
-      <workItem from="1591347861711" duration="13274000" />
+      <workItem from="1591347861711" duration="13927000" />
     </task>
     <servers />
   </component>
