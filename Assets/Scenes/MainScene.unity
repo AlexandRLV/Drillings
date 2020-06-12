@@ -1174,10 +1174,25 @@ PrefabInstance:
       propertyPath: m_ClearFlags
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5408207607793220104, guid: ca46050cd94fb8841a1be37d790ad049,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.19607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 5408207607793220104, guid: ca46050cd94fb8841a1be37d790ad049,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.19607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 5408207607793220104, guid: ca46050cd94fb8841a1be37d790ad049,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.19607843
+      objectReference: {fileID: 0}
     - target: {fileID: 5408207607793220105, guid: ca46050cd94fb8841a1be37d790ad049,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.5938
+      value: -0.877
       objectReference: {fileID: 0}
     - target: {fileID: 5408207607793220105, guid: ca46050cd94fb8841a1be37d790ad049,
         type: 3}
@@ -1187,7 +1202,32 @@ PrefabInstance:
     - target: {fileID: 5408207607793220105, guid: ca46050cd94fb8841a1be37d790ad049,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3436
+      value: 0.689
+      objectReference: {fileID: 0}
+    - target: {fileID: 5408207607793220105, guid: ca46050cd94fb8841a1be37d790ad049,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0834019
+      objectReference: {fileID: 0}
+    - target: {fileID: 5408207607793220105, guid: ca46050cd94fb8841a1be37d790ad049,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5408207607793220105, guid: ca46050cd94fb8841a1be37d790ad049,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5408207607793220105, guid: ca46050cd94fb8841a1be37d790ad049,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.996516
+      objectReference: {fileID: 0}
+    - target: {fileID: 5408207607793220105, guid: ca46050cd94fb8841a1be37d790ad049,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 9.568001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca46050cd94fb8841a1be37d790ad049, type: 3}

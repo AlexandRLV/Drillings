@@ -30,4 +30,4 @@ MonoBehaviour:
     30 \u0433\u0440\u0430\u0434\u0443\u0441\u043E\u0432"
   pointerReferenceIds: 04000000
   sizes: []
-  objectAnim: {fileID: 7400000, guid: 267921576b0d755409f1f261c2c422aa, type: 2}
+  objectAnim: {fileID: 0}

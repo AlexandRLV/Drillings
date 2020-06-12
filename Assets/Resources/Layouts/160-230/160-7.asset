@@ -33,4 +33,4 @@ MonoBehaviour:
     35/37 \u043C/\u043C\u0438\u043D"
   pointerReferenceIds: 01000000
   sizes: []
-  objectAnim: {fileID: 7400000, guid: de9468c3f9d95124a92590d02880f7fe, type: 2}
+  objectAnim: {fileID: 0}
