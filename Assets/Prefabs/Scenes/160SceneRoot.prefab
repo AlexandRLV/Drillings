@@ -827,7 +827,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: d4cac2f821491d0478838ede6a0df2e0, type: 3}
+    m_Font: {fileID: 12800000, guid: 56284d4287f80cc43868c47e4f4588e8, type: 3}
     m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
@@ -1475,7 +1475,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9db574665202d0e498f987e911a72ccf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 841efdf1584697746b085bb2d5a87ee1, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2437,7 +2437,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: d4cac2f821491d0478838ede6a0df2e0, type: 3}
+    m_Font: {fileID: 12800000, guid: 56284d4287f80cc43868c47e4f4588e8, type: 3}
     m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
@@ -2508,13 +2508,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 774faf4a10a0d474bb5994613122faa9, type: 2}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 9117d2420db0e4c49a52b43545ccc937, type: 3}
+    m_Font: {fileID: 12800000, guid: d49e0068e74ee704297b8893716824bc, type: 3}
     m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 0
@@ -2656,7 +2656,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: d4cac2f821491d0478838ede6a0df2e0, type: 3}
+    m_Font: {fileID: 12800000, guid: 56284d4287f80cc43868c47e4f4588e8, type: 3}
     m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
@@ -2925,13 +2925,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: d4cac2f821491d0478838ede6a0df2e0, type: 3}
+    m_Font: {fileID: 12800000, guid: 56284d4287f80cc43868c47e4f4588e8, type: 3}
     m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 55
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
