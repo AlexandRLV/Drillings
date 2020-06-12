@@ -17,6 +17,7 @@ namespace Data
         [Space] public PhotoContainer[] photos;
         [Space] [TextArea(3, 10)] public string[] infoTextStrings;
         [Space] public int[] pointerReferenceIds;
+		[Space] public float sizeArrowsVertOffset;
         [Space] public string[] sizes;
         [Space] public AnimationClip objectAnim;
     }

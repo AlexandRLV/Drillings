@@ -31,6 +31,7 @@ MonoBehaviour:
   - "\u0428\u0438\u0440\u0438\u043D\u0430 \u043A\u043E\u043D\u0432\u0435\u0439\u0435\u0440\u0430:
     900 \u043C\u043C"
   pointerReferenceIds: 02000000
+  sizeArrowsVertOffset: 7
   sizes:
   - 
   - "900 \u043C\u043C"

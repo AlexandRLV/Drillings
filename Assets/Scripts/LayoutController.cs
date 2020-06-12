@@ -138,7 +138,7 @@ public class LayoutController : MonoBehaviour
         
         
         if (unit.sizes != null && unit.sizes.Length > 0)
-            layoutUI.EnableArrows(unit.sizes[0], unit.sizes[1], unit.sizes[2]);
+            layoutUI.EnableArrows(unit.sizes[0], unit.sizes[1], unit.sizes[2], unit.sizeArrowsVertOffset);
         else
             layoutUI.DisableArrows();
 		
