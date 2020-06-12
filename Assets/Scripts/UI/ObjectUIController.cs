@@ -12,35 +12,23 @@ namespace UI
         public LayoutController layoutController;
         
         [Header("Settings")]
-        [SerializeField] private float scrollViewContentPadding;
-        [SerializeField] private float buttonsOffset;
-        [SerializeField] private float delayBeforePlay;
+        [SerializeField] private float buttonsTextOffset;
     
         [Header("References")]
         [SerializeField] private Text objectNameText;
         [SerializeField] private Text unitNameText;
-        [SerializeField] private Text loadingText;
-        [SerializeField] private GameObject buttonHome;
-        [SerializeField] private GameObject scrollView;
-        [SerializeField] private GameObject scrollBackground;
-        [SerializeField] private RectTransform scrollViewContent;
+        [SerializeField] private GameObject selectionsParent;
+        [SerializeField] private RectTransform outerCircle;
         [SerializeField] private Compass compass;
     
         [Header("Resources")]
         [SerializeField] private Button unitButton;
 
         private bool isInMainPage;
-        private UIFadeManager loadingTextFade;
         private Coroutine currentRoutine;
         private List<Button> selectionButtons;
 
 
-        private void OnEnable()
-        {
-            loadingTextFade = loadingText.GetComponent<UIFadeManager>();
-            loadingTextFade.gameObject.SetActive(false);
-            //buttonHome.SetActive(false);
-        }
 
 
         public void SetUpLayout()
@@ -53,28 +41,77 @@ namespace UI
             unitNameText.gameObject.SetActive(false);
             
             selectionButtons = new List<Button>();
-            Vector2 anchors = new Vector2(0, 0.5f);
-            
-            // Prepare scroll view content width
-            float width = scrollViewContentPadding * 2 + buttonsOffset * (layoutData.UnitsCount - 1);
-            scrollViewContent.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Left, 0, width);
 
-            // Instantiate buttons
-            for (int i = 0; i < layoutData.units.Length; i++)
+            float radius = outerCircle.rect.width / 2;
+            int n = layoutData.units.Length;
+            n = n % 2 == 0 ? n / 2 : (n + 1) / 2;
+
+            float angle = 180f / (n + 1);
+            for (int i = 0; i < n; i++)
             {
-                Button button = Instantiate(unitButton, scrollViewContent);
+                float x = -radius * Mathf.Sin(angle * (i + 1) * Mathf.Deg2Rad);
+                float y = radius * Mathf.Cos(angle * (i + 1) * Mathf.Deg2Rad);
+
+                Button button = Instantiate(unitButton, selectionsParent.transform);
                 int id = i;
                 button.onClick.AddListener(() => OpenUnit(id));
-                
-                RectTransform buttonTransform = button.GetComponent<RectTransform>();
-                buttonTransform.anchorMax = anchors;
-                buttonTransform.anchorMin = anchors;
-                buttonTransform.anchoredPosition = new Vector2(scrollViewContentPadding + buttonsOffset * i, 0);
+                button.GetComponent<RectTransform>().anchoredPosition = new Vector2(x, y);
 
-                button.GetComponentInChildren<Text>().text = layoutData.units[i].unitName;
+                Text text = button.GetComponentInChildren<Text>();
+                text.text = layoutData.units[i].unitName;
+
+                RectTransform textRect = text.rectTransform;
+                textRect.pivot = new Vector2(1, 0.5f);
+                textRect.anchoredPosition = new Vector2(-buttonsTextOffset, 0);
                 
                 selectionButtons.Add(button);
             }
+            
+            angle = 180f / (layoutData.UnitsCount - n + 1);
+            for (int i = n; i < layoutData.UnitsCount; i++)
+            {
+                float x = -radius * Mathf.Sin(angle * (i - n + 1) * Mathf.Deg2Rad);
+                float y = radius * Mathf.Cos(angle * (i - n + 1) * Mathf.Deg2Rad);
+
+                Button button = Instantiate(unitButton, selectionsParent.transform);
+                int id = i;
+                button.onClick.AddListener(() => OpenUnit(id));
+                button.GetComponent<RectTransform>().anchoredPosition = new Vector2(-x, y);
+
+                Text text = button.GetComponentInChildren<Text>();
+                text.text = layoutData.units[i].unitName;
+
+                RectTransform textRect = text.rectTransform;
+                textRect.pivot = new Vector2(0, 0.5f);
+                textRect.anchoredPosition = new Vector2(buttonsTextOffset, 0);
+                
+                selectionButtons.Add(button);
+            }
+
+
+
+            // Vector2 anchors = new Vector2(0, 0.5f);
+            //
+            // // Prepare scroll view content width
+            // float width = scrollViewContentPadding * 2 + buttonsOffset * (layoutData.UnitsCount - 1);
+            // scrollViewContent.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Left, 0, width);
+            //
+            // // Instantiate buttons
+            // for (int i = 0; i < layoutData.units.Length; i++)
+            // {
+            //     Button button = Instantiate(unitButton, scrollViewContent);
+            //     int id = i;
+            //     button.onClick.AddListener(() => OpenUnit(id));
+            //     
+            //     RectTransform buttonTransform = button.GetComponent<RectTransform>();
+            //     buttonTransform.anchorMax = anchors;
+            //     buttonTransform.anchorMin = anchors;
+            //     buttonTransform.anchoredPosition = new Vector2(scrollViewContentPadding + buttonsOffset * i, 0);
+            //
+            //     button.GetComponentInChildren<Text>().text = layoutData.units[i].unitName;
+            //     
+            //     selectionButtons.Add(button);
+            // }
         }
 
         public void DisposeLayout()
@@ -110,15 +147,18 @@ namespace UI
             }
         }
 
+        public void PlayAllUnits()
+        {
+            
+        }
+
 
 
         private void GoToMainPage()
         {
             layoutController.Stop();
             unitNameText.gameObject.SetActive(false);
-            scrollView.SetActive(true);
-            scrollBackground.SetActive(true);
-            //buttonHome.SetActive(false);
+            selectionsParent.SetActive(true);
             isInMainPage = true;
         }
         
@@ -142,41 +182,12 @@ namespace UI
             isInMainPage = false;
         
             unitNameText.gameObject.SetActive(true);
-            
-            scrollView.SetActive(false);
-            scrollBackground.SetActive(false);
-            //buttonHome.SetActive(true);
+            selectionsParent.SetActive(false);
             
             unitNameText.text = unit.unitName;
-
-            if (delayBeforePlay == 0)
-            {
-                unitNameText.gameObject.SetActive(true);
-                layoutController.Play();
-            }
-            else
-            {
-                loadingTextFade.gameObject.SetActive(true);
-                loadingTextFade.FadeIn();
-                loadingText.text = unit.unitName;
-                unitNameText.gameObject.SetActive(false);
-                StartCoroutine(WaitAndPlay(delayBeforePlay));
-            }
-        }
-
-
-
-        private IEnumerator WaitAndPlay(float seconds)
-        {
-            yield return new WaitForSeconds(seconds);
-        
-            if (loadingTextFade.gameObject.activeSelf)
-                loadingTextFade.FadeOut();
             
             unitNameText.gameObject.SetActive(true);
             layoutController.Play();
-            
-            currentRoutine = null;
         }
     }
 }
