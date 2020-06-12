@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitName: "\u0427\u0430\u0441\u0442\u043E\u0442\u0430 \u0432\u0440\u0430\u0449\u0435\u043D\u0438\u044F
     \u0438 \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u043F\u0440\u0438 \u0431\u0443\u0440\u0435\u043D\u0438\u0438"
+  shortName: "\u0427\u0430\u0441\u0442\u043E\u0442\u0430 \u0438 \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C
+    \u043F\u0440\u0438 \u0431\u0443\u0440\u0435\u043D\u0438\u0438"
   voices:
   - {fileID: 8300000, guid: 2da699fde33fdca4c8ca529b1a1f2bcb, type: 3}
   - {fileID: 8300000, guid: 3741f14f1f23dbd48a4cdaaa0779698e, type: 3}

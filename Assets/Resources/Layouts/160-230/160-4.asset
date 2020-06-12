@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 160-4
   m_EditorClassIdentifier: 
   unitName: "\u041A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0448\u0442\u0430\u043D\u0433"
+  shortName: "\u041A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0448\u0442\u0430\u043D\u0433"
   voices:
   - {fileID: 8300000, guid: b3f8652f9111d1e4fb669c8e1aae2096, type: 3}
   miniatureAnim: {fileID: 7400000, guid: 6f143cc4756f8994b92d0f962689958b, type: 2}
