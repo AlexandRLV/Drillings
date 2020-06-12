@@ -25,6 +25,8 @@ namespace UI
         [SerializeField] private Button unitButton;
 
         private bool isInMainPage;
+        private bool isInPlayAllMode;
+        private int lastPlayedUnit;
         private Coroutine currentRoutine;
         private List<Button> selectionButtons;
 
@@ -87,31 +89,6 @@ namespace UI
                 
                 selectionButtons.Add(button);
             }
-
-
-
-            // Vector2 anchors = new Vector2(0, 0.5f);
-            //
-            // // Prepare scroll view content width
-            // float width = scrollViewContentPadding * 2 + buttonsOffset * (layoutData.UnitsCount - 1);
-            // scrollViewContent.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Left, 0, width);
-            //
-            // // Instantiate buttons
-            // for (int i = 0; i < layoutData.units.Length; i++)
-            // {
-            //     Button button = Instantiate(unitButton, scrollViewContent);
-            //     int id = i;
-            //     button.onClick.AddListener(() => OpenUnit(id));
-            //     
-            //     RectTransform buttonTransform = button.GetComponent<RectTransform>();
-            //     buttonTransform.anchorMax = anchors;
-            //     buttonTransform.anchorMin = anchors;
-            //     buttonTransform.anchoredPosition = new Vector2(scrollViewContentPadding + buttonsOffset * i, 0);
-            //
-            //     button.GetComponentInChildren<Text>().text = layoutData.units[i].unitName;
-            //     
-            //     selectionButtons.Add(button);
-            // }
         }
 
         public void DisposeLayout()
@@ -131,7 +108,7 @@ namespace UI
             }
         }
 
-        public void GoHome()
+        public void GoHome(bool isLastUnit)
         {
             if (currentRoutine != null)
             {
@@ -143,13 +120,27 @@ namespace UI
                 compass.StopFollow();
             else
             {
-                GoToMainPage();
+                if (isInPlayAllMode)
+                {
+                    if (isLastUnit)
+                    {
+                        GoToMainPage();
+                        isInPlayAllMode = false;
+                    }
+                    else
+                        currentRoutine = StartCoroutine(WaitAndPlayNextUnit(1));
+                }
+                else
+                {
+                    GoToMainPage();
+                }
             }
         }
 
         public void PlayAllUnits()
         {
-            
+            isInPlayAllMode = true;
+            OpenUnit(0);
         }
 
 
@@ -185,9 +176,18 @@ namespace UI
             selectionsParent.SetActive(false);
             
             unitNameText.text = unit.unitName;
+
+            lastPlayedUnit = unitId;
             
             unitNameText.gameObject.SetActive(true);
             layoutController.Play();
+        }
+
+        private IEnumerator WaitAndPlayNextUnit(float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            
+            OpenUnit(lastPlayedUnit + 1);
         }
     }
 }
