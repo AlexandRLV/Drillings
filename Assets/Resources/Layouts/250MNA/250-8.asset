@@ -32,4 +32,4 @@ MonoBehaviour:
     32 \u043C"
   pointerReferenceIds: 04000000
   sizes: []
-  objectAnim: {fileID: 7400000, guid: cbc7fff60fb37cb489b3c415ff2cc105, type: 2}
+  objectAnim: {fileID: 0}
