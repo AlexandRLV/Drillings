@@ -1266,6 +1266,29 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5751776490869907712, guid: c97a69ff63d9fce438c670fa966c9223,
+        type: 3}
+      propertyPath: outerCircleFinal
+      value: 
+      objectReference: {fileID: 21300000, guid: 709ce018cd2db5d4192b738baf2080ca,
+        type: 3}
+    - target: {fileID: 5751776490869907712, guid: c97a69ff63d9fce438c670fa966c9223,
+        type: 3}
+      propertyPath: outerCircleStart
+      value: 
+      objectReference: {fileID: 21300000, guid: ae8fad1ce9efb414aa13de2fb84f6cdb,
+        type: 3}
+    - target: {fileID: 5751776490869907726, guid: c97a69ff63d9fce438c670fa966c9223,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5751776491728912450, guid: c97a69ff63d9fce438c670fa966c9223,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ae8fad1ce9efb414aa13de2fb84f6cdb,
+        type: 3}
     - target: {fileID: 5751776492184187881, guid: c97a69ff63d9fce438c670fa966c9223,
         type: 3}
       propertyPath: m_Name
@@ -1389,6 +1412,11 @@ PrefabInstance:
     - target: {fileID: 5751776492184187886, guid: c97a69ff63d9fce438c670fa966c9223,
         type: 3}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5751776492554183473, guid: c97a69ff63d9fce438c670fa966c9223,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5751776492554183475, guid: c97a69ff63d9fce438c670fa966c9223,
