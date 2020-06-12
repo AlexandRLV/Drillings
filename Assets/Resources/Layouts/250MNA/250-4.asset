@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: 250-4
   m_EditorClassIdentifier: 
   unitName: "\u0414\u043B\u0438\u043D\u0430 \u0448\u0442\u0430\u043D\u0433\u0438"
-  shortName: "\u0414\u043B\u0438\u043D\u0430 \u0448\u0442\u0430\u043D\u0433\u0438"
   voices:
   - {fileID: 8300000, guid: 3f3997b8d8a932645ac698909a90beb9, type: 3}
   miniatureAnim: {fileID: 7400000, guid: 21c34b4db8b7bee4f82836871ba141d5, type: 2}
@@ -21,7 +20,6 @@ MonoBehaviour:
   infoImage: {fileID: 0}
   video:
     clip: {fileID: 0}
-    clipId: 0
     aspectRatio: 0
     renderTexture: {fileID: 0}
   photos:

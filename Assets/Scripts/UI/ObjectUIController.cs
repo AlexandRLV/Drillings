@@ -60,7 +60,7 @@ namespace UI
                 button.GetComponent<RectTransform>().anchoredPosition = new Vector2(x, y);
 
                 Text text = button.GetComponentInChildren<Text>();
-                text.text = layoutData.units[i].shortName;
+                text.text = layoutData.units[i].unitName;
 
                 RectTransform textRect = text.rectTransform;
                 textRect.pivot = new Vector2(1, 0.5f);
@@ -81,7 +81,7 @@ namespace UI
                 button.GetComponent<RectTransform>().anchoredPosition = new Vector2(-x, y);
 
                 Text text = button.GetComponentInChildren<Text>();
-                text.text = layoutData.units[i].shortName;
+                text.text = layoutData.units[i].unitName;
 
                 RectTransform textRect = text.rectTransform;
                 textRect.pivot = new Vector2(0, 0.5f);

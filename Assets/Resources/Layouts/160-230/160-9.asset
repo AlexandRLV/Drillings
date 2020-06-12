@@ -15,8 +15,6 @@ MonoBehaviour:
   unitName: "\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u044B\u0439
     \u043F\u0440\u0435\u043E\u0434\u043E\u043B\u0435\u0432\u0430\u0435\u043C\u044B\u0439
     \u043F\u043E\u0434\u044A\u0435\u043C"
-  shortName: "\u041F\u0440\u0435\u043E\u0434\u043E\u043B\u0435\u0432\u0430\u0435\u043C\u044B\u0439
-    \u043F\u043E\u0434\u044A\u0435\u043C"
   voices:
   - {fileID: 8300000, guid: 3a409b75ee4463e4590faaa439b48cc3, type: 3}
   miniatureAnim: {fileID: 7400000, guid: b4587189f2cae0a40a5ceed1e19ac4e8, type: 2}

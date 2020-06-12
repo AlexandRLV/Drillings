@@ -8,7 +8,6 @@ namespace Data
     public class ObjectInfoUnitData : ScriptableObject
     {
         public string unitName;
-		public string shortName;
         [Space] public AudioClip[] voices;
         [Space] public AnimationClip miniatureAnim;
         public float delayBetweenVoices;
