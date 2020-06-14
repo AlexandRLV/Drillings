@@ -37,10 +37,12 @@ namespace UI
         {
             layoutController.AudioFinished += GoHome;
             isInMainPage = true;
+            isInPlayAllMode = false;
             
             LayoutData layoutData = layoutController.LayoutData;
             objectNameText.text = layoutData.objectName;
             unitNameText.gameObject.SetActive(false);
+            selectionsParent.SetActive(true);
             
             selectionButtons = new List<Button>();
 
@@ -151,6 +153,7 @@ namespace UI
             unitNameText.gameObject.SetActive(false);
             selectionsParent.SetActive(true);
             isInMainPage = true;
+            isInPlayAllMode = false;
         }
         
         // private button listener
@@ -172,14 +175,12 @@ namespace UI
 
             isInMainPage = false;
         
-            unitNameText.gameObject.SetActive(true);
             selectionsParent.SetActive(false);
-            
+            unitNameText.gameObject.SetActive(true);
             unitNameText.text = unit.unitName;
 
             lastPlayedUnit = unitId;
             
-            unitNameText.gameObject.SetActive(true);
             layoutController.Play();
         }
 

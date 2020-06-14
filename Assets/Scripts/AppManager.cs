@@ -86,11 +86,10 @@ public class AppManager : MonoBehaviour
         if (CurrentLayout == null)
             return false;
         
-        CurrentLayout.Stop();
+        uiManager.DisableControlElements();
         Destroy(CurrentLayout.gameObject);
         CurrentLayout = null;
         CurrentObjectName = null;
-        uiManager.DisableControlElements();
         
         return true;
     }

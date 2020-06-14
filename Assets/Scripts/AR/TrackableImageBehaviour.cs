@@ -15,6 +15,7 @@ namespace AR
         [Header("References")]
         [SerializeField] private TrackableImage trackableImage;
         [SerializeField] private AppManager appManager;
+        [SerializeField] private Compass compass;
 
         private Transform imageTransform;
 
@@ -63,7 +64,7 @@ namespace AR
 
         public void DisableBehaviour()
         {
-            appManager.DeactivateCurrentLayout();
+            compass.StopFollow();
         
 #if UNITY_EDITOR
             if (!Application.isPlaying)
