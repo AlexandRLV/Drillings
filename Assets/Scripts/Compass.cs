@@ -33,6 +33,7 @@ public class Compass : MonoBehaviour
 
     public void StartFollow(Transform targetObject)
     {
+        Debug.Log("Compass: Start");
         if (isFollowing) 
             return;
     
@@ -43,6 +44,7 @@ public class Compass : MonoBehaviour
     [ContextMenu("Stop Follow")]
     public void StopFollow()
     {
+        Debug.Log("Compass: Stop");
         if (!appManager.DeactivateCurrentLayout())
             return;
         

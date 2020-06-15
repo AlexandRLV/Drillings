@@ -432,14 +432,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5751776492554183475}
         m_MethodName: GoHome
-        m_Mode: 1
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &2647925277327727396
 GameObject:
@@ -757,7 +757,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5751776490869907727
 RectTransform:
   m_ObjectHideFlags: 0
@@ -832,9 +832,9 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  outerCircleStart: {fileID: 21300000, guid: a0f160dec68098f46a8369b33152f89e, type: 3}
+  outerCircleStart: {fileID: 21300000, guid: ae8fad1ce9efb414aa13de2fb84f6cdb, type: 3}
   innerCircleStart: {fileID: 21300000, guid: 14ce5fc58ed34e742b2bf44fa077f8a2, type: 3}
-  outerCircleFinal: {fileID: 21300000, guid: 75b564e3793201b4e92415a462fb076c, type: 3}
+  outerCircleFinal: {fileID: 21300000, guid: 709ce018cd2db5d4192b738baf2080ca, type: 3}
   innerCircleFinal: {fileID: 21300000, guid: 913dc6d66e8c7194a92384fc8122a131, type: 3}
 --- !u!1 &5751776490888674717
 GameObject:
@@ -1452,7 +1452,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a0f160dec68098f46a8369b33152f89e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ae8fad1ce9efb414aa13de2fb84f6cdb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2688,7 +2688,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5751776492554183474
 RectTransform:
   m_ObjectHideFlags: 0

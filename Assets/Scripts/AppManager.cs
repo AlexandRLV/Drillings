@@ -54,16 +54,17 @@ public class AppManager : MonoBehaviour
 
     public void ActivateLayout(string objectName, Transform targetTransform)
     {
+	    Debug.Log($"AppManager: Activating {objectName}");
 	    if (CurrentLayout != null || !string.IsNullOrWhiteSpace(CurrentObjectName))
+	    {
+		    Debug.Log($"AppManager: Already activated {CurrentObjectName}, returning");
 		    return;
+	    }
 	    
 	    LayoutDataContainer layoutContainer = scenesLayoutDataAssets.SingleOrDefault(x => x.objectName.Equals(objectName));
 
 	    if (layoutContainer == null)
 		    return;
-
-	    // if (!compass.SuitableAngleAndDistance(targetTransform))
-		   //  return;
 
 	    reloadWhenInactiveTimer = 0;
 		
@@ -83,19 +84,25 @@ public class AppManager : MonoBehaviour
     
     public bool DeactivateCurrentLayout()
     {
+	    Debug.Log("AppManager: Deactivating");
         if (CurrentLayout == null)
-            return false;
+        {
+	        Debug.Log($"AppManager: No active layout");
+	        return false;
+        }
         
         uiManager.DisableControlElements();
         Destroy(CurrentLayout.gameObject);
         CurrentLayout = null;
         CurrentObjectName = null;
+        objectTransform = null;
         
         return true;
     }
 
     public void ShowLoadedLayout()
     {
+	    Debug.Log("AppManager: Show");
         CurrentLayout.gameObject.SetActive(true);
         CurrentLayout.SetUpUnit();
     }

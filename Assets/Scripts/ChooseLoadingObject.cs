@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using AR;
 using UnityEngine;
 
 public class ChooseLoadingObject : MonoBehaviour
 {
     public GameObject[] loadingObjects;
 
+    public TrackableObjectBehavior[] behaviors;
     
     
     private void Start()
@@ -25,5 +27,14 @@ public class ChooseLoadingObject : MonoBehaviour
         }
         
         gameObject.SetActive(false);
+    }
+
+    [ContextMenu("Activate")]
+    public void ActivateAllBehaviors()
+    {
+        foreach (var behavior in behaviors)
+        {
+            behavior.EnableBehaviour();
+        }
     }
 }

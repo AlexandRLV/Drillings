@@ -47,7 +47,7 @@ namespace UI
 		private Transform cameraTransform;
 		private Transform canvasTransform;
 		private Transform pointerTargetTransform;
-		private VideoPlayer currentPlayer;
+		private VideoPlayer currentVideoPlayer;
     
     
 
@@ -205,10 +205,10 @@ namespace UI
 			videoPlayer.gameObject.SetActive(true);
 			videoPlayer.FadeIn();
 
-			currentPlayer = VideoHolder.Instance.players[clipId];
+			currentVideoPlayer = VideoHolder.Instance.players[clipId];
 			videoPlayer.GetComponentInChildren<RawImage>().texture = renderTexture;
-			currentPlayer.targetTexture = renderTexture;
-			currentPlayer.Play();
+			currentVideoPlayer.targetTexture = renderTexture;
+			currentVideoPlayer.Play();
 			
 			// videoPlayer.GetComponentInChildren<RawImage>().texture = renderTexture;
 			// videoPlayer.GetComponent<VideoPlayer>().targetTexture = renderTexture;
@@ -234,8 +234,8 @@ namespace UI
 			if (videoPlayer.gameObject.activeSelf)
 				videoPlayer.FadeOut();
 			
-			if (currentPlayer != null)
-				currentPlayer.Stop();
+			if (currentVideoPlayer != null)
+				currentVideoPlayer.Stop();
 		}
 
 		public void EnablePointer(Transform target)
