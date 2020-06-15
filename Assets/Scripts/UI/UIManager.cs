@@ -47,14 +47,8 @@ namespace UI
         
             StartCoroutine(Loading(loadingTime));
         }
-    
-    
-        public void EnableControlElements()
-        {
-            objectLayout.gameObject.SetActive(true);
-            objectLayout.layoutController = appManager.CurrentLayout;
-            objectLayout.SetUpLayout();
-        }
+
+
 
         public void DisableControlElements()
         {
@@ -106,6 +100,13 @@ namespace UI
 
     
 
+        private void EnableControlElements()
+        {
+            objectLayout.gameObject.SetActive(true);
+            objectLayout.layoutController = appManager.CurrentLayout;
+            objectLayout.SetUpLayout();
+        }
+        
         private IEnumerator Loading(float seconds)
         {
             yield return new WaitForSeconds(seconds);
