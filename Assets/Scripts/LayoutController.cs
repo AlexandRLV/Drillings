@@ -6,7 +6,7 @@ using UI;
 
 public class LayoutController : MonoBehaviour
 {
-    public event Action AudioFinished;
+    public event Action<bool> AudioFinished;
     public LayoutData LayoutData { get; set; }
     public bool IsPlaying { get; private set; }
     public Transform ObjectTransform => objectAnimation.transform;
@@ -41,7 +41,7 @@ public class LayoutController : MonoBehaviour
         
         if (currentUnitVoiceId >= unit.voices.Length - 1)
         {
-            AudioFinished?.Invoke();
+            AudioFinished?.Invoke(LayoutData.IsLastUnit);
             Stop();
             return;
         }

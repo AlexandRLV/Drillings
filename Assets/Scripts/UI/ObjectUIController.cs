@@ -19,8 +19,7 @@ namespace UI
         [Header("References")]
         [SerializeField] private Text objectNameText;
         [SerializeField] private Text unitNameText;
-        [SerializeField] private Text loadingText;
-        [SerializeField] private GameObject buttonHome;
+        [SerializeField] private GameObject buttonPlayAll;
         [SerializeField] private GameObject scrollView;
         [SerializeField] private GameObject scrollBackground;
         [SerializeField] private RectTransform scrollViewContent;
@@ -30,27 +29,30 @@ namespace UI
         [SerializeField] private Button unitButton;
 
         private bool isInMainPage;
-        private UIFadeManager loadingTextFade;
+        private bool isInPlayAllMode;
+        private int lastPlayedUnit;
         private Coroutine currentRoutine;
         private List<Button> selectionButtons;
 
 
-        private void OnEnable()
-        {
-            loadingTextFade = loadingText.GetComponent<UIFadeManager>();
-            loadingTextFade.gameObject.SetActive(false);
-            //buttonHome.SetActive(false);
-        }
-
-
         public void SetUpLayout()
         {
+            if (currentRoutine != null)
+            {
+                StopCoroutine(currentRoutine);
+                currentRoutine = null;
+            }
+            
             layoutController.AudioFinished += GoHome;
             isInMainPage = true;
+            isInPlayAllMode = false;
             
             LayoutData layoutData = layoutController.LayoutData;
             objectNameText.text = layoutData.objectName;
             unitNameText.gameObject.SetActive(false);
+            scrollView.SetActive(true);
+            scrollBackground.SetActive(true);
+            buttonPlayAll.SetActive(true);
             
             selectionButtons = new List<Button>();
             Vector2 anchors = new Vector2(0, 0.5f);
@@ -94,7 +96,7 @@ namespace UI
             }
         }
 
-        public void GoHome()
+        public void GoHome(bool isLastUnit)
         {
             if (currentRoutine != null)
             {
@@ -106,8 +108,24 @@ namespace UI
                 compass.StopFollow();
             else
             {
-                GoToMainPage();
+                if (isInPlayAllMode)
+                {
+                    if (isLastUnit)
+                    {
+                        GoToMainPage();
+                    }
+                    else
+                        currentRoutine = StartCoroutine(WaitAndPlayNextUnit(delayBeforePlay));
+                }
+                else
+                    GoToMainPage();
             }
+        }
+
+        public void PlayAllUnits()
+        {
+            isInPlayAllMode = true;
+            OpenUnit(0);
         }
 
 
@@ -118,8 +136,9 @@ namespace UI
             unitNameText.gameObject.SetActive(false);
             scrollView.SetActive(true);
             scrollBackground.SetActive(true);
-            //buttonHome.SetActive(false);
             isInMainPage = true;
+            isInPlayAllMode = false;
+            buttonPlayAll.SetActive(true);
         }
         
         // private button listener
@@ -141,41 +160,26 @@ namespace UI
 
             isInMainPage = false;
         
-            unitNameText.gameObject.SetActive(true);
+            buttonPlayAll.SetActive(false);
             
             scrollView.SetActive(false);
             scrollBackground.SetActive(false);
-            //buttonHome.SetActive(true);
             
+            unitNameText.gameObject.SetActive(true);
             unitNameText.text = unit.unitName;
 
-            if (delayBeforePlay == 0)
-            {
-                unitNameText.gameObject.SetActive(true);
-                layoutController.Play();
-            }
-            else
-            {
-                loadingTextFade.gameObject.SetActive(true);
-                loadingTextFade.FadeIn();
-                loadingText.text = unit.unitName;
-                unitNameText.gameObject.SetActive(false);
-                StartCoroutine(WaitAndPlay(delayBeforePlay));
-            }
+            lastPlayedUnit = unitId;
+            
+            layoutController.Play();
         }
 
 
 
-        private IEnumerator WaitAndPlay(float seconds)
+        private IEnumerator WaitAndPlayNextUnit(float seconds)
         {
             yield return new WaitForSeconds(seconds);
-        
-            if (loadingTextFade.gameObject.activeSelf)
-                loadingTextFade.FadeOut();
-            
-            unitNameText.gameObject.SetActive(true);
-            layoutController.Play();
-            
+
+            OpenUnit(lastPlayedUnit + 1);
             currentRoutine = null;
         }
     }

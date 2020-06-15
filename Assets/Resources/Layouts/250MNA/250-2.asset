@@ -21,13 +21,14 @@ MonoBehaviour:
   infoImage: {fileID: 0}
   video:
     clip: {fileID: 0}
+    clipId: 0
     aspectRatio: 0
     renderTexture: {fileID: 0}
   photos:
-  - photo: {fileID: 0}
-    aspectRatio: 0
   - photo: {fileID: 21300000, guid: 3700a11027c708c48bf9643e657b23a9, type: 3}
     aspectRatio: 0.67
+  - photo: {fileID: 0}
+    aspectRatio: 0
   infoTextStrings:
   - 
   - 

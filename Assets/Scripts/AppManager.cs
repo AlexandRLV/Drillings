@@ -62,9 +62,6 @@ public class AppManager : MonoBehaviour
 	    if (layoutContainer == null)
 		    return;
 
-	    // if (!compass.SuitableAngleAndDistance(targetTransform))
-		   //  return;
-
 	    reloadWhenInactiveTimer = 0;
 		
 		CurrentObjectName = layoutContainer.objectName;
@@ -86,11 +83,11 @@ public class AppManager : MonoBehaviour
         if (CurrentLayout == null)
             return false;
         
-        CurrentLayout.Stop();
+        uiManager.DisableControlElements();
         Destroy(CurrentLayout.gameObject);
         CurrentLayout = null;
         CurrentObjectName = null;
-        uiManager.DisableControlElements();
+        objectTransform = null;
         
         return true;
     }
