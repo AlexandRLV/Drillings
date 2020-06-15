@@ -37,6 +37,7 @@ namespace UI
 		private bool longArrowEnabled;
 		private bool shortArrowEnabled;
 		private bool vertArrowEnabled;
+		private float sizeArrowsVertOffset;
 		private RectTransform imageRect;
 		private RectTransform circleRect;
 		private RectTransform pointerRect;
@@ -130,8 +131,8 @@ namespace UI
 			if (longArrowEnabled)
 			{            
 				// set up long arrow
-				Vector2 arrowPoint1 = GetReferencePoint(arrowsManager.LongArrowPoint1);
-				Vector2 arrowPoint2 = GetReferencePoint(arrowsManager.LongArrowPoint2);
+				Vector2 arrowPoint1 = GetReferencePoint(arrowsManager.LongArrowPoint1) + Vector2.up * sizeArrowsVertOffset;
+				Vector2 arrowPoint2 = GetReferencePoint(arrowsManager.LongArrowPoint2) + Vector2.up * sizeArrowsVertOffset;
 				SetUpRect(horizontalLongArrow, arrowPoint1, arrowPoint2);
 				SetUpTextRect(hLTextRect, horizontalLongArrow);
 			}
@@ -139,8 +140,8 @@ namespace UI
 			if (shortArrowEnabled)
 			{
 				// set up short arrow
-				Vector2 arrowPoint1 = GetReferencePoint(arrowsManager.ShortArrowPoint1);
-				Vector2 arrowPoint2 = GetReferencePoint(arrowsManager.ShortArrowPoint2);
+				Vector2 arrowPoint1 = GetReferencePoint(arrowsManager.ShortArrowPoint1) + Vector2.up * sizeArrowsVertOffset;
+				Vector2 arrowPoint2 = GetReferencePoint(arrowsManager.ShortArrowPoint2) + Vector2.up * sizeArrowsVertOffset;
 				SetUpRect(horizontalShortArrow, arrowPoint1, arrowPoint2);
 				SetUpTextRect(hsTextRect, horizontalShortArrow);
 			}
@@ -148,8 +149,8 @@ namespace UI
 			if (vertArrowEnabled)
 			{
 				// set up vertical arrow
-				Vector2 arrowPoint1 = GetReferencePoint(arrowsManager.VertArrowPoint1);
-				Vector2 arrowPoint2 = GetReferencePoint(arrowsManager.VertArrowPoint2);
+				Vector2 arrowPoint1 = GetReferencePoint(arrowsManager.VertArrowPoint1) + Vector2.up * sizeArrowsVertOffset;
+				Vector2 arrowPoint2 = GetReferencePoint(arrowsManager.VertArrowPoint2) + Vector2.up * sizeArrowsVertOffset;
 				SetUpRect(verticalArrow, arrowPoint1, arrowPoint2);
 				SetUpTextRect(vTextRect, verticalArrow);
 			}
@@ -252,7 +253,7 @@ namespace UI
 				pointer.FadeOut();
 		}
 
-		public void EnableArrows(string longSize, string shortSize, string vertSize)
+		public void EnableArrows(string longSize, string shortSize, string vertSize, float vertOffset)
 		{
 			if (!string.IsNullOrWhiteSpace(longSize))
 			{
@@ -293,7 +294,8 @@ namespace UI
 				verticalText.gameObject.SetActive(false);
 				verticalArrow.gameObject.SetActive(false);
 			}
-		
+
+			sizeArrowsVertOffset = vertOffset;
 			arrowsParent.SetActive(true);
 		}
 
