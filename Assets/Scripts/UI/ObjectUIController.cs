@@ -35,6 +35,12 @@ namespace UI
 
         public void SetUpLayout()
         {
+            if (currentRoutine != null)
+            {
+                StopCoroutine(currentRoutine);
+                currentRoutine = null;
+            }
+            
             Debug.Log("ObjectUI: SetUp");
             layoutController.AudioFinished += GoHome;
             isInMainPage = true;
@@ -192,6 +198,7 @@ namespace UI
             yield return new WaitForSeconds(delay);
             
             OpenUnit(lastPlayedUnit + 1);
+            currentRoutine = null;
         }
     }
 }
