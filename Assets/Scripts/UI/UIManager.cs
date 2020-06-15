@@ -53,6 +53,7 @@ namespace UI
         public void DisableControlElements()
         {
             Debug.Log("UIManager: Disabling control elements");
+            DebugWriter.Write("UIManager: Disabling control elements");
             if (currentRoutine != null)
             {
                 StopCoroutine(currentRoutine);
@@ -72,6 +73,7 @@ namespace UI
         public void ShowLoadingAnimation()
         {
             Debug.Log("UIManager: Enabling loading animation");
+            DebugWriter.Write("UIManager: Enabling loading animation");
             searchingCircles.gameObject.SetActive(true);
             searchingCircles.ShowLoading();
         }
@@ -82,6 +84,7 @@ namespace UI
         public void DisableIntroLayout()
         {
             Debug.Log("UIManager: Disabling intro layout");
+            DebugWriter.Write("UIManager: Disabling intro layout");
             introLayout.SetActive(false);
             
             if (arTrackedObjectManager != null)
@@ -97,6 +100,7 @@ namespace UI
         public void Show()
         {
             Debug.Log("UIManager: Showing object");
+            DebugWriter.Write("UIManager: Showing object");
             searchingCircles.gameObject.SetActive(false);
             appManager.ShowLoadedLayout();
             EnableControlElements();

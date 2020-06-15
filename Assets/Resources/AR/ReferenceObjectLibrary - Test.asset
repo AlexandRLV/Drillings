@@ -17,6 +17,11 @@ MonoBehaviour:
   m_ReferenceObjects:
   - m_GuidLow: 5188004030949401923
     m_GuidHigh: 3044238191997696191
-    m_Name: Test
+    m_Name: Test1
     m_Entries:
     - {fileID: -6831329414088302235, guid: dc70a7dffd7ba814182e120c07316c73, type: 3}
+  - m_GuidLow: 4902016336998388206
+    m_GuidHigh: 12779479134577083808
+    m_Name: Test2
+    m_Entries:
+    - {fileID: -6831329414088302235, guid: 7c3805dce0779634496ac6bc1ed2c31e, type: 3}

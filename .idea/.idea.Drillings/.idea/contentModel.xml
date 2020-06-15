@@ -149,6 +149,7 @@
             <e p="LayoutData.cs" t="Include" />
             <e p="ObjectInfoUnitData.cs" t="Include" />
           </e>
+          <e p="DebugWriter.cs" t="Include" />
           <e p="DrillController.cs" t="Include" />
           <e p="Editor" t="Include">
             <e p="TrackableObjectEditor.cs" t="Include" />
