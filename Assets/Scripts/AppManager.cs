@@ -20,33 +20,15 @@ public class AppManager : MonoBehaviour
     [Header("Layouts")]
     [SerializeField] private List<LayoutDataContainer> scenesLayoutDataAssets;
 
-	private float reloadWhenInactiveTimer;
 	private Transform objectTransform;
 
 
 
     private void Update()
 	{
-		#if UNITY_EDITOR
-		return;
-		#endif
-		
-		if (CurrentLayout == null || CurrentLayout.IsPlaying)
+		if (objectTransform == null || CurrentLayout == null)
 			return;
 		
-		if (Input.touchCount > 0)
-			reloadWhenInactiveTimer = 0;
-		
-		reloadWhenInactiveTimer += Time.deltaTime;
-		if (reloadWhenInactiveTimer >= noInputReloadTime)
-		{
-			compass.StopFollow();
-			reloadWhenInactiveTimer = 0;
-		}
-
-		if (objectTransform == null)
-			return;
-
 		UpdateRootTransform();
 	}
 
@@ -55,7 +37,6 @@ public class AppManager : MonoBehaviour
     public void ActivateLayout(string objectName, Transform targetTransform)
     {
 	    Debug.Log($"AppManager: Activating {objectName}");
-	    DebugWriter.Write($"AppManager: Activating {objectName}");
 	    if (CurrentLayout != null || !string.IsNullOrWhiteSpace(CurrentObjectName))
 	    {
 		    Debug.Log($"AppManager: Already activated {CurrentObjectName}, returning");
@@ -66,8 +47,6 @@ public class AppManager : MonoBehaviour
 
 	    if (layoutContainer == null)
 		    return;
-
-	    reloadWhenInactiveTimer = 0;
 		
 		CurrentObjectName = layoutContainer.objectName;
 		objectTransform = targetTransform;
@@ -77,7 +56,6 @@ public class AppManager : MonoBehaviour
 		CurrentLayout.gameObject.SetActive(false);
 		CurrentLayout.LayoutData.ResetUnit();
 		
-		
 		compass.StartFollow(CurrentLayout.ObjectTransform);
 		
         uiManager.ShowLoadingAnimation();
@@ -86,11 +64,9 @@ public class AppManager : MonoBehaviour
     public bool DeactivateCurrentLayout()
     {
 	    Debug.Log("AppManager: Deactivating");
-	    DebugWriter.Write("AppManager: Deactivating");
         if (CurrentLayout == null)
         {
 	        Debug.Log("AppManager: No active layout");
-	        DebugWriter.Write("AppManager: No active layout");
 	        return false;
         }
         
@@ -106,7 +82,6 @@ public class AppManager : MonoBehaviour
     public void ShowLoadedLayout()
     {
 	    Debug.Log("AppManager: Show");
-	    DebugWriter.Write("AppManager: Show");
         CurrentLayout.gameObject.SetActive(true);
         CurrentLayout.SetUpUnit();
     }

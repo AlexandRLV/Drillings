@@ -9,11 +9,16 @@ public class ChooseLoadingObject : MonoBehaviour
     public GameObject[] loadingObjects;
 
     public TrackableObjectBehavior[] behaviors;
+	
+	private bool activatingMode;
     
     
-    private void Start()
+    private void Update()
     {
-        
+        if (!activatingMode)
+			return;
+		
+		ActivateAllBehaviors();
     }
 
 
@@ -32,9 +37,23 @@ public class ChooseLoadingObject : MonoBehaviour
     [ContextMenu("Activate")]
     public void ActivateAllBehaviors()
     {
+	    throw new NotImplementedException("LAL");
+	    
         foreach (var behavior in behaviors)
         {
             behavior.EnableBehaviour();
         }
     }
+	
+	[ContextMenu("Enable Activating")]
+	public void EnableActivating()
+	{
+		activatingMode = true;
+	}
+	
+	[ContextMenu("Disable Activating")]
+	public void DisableActivating()
+	{
+		activatingMode = false;
+	}
 }

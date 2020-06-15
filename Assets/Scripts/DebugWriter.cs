@@ -8,18 +8,28 @@ public class DebugWriter : MonoBehaviour
 {
     private static DebugWriter Instance { get; set; }
 
-    private Text text;
+    public Text text;
 
     private void Awake()
     {
         Instance = this;
-        text = GetComponentInChildren<Text>();
     }
+	
+	private void OnEnable()
+	{
+		Application.logMessageReceived += HandleLog;
+	}
 
+	private void OnDisable()
+	{
+		Application.logMessageReceived -= HandleLog;
+	}
 
-    public static void Write(string message)
-    {
-        Instance.text.text += message;
-        Instance.text.text += "\n";
-    }
+	private void HandleLog(string condition, string stacktrace, LogType type)
+	{
+		if (type == LogType.Exception)
+			text.text += "\nException: ";
+
+		text.text += condition + "\n";
+	}
 }
