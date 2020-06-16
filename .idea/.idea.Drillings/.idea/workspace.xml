@@ -25,43 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49960220-d93b-408e-9856-921e14d7901d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Drillings/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Drillings/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Drillings/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Drillings/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Drillings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Drillings/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/ScreenCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/ScreenCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AR/ReferenceObjectLibrary - Test.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/AR/ReferenceObjectLibrary - Test.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AR/Scan_Test_2.arobject" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AR/Scan_Test_2.arobject.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AR/Scan_Test_3.arobject" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AR/Scan_Test_3.arobject.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AR/TrackableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AR/TrackableObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AR/TrackableObjectBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AR/TrackableObjectBehavior.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Compass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Compass.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Assets/Shaders/ARKitBackground.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Assets/Shaders/ARKitBackground.shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Assets/Shaders/ARKitLWRPBackground.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Assets/Shaders/ARKitLWRPBackground.shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Assets/Shaders/ARKitURPBackground.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Assets/Shaders/ARKitURPBackground.shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Editor/ObjectTracking/ARObjectInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Editor/ObjectTracking/ARObjectInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/ARKitCameraSubsystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/ARKitCameraSubsystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/ARKitLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/ARKitLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/ARKitReferencePointSubsystem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/ARKitReferencePointSubsystem.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/ARKitSessionSubsystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/ARKitSessionSubsystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/ARWorldMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/ARWorldMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/HumanBody/ARKitXRHumanBodySubsystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/HumanBody/ARKitXRHumanBodySubsystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/Input/InputLayoutLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/Input/InputLayoutLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/Unity.XR.ARKit.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/Unity.XR.ARKit.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/iOS/UnityARKit.m.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/iOS/UnityARKit.m.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/iOS/Xcode1000/UnityARKit.a" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/iOS/Xcode1000/UnityARKit.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/iOS/Xcode1000/UnityARKit.a.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/iOS/Xcode1000/UnityARKit.a.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/iOS/Xcode1100/UnityARKit.a" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/iOS/Xcode1100/UnityARKit.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/iOS/Xcode1100/UnityARKit.a.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/Runtime/iOS/Xcode1100/UnityARKit.a.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.unity.xr.arkit/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="49960220-d93b-408e-9856-921e14d7901d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,22 +35,47 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/ObjectInfoUnitData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/Background.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0D2763AD-8235-4FC6-A022-A2846086CA7B/33/2df025f1/Animation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/LayoutData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SearchingCircles.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ObjectUIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/SimpleTransparent.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/WorldImageSizeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoHolder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UIFadeManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SwipeManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/LayoutWorldUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/TrackableObjectEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AR/TrackableImageBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.unity.xr.arkit/Editor/ObjectTracking/ARObjectInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AR/TrackableImage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AR/TrackableObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AR/BaseTrackable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6F28216F-EA9F-453A-BF2E-05B770ED3EE4/8a/c08e5a04/EditorCompilationInterface.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AR/TrackableObjectBehavior.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/InvertColors.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AppManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/59837000-EBF5-4955-A9CB-1D31CAA86097/65/e46aeb86/GUIUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/59837000-EBF5-4955-A9CB-1D31CAA86097/d4/1d8bcb77/Event.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MKGlowFree/Shaders/VariantsSelective/Legacy/Transparent/MK_Transparent-Overlay.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/1/WireframeShaded-Unlit.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/OverlayNoZTest.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/ba/0f6dc05e/Delegate.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ArrowsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F38C71C8-6AA6-4E29-9D4C-EA9FB7C715E1/19/804b6f74/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/AlwaysVisible1.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObjectMover.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MKGlowFree/Shaders/VariantsSelective/Legacy/Transparent/MK_Transparent-Diffuse.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/ColoredBlended.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LayoutController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/GridOverlay.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Wireframe.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/c1/31dbeb08/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Compass.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WorldPoseToGridMaterial.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AssetVariables/FloatVariable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Wireframe1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WireframeMaterialController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -94,31 +83,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChooseLoadingObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DebugWriter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObjectToCameraAngleController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/ObjectInfoUnitData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0D2763AD-8235-4FC6-A022-A2846086CA7B/33/2df025f1/Animation.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/LayoutData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SearchingCircles.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ObjectUIController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoHolder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UIFadeManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SwipeManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/LayoutWorldUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AR/TrackableImageBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AR/TrackableImage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AR/TrackableObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AR/BaseTrackable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AR/TrackableObjectBehavior.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shaders/InvertColors.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AppManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shaders/OverlayNoZTest.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ArrowsManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObjectMover.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/MKGlowFree/Shaders/VariantsSelective/Legacy/Transparent/MK_Transparent-Diffuse.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LayoutController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Wireframe.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Compass.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WorldPoseToGridMaterial.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -229,7 +193,7 @@
       <workItem from="1592173119026" duration="776000" />
       <workItem from="1592217004850" duration="3905000" />
       <workItem from="1592258563771" duration="1252000" />
-      <workItem from="1592330211243" duration="296000" />
+      <workItem from="1592330211243" duration="619000" />
     </task>
     <servers />
   </component>
