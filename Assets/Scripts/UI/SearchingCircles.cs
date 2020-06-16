@@ -87,7 +87,7 @@ namespace UI
 
         public void Play()
         {
-            Debug.Log("Playing");
+            //Debug.Log("Playing");
             hasRunningAnimation = true;
             activeLoadingAnimation = false;
             outerCircle.sprite = outerCircleStart;
@@ -102,7 +102,7 @@ namespace UI
         public void ShowLoading()
         {
             Play();
-            Debug.Log("Show loading");
+            //Debug.Log("Show loading");
             loadingImage.SetActive(true);
             activeLoadingAnimation = true;
             loadingAnimationTimer = loadingAnimationTime;
