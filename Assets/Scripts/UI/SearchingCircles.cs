@@ -87,6 +87,10 @@ namespace UI
 
         public void Play()
         {
+            if (activeLoadingAnimation)
+            {
+                Debug.Log("Circles: Disabling loading animation");
+            }
             Debug.Log("Circles: Playing");
             hasRunningAnimation = true;
 			activeLoadingAnimation = false;

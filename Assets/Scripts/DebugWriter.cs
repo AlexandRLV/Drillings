@@ -28,7 +28,7 @@ public class DebugWriter : MonoBehaviour
 	private void HandleLog(string condition, string stacktrace, LogType type)
 	{
 		if (type == LogType.Exception)
-			text.text += "\nException: ";
+			text.text += "\nEXCEPTION: ";
 
 		text.text += condition + "\n";
 	}

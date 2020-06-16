@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5408207606566312850}
   - component: {fileID: 5408207606566312849}
   - component: {fileID: 5408207607196680148}
+  - component: {fileID: 644721459}
   m_Layer: 0
   m_Name: ARSessionOrigin
   m_TagString: Untagged
@@ -73,6 +74,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ReferenceLibrary: {fileID: 11400000, guid: a218f574a8621ba428c41307033c51c8, type: 2}
   m_TrackedObjectPrefab: {fileID: 0}
+--- !u!114 &644721459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5408207606566312943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dea56a9eaadd1c439095de4f9a371cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedLibrary: {fileID: 11400000, guid: 8ad47a312849b8549aa39c78a37d27eb,
+    type: 2}
+  m_MaxNumberOfMovingImages: 0
+  m_TrackedImagePrefab: {fileID: 0}
 --- !u!1 &5408207607793220101
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,13 +119,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5408207607793220101}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.296, z: -1.325}
+  m_LocalRotation: {x: 0.0834019, y: -0, z: -0, w: 0.996516}
+  m_LocalPosition: {x: 0.0127, y: 0.689, z: -0.877}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5408207606566312848}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 9.568001, y: 0, z: 0}
 --- !u!20 &5408207607793220104
 Camera:
   m_ObjectHideFlags: 0
@@ -119,7 +136,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_BackGroundColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -226,4 +243,4 @@ MonoBehaviour:
     minValue: 1
     maxValue: 10
   bloomScattering: 5
-  bloomIntensity: 1
+  bloomIntensity: 0.6

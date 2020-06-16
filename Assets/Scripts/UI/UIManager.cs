@@ -61,6 +61,7 @@ namespace UI
             
             if (objectLayout.gameObject.activeSelf)
             {
+                Debug.Log("UIManager: Disabling controls");
                 objectLayout.DisposeLayout();
                 objectLayout.gameObject.SetActive(false);
             }
@@ -100,14 +101,16 @@ namespace UI
             searchingCircles.gameObject.SetActive(false);
             appManager.ShowLoadedLayout();
             EnableControlElements();
+            Debug.Log("Activation finished");
         }
 
     
 
         private void EnableControlElements()
         {
+            Debug.Log("UIManager: Enabling controls");
             objectLayout.gameObject.SetActive(true);
-            objectLayout.layoutController = appManager.CurrentLayout;
+            objectLayout.LayoutController = appManager.CurrentLayout;
             objectLayout.SetUpLayout();
         }
         

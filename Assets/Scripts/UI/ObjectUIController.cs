@@ -9,7 +9,7 @@ namespace UI
 {
     public class ObjectUIController : MonoBehaviour
     {
-        public LayoutController layoutController;
+        public LayoutController LayoutController { get; set; }
         
         [Header("Settings")]
         [SerializeField] private float buttonsTextOffset;
@@ -42,11 +42,11 @@ namespace UI
             }
             
             Debug.Log("ObjectUI: SetUp");
-            layoutController.AudioFinished += GoHome;
+            LayoutController.AudioFinished += GoHome;
             isInMainPage = true;
             isInPlayAllMode = false;
             
-            LayoutData layoutData = layoutController.LayoutData;
+            LayoutData layoutData = LayoutController.LayoutData;
             objectNameText.text = layoutData.objectName;
             unitNameText.gameObject.SetActive(false);
             selectionsParent.SetActive(true);
@@ -103,9 +103,16 @@ namespace UI
         public void DisposeLayout()
         {
             Debug.Log("ObjectUI: Dispose");
+            
+            if (currentRoutine != null)
+            {
+                StopCoroutine(currentRoutine);
+                currentRoutine = null;
+            }
+            
             GoToMainPage();
             
-            layoutController.AudioFinished -= GoHome;
+            LayoutController.AudioFinished -= GoHome;
             
             if (selectionButtons == null || selectionButtons.Count == 0)
                 return;
@@ -158,7 +165,7 @@ namespace UI
         private void GoToMainPage()
         {
             Debug.Log("ObjectUI: ToMainPage");
-            layoutController.Stop();
+            LayoutController.Stop();
             unitNameText.gameObject.SetActive(false);
             selectionsParent.SetActive(true);
             isInMainPage = true;
@@ -177,7 +184,7 @@ namespace UI
                 currentRoutine = null;
             }
 
-            ObjectInfoUnitData unit = layoutController.OpenUnit(unitId);
+            ObjectInfoUnitData unit = LayoutController.OpenUnit(unitId);
             
             if (unit == null)
                 return;
@@ -190,7 +197,7 @@ namespace UI
 
             lastPlayedUnit = unitId;
             
-            layoutController.Play();
+            LayoutController.Play();
         }
 
         private IEnumerator WaitAndPlayNextUnit(float delay)
