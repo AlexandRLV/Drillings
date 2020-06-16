@@ -1191,6 +1191,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00fd6d5069f03a94f990d84bd1faac23, type: 3}
+--- !u!114 &1806394982 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7525704406154406247, guid: 00fd6d5069f03a94f990d84bd1faac23,
+    type: 3}
+  m_PrefabInstance: {fileID: 1806394981}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3859a92a05d4f5d418cb6ca605290e74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1876075107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1413,6 +1425,11 @@ PrefabInstance:
       propertyPath: uiManager
       value: 
       objectReference: {fileID: 1599249778}
+    - target: {fileID: 899190115356457735, guid: c12b55e1c3b04ba4595bb12b984736a9,
+        type: 3}
+      propertyPath: arSession
+      value: 
+      objectReference: {fileID: 1806394982}
     - target: {fileID: 899190115356457752, guid: c12b55e1c3b04ba4595bb12b984736a9,
         type: 3}
       propertyPath: m_LocalPosition.x
