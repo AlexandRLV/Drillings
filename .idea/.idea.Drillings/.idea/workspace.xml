@@ -20,10 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49960220-d93b-408e-9856-921e14d7901d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Layouts/10BC15/1015-2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Layouts/10BC15/1015-2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/ObjectInfoUnitData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/ObjectInfoUnitData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LayoutController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LayoutController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LayoutWorldUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LayoutWorldUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AppManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AppManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SearchingCircles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SearchingCircles.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +40,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/TrackableObjectEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.unity.xr.arkit/Editor/ObjectTracking/ARKitReferenceObjectEntryEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.arsubsystems@3.0.0-preview.4/Runtime/ObjectTrackingSubsystem/XRReferenceObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.unity.xr.arkit/Editor/ObjectTracking/ARObjectImporter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6F28216F-EA9F-453A-BF2E-05B770ED3EE4/8a/c08e5a04/EditorCompilationInterface.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.unity.xr.arkit/Editor/ObjectTracking/ARObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.unity.xr.arkit/Editor/ObjectTracking/ARKitReferenceObjectLibraryBuildProcessor.cs" root0="FORCE_HIGHLIGHTING" />
@@ -98,7 +98,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/WireframeMaterialController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/SwipeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/LayoutData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/SearchingCircles.cs" />
         <option value="$PROJECT_DIR$/Assets/Shaders/SimpleTransparent.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Wireframe.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/TrackableObjectEditor.cs" />
@@ -113,17 +112,18 @@
         <option value="$PROJECT_DIR$/Assets/Shaders/Background.shader" />
         <option value="$PROJECT_DIR$/Assets/Shaders/InvertColors.shader" />
         <option value="$PROJECT_DIR$/Assets/MKGlowFree/Shaders/VariantsSelective/Legacy/Transparent/MK_Transparent-Overlay.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AR/BaseTrackableBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AR/TrackableImage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AR/TrackableImageBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AR/TrackableObjectBehavior.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Compass.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ObjectUIController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AppManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/ObjectInfoUnitData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LayoutController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/LayoutWorldUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AppManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/SearchingCircles.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" />
       </list>
     </option>
   </component>

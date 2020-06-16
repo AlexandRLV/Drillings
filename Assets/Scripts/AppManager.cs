@@ -9,9 +9,6 @@ public class AppManager : MonoBehaviour
 {
     public LayoutController CurrentLayout { get; private set; }
     public string CurrentObjectName { get; private set; }
-
-    [Header("Settings")]
-	[SerializeField] private float noInputReloadTime;
 	
     [Header("References")]
     [SerializeField] private UIManager uiManager;
@@ -20,29 +17,14 @@ public class AppManager : MonoBehaviour
     [Header("Layouts")]
     [SerializeField] private List<LayoutDataContainer> scenesLayoutDataAssets;
 
-	private float reloadWhenInactiveTimer;
 	private Transform objectTransform;
 
 
 
     private void Update()
 	{
-		#if UNITY_EDITOR
-		//return;
-		#endif
-		
 		if (CurrentLayout == null || CurrentLayout.IsPlaying)
 			return;
-		
-		if (Input.touchCount > 0)
-			reloadWhenInactiveTimer = 0;
-		
-		reloadWhenInactiveTimer += Time.deltaTime;
-		if (reloadWhenInactiveTimer >= noInputReloadTime)
-		{
-			compass.StopFollow();
-			reloadWhenInactiveTimer = 0;
-		}
 
 		if (objectTransform == null)
 			return;
@@ -62,9 +44,7 @@ public class AppManager : MonoBehaviour
 	    if (layoutContainer == null)
 		    return;
 
-	    reloadWhenInactiveTimer = 0;
-		
-		CurrentObjectName = layoutContainer.objectName;
+	    CurrentObjectName = layoutContainer.objectName;
 		objectTransform = targetTransform;
 		
 		CurrentLayout = Instantiate(layoutContainer.sceneRoot, targetTransform.position, Quaternion.identity).GetComponent<LayoutController>();

@@ -41,15 +41,14 @@ namespace UI
             if (arTrackedImageManager != null)
                 arTrackedImageManager.enabled = false;
             
-            
             searchingCircles.gameObject.SetActive(false);
             objectLayout.gameObject.SetActive(false);
         
             StartCoroutine(Loading(loadingTime));
         }
-    
-    
-        public void EnableControlElements()
+
+
+        private void EnableControlElements()
         {
             objectLayout.gameObject.SetActive(true);
             objectLayout.layoutController = appManager.CurrentLayout;
