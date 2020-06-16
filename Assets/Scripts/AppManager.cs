@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Data;
 using UI;
+using UnityEngine.XR.ARFoundation;
 
 public class AppManager : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class AppManager : MonoBehaviour
     [Header("References")]
     [SerializeField] private UIManager uiManager;
     [SerializeField] private Compass compass;
+    [SerializeField] private ARSession arSession;
 
     [Header("Layouts")]
     [SerializeField] private List<LayoutDataContainer> scenesLayoutDataAssets;
@@ -80,6 +82,8 @@ public class AppManager : MonoBehaviour
         objectTransform = null;
         Debug.Log("AppManager: Deactivated");
         
+        arSession.Reset();
+
         return true;
     }
 
