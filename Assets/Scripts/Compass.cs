@@ -33,10 +33,10 @@ public class Compass : MonoBehaviour
 
     public void StartFollow(Transform targetObject)
     {
-        Debug.Log("Compass: Start");
+        //Debug.Log("Compass: Start");
         if (isFollowing)
         {
-            Debug.Log("Compass: Already started");
+            //Debug.Log("Compass: Already started");
             return;
         }
     
@@ -47,9 +47,9 @@ public class Compass : MonoBehaviour
     [ContextMenu("Stop Follow")]
     public void StopFollow()
     {
-        Debug.Log("");
-        Debug.Log("Disabling an object:");
-        Debug.Log("Compass: Stop");
+        //Debug.Log("");
+        //Debug.Log("Disabling an object:");
+        //Debug.Log("Compass: Stop");
         if (!appManager.DeactivateCurrentLayout())
         {
             Debug.Log("Compass: Deactivation not completed");
@@ -60,7 +60,7 @@ public class Compass : MonoBehaviour
         angle = -1;
         distance = -1;
         target = null;
-        Debug.Log("Disabling finished");
+        //Debug.Log("Disabling finished");
     }
 
     public bool SuitableAngleAndDistance(Transform target)

@@ -89,9 +89,9 @@ namespace UI
         {
             if (activeLoadingAnimation)
             {
-                Debug.Log("Circles: Disabling loading animation");
+                //Debug.Log("Circles: Disabling loading animation");
             }
-            Debug.Log("Circles: Playing");
+            //Debug.Log("Circles: Playing");
             hasRunningAnimation = true;
 			activeLoadingAnimation = false;
             outerCircle.sprite = outerCircleStart;
@@ -106,7 +106,7 @@ namespace UI
         public void ShowLoading()
         {
             Play();
-            Debug.Log("Circles: Show loading");
+            //Debug.Log("Circles: Show loading");
             loadingImage.SetActive(true);
             activeLoadingAnimation = true;
             loadingAnimationTimer = loadingAnimationTime;
@@ -115,14 +115,14 @@ namespace UI
 
         public void Show()
         {
-            Debug.Log("Circles: Show");
+            //Debug.Log("Circles: Show");
             uiManager.Show();
         }
 
 
         private void StopLoadingAnimation()
         {
-            Debug.Log("Circles: Stop loading");
+            //Debug.Log("Circles: Stop loading");
             hasRunningAnimation = false;
             activeLoadingAnimation = false;
             loadingImage.SetActive(false);

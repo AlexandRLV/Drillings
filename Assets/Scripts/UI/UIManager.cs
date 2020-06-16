@@ -52,7 +52,7 @@ namespace UI
 
         public void DisableControlElements()
         {
-            Debug.Log("UIManager: Disabling control elements");
+            //Debug.Log("UIManager: Disabling control elements");
             if (currentRoutine != null)
             {
                 StopCoroutine(currentRoutine);
@@ -61,7 +61,7 @@ namespace UI
             
             if (objectLayout.gameObject.activeSelf)
             {
-                Debug.Log("UIManager: Disabling controls");
+                //Debug.Log("UIManager: Disabling controls");
                 objectLayout.DisposeLayout();
                 objectLayout.gameObject.SetActive(false);
             }
@@ -72,7 +72,7 @@ namespace UI
 
         public void ShowLoadingAnimation()
         {
-            Debug.Log("UIManager: Enabling loading animation");
+            //Debug.Log("UIManager: Enabling loading animation");
             searchingCircles.gameObject.SetActive(true);
             searchingCircles.ShowLoading();
         }
@@ -82,7 +82,7 @@ namespace UI
         // Methods for buttons control
         public void DisableIntroLayout()
         {
-            Debug.Log("UIManager: Disabling intro layout");
+            //Debug.Log("UIManager: Disabling intro layout");
             introLayout.SetActive(false);
             
             if (arTrackedObjectManager != null)
@@ -97,18 +97,18 @@ namespace UI
 
         public void Show()
         {
-            Debug.Log("UIManager: Showing object");
+            //Debug.Log("UIManager: Showing object");
             searchingCircles.gameObject.SetActive(false);
             appManager.ShowLoadedLayout();
             EnableControlElements();
-            Debug.Log("Activation finished");
+            //Debug.Log("Activation finished");
         }
 
     
 
         private void EnableControlElements()
         {
-            Debug.Log("UIManager: Enabling controls");
+            //Debug.Log("UIManager: Enabling controls");
             objectLayout.gameObject.SetActive(true);
             objectLayout.LayoutController = appManager.CurrentLayout;
             objectLayout.SetUpLayout();

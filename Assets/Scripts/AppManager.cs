@@ -33,12 +33,12 @@ public class AppManager : MonoBehaviour
 
     public void ActivateLayout(string objectName, Transform targetTransform)
     {
-	    Debug.Log("");
-	    Debug.Log("Activation of new object:");
-	    Debug.Log($"AppManager: Activating {objectName}");
+	    // Debug.Log("");
+	    // Debug.Log("Activation of new object:");
+	    // Debug.Log($"AppManager: Activating {objectName}");
 	    if (CurrentLayout != null || !string.IsNullOrWhiteSpace(CurrentObjectName))
 	    {
-		    Debug.Log($"AppManager: Already activated object, returning");
+		    // Debug.Log($"AppManager: Already activated object, returning");
 		    return;
 	    }
 	    
@@ -47,7 +47,7 @@ public class AppManager : MonoBehaviour
 	    if (layoutContainer == null)
 		    return;
 	    
-	    Debug.Log($"AppManager: Found data for {objectName}");
+	    // Debug.Log($"AppManager: Found data for {objectName}");
 		
 		CurrentObjectName = layoutContainer.objectName;
 		objectTransform = targetTransform;
@@ -57,7 +57,7 @@ public class AppManager : MonoBehaviour
 		CurrentLayout.gameObject.SetActive(false);
 		CurrentLayout.LayoutData.ResetUnit();
 		
-		Debug.Log($"AppManager: Activated {objectName}");
+		// Debug.Log($"AppManager: Activated {objectName}");
 		
 		compass.StartFollow(CurrentLayout.ObjectTransform);
 		
@@ -66,10 +66,10 @@ public class AppManager : MonoBehaviour
     
     public bool DeactivateCurrentLayout()
     {
-	    Debug.Log("AppManager: Deactivating");
+	    // Debug.Log("AppManager: Deactivating");
         if (CurrentLayout == null)
         {
-	        Debug.Log("AppManager: No active layout");
+	        // Debug.Log("AppManager: No active layout");
 	        return false;
         }
         
@@ -78,14 +78,14 @@ public class AppManager : MonoBehaviour
         CurrentLayout = null;
         CurrentObjectName = null;
         objectTransform = null;
-        Debug.Log("AppManager: Deactivated");
+        // Debug.Log("AppManager: Deactivated");
 
         return true;
     }
 
     public void ShowLoadedLayout()
     {
-	    Debug.Log("AppManager: Show");
+	    // Debug.Log("AppManager: Show");
         CurrentLayout.gameObject.SetActive(true);
         CurrentLayout.SetUpUnit();
     }

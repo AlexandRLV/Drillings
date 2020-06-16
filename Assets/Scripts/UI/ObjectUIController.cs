@@ -41,7 +41,7 @@ namespace UI
                 currentRoutine = null;
             }
             
-            Debug.Log("ObjectUI: SetUp");
+            //Debug.Log("ObjectUI: SetUp");
             LayoutController.AudioFinished += GoHome;
             isInMainPage = true;
             isInPlayAllMode = false;
@@ -102,7 +102,7 @@ namespace UI
 
         public void DisposeLayout()
         {
-            Debug.Log("ObjectUI: Dispose");
+            //Debug.Log("ObjectUI: Dispose");
             
             if (currentRoutine != null)
             {
@@ -164,7 +164,7 @@ namespace UI
 
         private void GoToMainPage()
         {
-            Debug.Log("ObjectUI: ToMainPage");
+            //Debug.Log("ObjectUI: ToMainPage");
             LayoutController.Stop();
             unitNameText.gameObject.SetActive(false);
             selectionsParent.SetActive(true);

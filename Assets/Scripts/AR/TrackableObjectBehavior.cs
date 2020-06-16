@@ -44,7 +44,7 @@ namespace AR
             if (appManager.CurrentObjectName == sceneToLoad)
                 return;
 
-            Debug.Log("Enabling behaviour");
+            //Debug.Log("Enabling behaviour");
 
 #if UNITY_EDITOR
             if (objectTransform == null)
