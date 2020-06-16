@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   referenceImageName: 160
-  arTrackedImageManager: {fileID: 644721459}
+  arTrackedImageManager: {fileID: 0}
 --- !u!4 &419329248
 Transform:
   m_ObjectHideFlags: 0
@@ -309,28 +309,18 @@ MonoBehaviour:
   - {fileID: 32900000, guid: 6c173ac1e2d44a2488e239d69b51309d, type: 3}
   - {fileID: 32900000, guid: 5d762632789b7bd41b08ed596a51d3c0, type: 3}
   players: []
---- !u!1 &644721455 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5408207606566312943, guid: ca46050cd94fb8841a1be37d790ad049,
+--- !u!114 &644721457 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 644721459, guid: ca46050cd94fb8841a1be37d790ad049,
     type: 3}
   m_PrefabInstance: {fileID: 5408207607196680144}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &644721459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 644721455}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4dea56a9eaadd1c439095de4f9a371cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SerializedLibrary: {fileID: 11400000, guid: 8ad47a312849b8549aa39c78a37d27eb,
-    type: 2}
-  m_MaxNumberOfMovingImages: 0
-  m_TrackedImagePrefab: {fileID: 0}
 --- !u!1 &667639672
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,7 +588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   referenceImageName: 1015
-  arTrackedImageManager: {fileID: 644721459}
+  arTrackedImageManager: {fileID: 0}
 --- !u!4 &1218895304
 Transform:
   m_ObjectHideFlags: 0
@@ -802,7 +792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f09029d399585148891d9940bef5c52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  referenceObjectName: Test
+  referenceObjectName: Test250
   arTrackedObjectManager: {fileID: 5408207607196680148}
 --- !u!4 &1872360557
 Transform:
@@ -864,7 +854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f09029d399585148891d9940bef5c52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  referenceObjectName: Test
+  referenceObjectName: Test160
   arTrackedObjectManager: {fileID: 5408207607196680148}
 --- !u!4 &2014930830
 Transform:
@@ -939,7 +929,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   referenceImageName: 250
-  arTrackedImageManager: {fileID: 644721459}
+  arTrackedImageManager: {fileID: 0}
 --- !u!4 &2035807051
 Transform:
   m_ObjectHideFlags: 0
@@ -1000,7 +990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f09029d399585148891d9940bef5c52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  referenceObjectName: Test
+  referenceObjectName: Test1015
   arTrackedObjectManager: {fileID: 5408207607196680148}
 --- !u!4 &2061838715
 Transform:
@@ -1102,10 +1092,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1417663821, guid: ca46050cd94fb8841a1be37d790ad049, type: 3}
-      propertyPath: bloomIntensity
-      value: 0.6
-      objectReference: {fileID: 0}
     - target: {fileID: 5408207606566312848, guid: ca46050cd94fb8841a1be37d790ad049,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1166,72 +1152,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ARSessionOrigin
       objectReference: {fileID: 0}
-    - target: {fileID: 5408207607196680148, guid: ca46050cd94fb8841a1be37d790ad049,
-        type: 3}
-      propertyPath: m_ReferenceLibrary
-      value: 
-      objectReference: {fileID: 11400000, guid: a218f574a8621ba428c41307033c51c8,
-        type: 2}
-    - target: {fileID: 5408207607793220104, guid: ca46050cd94fb8841a1be37d790ad049,
-        type: 3}
-      propertyPath: m_ClearFlags
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5408207607793220104, guid: ca46050cd94fb8841a1be37d790ad049,
-        type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0.19607843
-      objectReference: {fileID: 0}
-    - target: {fileID: 5408207607793220104, guid: ca46050cd94fb8841a1be37d790ad049,
-        type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0.19607843
-      objectReference: {fileID: 0}
-    - target: {fileID: 5408207607793220104, guid: ca46050cd94fb8841a1be37d790ad049,
-        type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0.19607843
-      objectReference: {fileID: 0}
-    - target: {fileID: 5408207607793220105, guid: ca46050cd94fb8841a1be37d790ad049,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.877
-      objectReference: {fileID: 0}
-    - target: {fileID: 5408207607793220105, guid: ca46050cd94fb8841a1be37d790ad049,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.0127
-      objectReference: {fileID: 0}
-    - target: {fileID: 5408207607793220105, guid: ca46050cd94fb8841a1be37d790ad049,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.689
-      objectReference: {fileID: 0}
-    - target: {fileID: 5408207607793220105, guid: ca46050cd94fb8841a1be37d790ad049,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.0834019
-      objectReference: {fileID: 0}
-    - target: {fileID: 5408207607793220105, guid: ca46050cd94fb8841a1be37d790ad049,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5408207607793220105, guid: ca46050cd94fb8841a1be37d790ad049,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5408207607793220105, guid: ca46050cd94fb8841a1be37d790ad049,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.996516
-      objectReference: {fileID: 0}
-    - target: {fileID: 5408207607793220105, guid: ca46050cd94fb8841a1be37d790ad049,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 9.568001
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca46050cd94fb8841a1be37d790ad049, type: 3}
 --- !u!4 &5408207607196680145 stripped
@@ -1246,7 +1166,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 5408207607196680144}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 644721455}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f07ca66ce5514fb7a26ab1e51e9bfec, type: 3}
@@ -1319,7 +1239,7 @@ PrefabInstance:
         type: 3}
       propertyPath: arTrackedImageManager
       value: 
-      objectReference: {fileID: 644721459}
+      objectReference: {fileID: 644721457}
     - target: {fileID: 5751776492184187886, guid: c97a69ff63d9fce438c670fa966c9223,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -13,7 +13,6 @@
             <e p="EmbedPackage.cs" t="Include" />
           </e>
         </e>
-        <e p="link.xml" t="Include" />
         <e p="MKGlowFree" t="Include">
           <e p="Editor" t="Include">
             <e p="EditorHelper.cs" t="Include" />
@@ -155,7 +154,6 @@
           <e p="Editor" t="Include">
             <e p="TrackableObjectEditor.cs" t="Include" />
           </e>
-          <e p="GDocsWriter.cs" t="Include" />
           <e p="ImageToCameraRotator.cs" t="Include" />
           <e p="LayoutController.cs" t="Include" />
           <e p="ObjectMover.cs" t="Include" />
