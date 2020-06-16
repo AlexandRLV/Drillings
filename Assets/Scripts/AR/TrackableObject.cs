@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
@@ -19,7 +20,6 @@ namespace AR
 
         private TrackingState currentTrackingState = TrackingState.None;
 
-
         private void OnEnable()
         {
             arTrackedObjectManager.trackedObjectsChanged += OnTrackedObjectsChanged;
@@ -29,7 +29,6 @@ namespace AR
         {
             arTrackedObjectManager.trackedObjectsChanged -= OnTrackedObjectsChanged;
         }
-
 
 
         private void OnTrackedObjectsChanged(ARTrackedObjectsChangedEventArgs args)
@@ -65,13 +64,19 @@ namespace AR
             if (currentTrackingState != prevTrackingState)
             {
                 if (currentTrackingState == TrackingState.Tracking)
+                {
                     InvokeOnTrackableFound(trackedObject);
+                }
                 else
+                {
                     InvokeOnTrackableLost();
+                }
             }
             
             if (currentTrackingState != TrackingState.None)
+            {
                 InvokeOnTrackableUpdated(trackedObject);
+            }
         }
 
         private void ProcessRemovedObjects(List<ARTrackedObject> removed)

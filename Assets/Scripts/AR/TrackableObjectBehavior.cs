@@ -13,7 +13,7 @@ namespace AR
         [SerializeField] private AppManager appManager;
         [SerializeField] private Compass compass;
 
-        private Transform objectTransform;
+        public Transform objectTransform;
         private bool isLoaded;
         
 

@@ -18,7 +18,13 @@ public class Compass : MonoBehaviour
     [SerializeField] private Transform arCamera;
     [SerializeField] private AppManager appManager;
 
-    
+    private float sqrMaxDistance;
+
+    private void Awake()
+    {
+        sqrMaxDistance = maxDistance * maxDistance;
+    }
+
     private void Update()
     {
         if (!isFollowing)
@@ -26,7 +32,7 @@ public class Compass : MonoBehaviour
 
         CalculateAngleAndDistance();
 
-        if (angle > maxAngle || distance > maxDistance)
+        if (angle > maxAngle || distance > sqrMaxDistance)
             StopFollow();
     }
     
@@ -62,20 +68,11 @@ public class Compass : MonoBehaviour
         target = null;
         //Debug.Log("Disabling finished");
     }
-
-    public bool SuitableAngleAndDistance(Transform target)
-    {
-        Vector3 direction = target.position - arCamera.position;
-        float angle = Vector3.Angle(arCamera.forward, direction);
-        float distance = direction.magnitude;
-
-        return angle < maxAngle && distance < maxDistance;
-    }
     
     private void CalculateAngleAndDistance()
     {
         Vector3 direction = target.position - arCamera.position;
         angle = Vector3.Angle(arCamera.forward, direction);
-        distance = direction.magnitude;
+        distance = direction.sqrMagnitude;
     }
 }

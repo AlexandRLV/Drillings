@@ -229,6 +229,7 @@ MonoBehaviour:
   trackableObject: {fileID: 530806160}
   appManager: {fileID: 2021286671}
   compass: {fileID: 229066135}
+  objectTransform: {fileID: 0}
 --- !u!114 &530806160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -355,6 +356,7 @@ MonoBehaviour:
   trackableObject: {fileID: 667639674}
   appManager: {fileID: 2021286671}
   compass: {fileID: 229066135}
+  objectTransform: {fileID: 0}
 --- !u!114 &667639674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -649,6 +651,7 @@ MonoBehaviour:
   trackableObject: {fileID: 1362105967}
   appManager: {fileID: 2021286671}
   compass: {fileID: 229066135}
+  objectTransform: {fileID: 0}
 --- !u!114 &1362105967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -983,6 +986,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: ARSessionOrigin
       objectReference: {fileID: 0}
+    - target: {fileID: 5408207607196680148, guid: ca46050cd94fb8841a1be37d790ad049,
+        type: 3}
+      propertyPath: m_ReferenceLibrary
+      value: 
+      objectReference: {fileID: 11400000, guid: a218f574a8621ba428c41307033c51c8,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca46050cd94fb8841a1be37d790ad049, type: 3}
 --- !u!4 &5408207607196680145 stripped

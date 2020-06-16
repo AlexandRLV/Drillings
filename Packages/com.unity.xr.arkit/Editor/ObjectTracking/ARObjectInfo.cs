@@ -98,8 +98,8 @@ namespace UnityEditor.XR.ARKit
                 return defaultValue;
 
             return new Vector3(
-                 float.Parse(reals[0].InnerText, CultureInfo.InvariantCulture),
-                 float.Parse(reals[1].InnerText, CultureInfo.InvariantCulture),
+                float.Parse(reals[0].InnerText, CultureInfo.InvariantCulture),
+                float.Parse(reals[1].InnerText, CultureInfo.InvariantCulture),
                 -float.Parse(reals[2].InnerText, CultureInfo.InvariantCulture));
         }
 
@@ -117,8 +117,8 @@ namespace UnityEditor.XR.ARKit
                 return defaultValue;
 
             return new Quaternion(
-                 float.Parse(reals[0].InnerText, CultureInfo.InvariantCulture),
-                 float.Parse(reals[1].InnerText, CultureInfo.InvariantCulture),
+                float.Parse(reals[0].InnerText, CultureInfo.InvariantCulture),
+                float.Parse(reals[1].InnerText, CultureInfo.InvariantCulture),
                 -float.Parse(reals[2].InnerText, CultureInfo.InvariantCulture),
                 -float.Parse(reals[3].InnerText, CultureInfo.InvariantCulture));
         }
