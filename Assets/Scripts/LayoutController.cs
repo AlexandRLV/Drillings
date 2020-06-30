@@ -7,9 +7,9 @@ using UI;
 public class LayoutController : MonoBehaviour
 {
     public event Action<bool> AudioFinished;
-    public LayoutData LayoutData { get; set; }
-    public bool IsPlaying { get; private set; }
+    public LayoutData LayoutData => data;
     public Transform ObjectTransform => objectAnimation.transform;
+    private bool IsPlaying { get; set; }
 	
     [Header("References")]
     [SerializeField] private Animation miniatureAnimation;
@@ -17,8 +17,9 @@ public class LayoutController : MonoBehaviour
     [SerializeField] private AudioSource voiceSource;
     [SerializeField] private LayoutWorldUI layoutUI;
     [SerializeField] private Transform[] referencePoints;
-	
-	[Header("Assets")]
+
+    [Header("Assets")]
+    [SerializeField] private LayoutData data;
 	[SerializeField] private AnimationClip emptyMiniature;
 	[SerializeField] private AnimationClip emptyObject;
     
@@ -32,8 +33,6 @@ public class LayoutController : MonoBehaviour
         if (!IsPlaying)
             return;
 
-        //elapsedTime += Time.deltaTime;
-        
         if (voiceSource.isPlaying)
             return;
 
@@ -49,6 +48,12 @@ public class LayoutController : MonoBehaviour
         if (currentRoutine == null)
             currentRoutine = StartCoroutine(WaitAndPlayNextUnitVoice(unit.delayBetweenVoices, unit));
     }
+
+    private void OnEnable()
+    {
+        LayoutData.ResetUnit();
+    }
+
 
     public ObjectInfoUnitData OpenUnit(int unitId)
     {

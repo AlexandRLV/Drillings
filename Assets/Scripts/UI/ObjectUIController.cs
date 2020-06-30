@@ -113,6 +113,7 @@ namespace UI
             GoToMainPage();
             
             LayoutController.AudioFinished -= GoHome;
+            LayoutController = null;
             
             if (selectionButtons == null || selectionButtons.Count == 0)
                 return;
@@ -199,6 +200,8 @@ namespace UI
             
             LayoutController.Play();
         }
+        
+        
 
         private IEnumerator WaitAndPlayNextUnit(float delay)
         {

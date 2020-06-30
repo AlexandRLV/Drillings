@@ -1898,6 +1898,7 @@ MonoBehaviour:
   - {fileID: 2933742778462800767}
   - {fileID: 6958567110460619426}
   - {fileID: 3607824274004325767}
+  data: {fileID: 11400000, guid: 23e32da96f37ff94d94d9641b739c23d, type: 2}
   emptyMiniature: {fileID: 7400000, guid: be440199e98b4f94a819bf862f196e1c, type: 2}
   emptyObject: {fileID: 7400000, guid: 096b4bddbe6682d45971b7b51f34a69f, type: 2}
 --- !u!82 &2933742778110247387

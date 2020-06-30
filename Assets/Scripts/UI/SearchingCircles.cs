@@ -106,7 +106,6 @@ namespace UI
         public void ShowLoading()
         {
             Play();
-            //Debug.Log("Circles: Show loading");
             loadingImage.SetActive(true);
             activeLoadingAnimation = true;
             loadingAnimationTimer = loadingAnimationTime;
@@ -115,18 +114,15 @@ namespace UI
 
         public void Show()
         {
-            //Debug.Log("Circles: Show");
             uiManager.Show();
         }
 
 
         private void StopLoadingAnimation()
         {
-            //Debug.Log("Circles: Stop loading");
             hasRunningAnimation = false;
             activeLoadingAnimation = false;
             loadingImage.SetActive(false);
-            //startButton.SetActive(true);
             innerCircle.transform.localScale = Vector3.one;
             outerCircle.transform.localScale = Vector3.one;
             outerCircle.sprite = outerCircleFinal;

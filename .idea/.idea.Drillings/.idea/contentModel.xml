@@ -129,12 +129,9 @@
         <e p="Scripts" t="Include">
           <e p="AppManager.cs" t="Include" />
           <e p="AR" t="Include">
-            <e p="BaseTrackable.cs" t="Include" />
             <e p="LightEstimator.cs" t="Include" />
-            <e p="TrackableImage.cs" t="Include" />
-            <e p="TrackableImageBehaviour.cs" t="Include" />
-            <e p="TrackableObject.cs" t="Include" />
-            <e p="TrackableObjectBehavior.cs" t="Include" />
+            <e p="Trackable.cs" t="Include" />
+            <e p="TrackingManager.cs" t="Include" />
           </e>
           <e p="ArrowsManager.cs" t="Include" />
           <e p="AssetVariables" t="Include">
@@ -143,7 +140,6 @@
             <e p="ColorVariable.cs" t="Include" />
             <e p="FloatVariable.cs" t="Include" />
           </e>
-          <e p="ChooseLoadingObject.cs" t="Include" />
           <e p="Compass.cs" t="Include" />
           <e p="Data" t="Include">
             <e p="LayoutData.cs" t="Include" />
@@ -152,12 +148,11 @@
           <e p="DebugWriter.cs" t="Include" />
           <e p="DrillController.cs" t="Include" />
           <e p="Editor" t="Include">
-            <e p="TrackableObjectEditor.cs" t="Include" />
+            <e p="TrackingManagerEditor.cs" t="Include" />
           </e>
           <e p="ImageToCameraRotator.cs" t="Include" />
           <e p="LayoutController.cs" t="Include" />
           <e p="ObjectMover.cs" t="Include" />
-          <e p="ObjectToCameraAngleController.cs" t="Include" />
           <e p="SelectionBlink.cs" t="Include" />
           <e p="SetUpMaterial.cs" t="Include" />
           <e p="UI" t="Include">

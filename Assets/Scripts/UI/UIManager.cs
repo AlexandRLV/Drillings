@@ -69,20 +69,12 @@ namespace UI
             searchingCircles.gameObject.SetActive(true);
             searchingCircles.Play();
         }
-
-        public void ShowLoadingAnimation()
-        {
-            //Debug.Log("UIManager: Enabling loading animation");
-            searchingCircles.gameObject.SetActive(true);
-            searchingCircles.ShowLoading();
-        }
-    
-
-    
+        
+        
+        
         // Methods for buttons control
         public void DisableIntroLayout()
         {
-            //Debug.Log("UIManager: Disabling intro layout");
             introLayout.SetActive(false);
             
             if (arTrackedObjectManager != null)
@@ -97,20 +89,16 @@ namespace UI
 
         public void Show()
         {
-            //Debug.Log("UIManager: Showing object");
             searchingCircles.gameObject.SetActive(false);
-            appManager.ShowLoadedLayout();
             EnableControlElements();
-            //Debug.Log("Activation finished");
         }
 
     
 
         private void EnableControlElements()
         {
-            //Debug.Log("UIManager: Enabling controls");
             objectLayout.gameObject.SetActive(true);
-            objectLayout.LayoutController = appManager.CurrentLayout;
+            objectLayout.LayoutController = appManager.CurrentTrackable.LayoutController;
             objectLayout.SetUpLayout();
         }
         

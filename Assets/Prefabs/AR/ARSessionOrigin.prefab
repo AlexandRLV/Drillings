@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5408207606566312849}
   - component: {fileID: 5408207607196680148}
   - component: {fileID: 644721459}
+  - component: {fileID: 5408207607196680149}
   m_Layer: 0
   m_Name: ARSessionOrigin
   m_TagString: Untagged
@@ -90,6 +91,27 @@ MonoBehaviour:
     type: 2}
   m_MaxNumberOfMovingImages: 0
   m_TrackedImagePrefab: {fileID: 0}
+--- !u!114 &5408207607196680149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5408207606566312943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e86269a7acbf71841bb4e28fc3ac933d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angleToHide: 90
+  appManager: {fileID: 0}
+  trackables:
+  - referenceName: 1015
+    targetObject: {fileID: 0}
+  - referenceName: 160
+    targetObject: {fileID: 0}
+  - referenceName: 250
+    targetObject: {fileID: 0}
 --- !u!1 &5408207607793220101
 GameObject:
   m_ObjectHideFlags: 0
