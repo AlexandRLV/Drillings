@@ -17,8 +17,10 @@ public class AppManager : MonoBehaviour
 
 	public void ActivateLayout(Trackable trackable)
     {
+	    Debug.Log($"Activating layout {trackable.ReferenceName}");
 	    if (CurrentTrackable != null)
 	    {
+		    Debug.Log($"Already activated: {CurrentTrackable.ReferenceName}");
 		    return;
 	    }
 
@@ -33,10 +35,13 @@ public class AppManager : MonoBehaviour
     
     public bool DeactivateCurrentLayout()
     {
+	    Debug.Log("Deactivating layout");
         if (CurrentTrackable == null)
         {
+	        Debug.Log("Deactivation failed: no active layout");
 	        return false;
         }
+        Debug.Log($"Deactivating {CurrentTrackable.ReferenceName}");
         
         uiManager.DisableControlElements();
         CurrentTrackable.Disable();

@@ -9,7 +9,8 @@ namespace AR
     [RequireComponent(typeof(ARTrackedObjectManager))]
     public class TrackingManager : MonoBehaviour
     {
-        public Trackable[] Trackables => trackables;
+        public IEnumerable<Trackable> Trackables => trackables;
+        public bool IsInSearchMode { get; set; }
         
         [Header("Settings")]
         [SerializeField] private float angleToHide;
@@ -66,6 +67,7 @@ namespace AR
         // AR Tracked Manager event's handlers
         private void TrackedObjectsChanged(ARTrackedObjectsChangedEventArgs obj)
         {
+            Debug.Log("Tracked objects changed");
             foreach (ARTrackedObject o in obj.added)
             {
                 HandleAdded(o);
@@ -91,7 +93,7 @@ namespace AR
                 return;
             
             trackable.UpdateObjectTransform(trackedObject.transform);
-            appManager.ActivateLayout(trackable);
+            EnableTrackable(trackable);
         }
 
         private void HandleUpdated(ARTrackedObject trackedObject)
@@ -107,7 +109,7 @@ namespace AR
             trackable.UpdateObjectTransform(trackedObject.transform);
         
             if (!trackable.IsActive)
-                appManager.ActivateLayout(trackable);
+                EnableTrackable(trackable);
         }
 
         private void HandleRemoved(ARTrackedObject trackedObject)
@@ -145,9 +147,18 @@ namespace AR
                 Vector3 directionToTr = trackable.Position - cameraTransform.transform.position;
                 if (Vector3.Angle(directionToTr, cameraTransform.transform.forward) < angleToShow)
                 {
-                    appManager.ActivateLayout(trackable);
+                    EnableTrackable(trackable);
                 }
             }
+        }
+
+        private void EnableTrackable(Trackable t)
+        {
+            Debug.Log($"Enabling {t.ReferenceName}");
+            if (IsInSearchMode)
+                appManager.ActivateLayout(t);
+            else
+                Debug.Log("Enabling failed, not in search mode");
         }
     }
 }

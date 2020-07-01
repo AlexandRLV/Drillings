@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using AR;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 
@@ -15,9 +16,10 @@ namespace UI
         [Header("References")]
         [SerializeField] private AppManager appManager;
         [SerializeField] private SearchingCircles searchingCircles;
-        [SerializeField] private ARTrackedObjectManager arTrackedObjectManager;
-        [SerializeField] private ARTrackedImageManager arTrackedImageManager;
         [SerializeField] private ObjectUIController objectLayout;
+        [SerializeField] private TrackingManager trackingManager;
+        
+        [Header("UI elements")]
         [SerializeField] private GameObject introLayout;
         [SerializeField] private GameObject loadingIndicator;
         [SerializeField] private GameObject loadingText;
@@ -34,13 +36,8 @@ namespace UI
             startButton.SetActive(false);
             loadingIndicator.SetActive(true);
             loadingText.SetActive(true);
-            
-            if (arTrackedObjectManager != null)
-                arTrackedObjectManager.enabled = false;
-            
-            if (arTrackedImageManager != null)
-                arTrackedImageManager.enabled = false;
-            
+
+            trackingManager.IsInSearchMode = false;
             
             searchingCircles.gameObject.SetActive(false);
             objectLayout.gameObject.SetActive(false);
@@ -76,12 +73,8 @@ namespace UI
         public void DisableIntroLayout()
         {
             introLayout.SetActive(false);
-            
-            if (arTrackedObjectManager != null)
-                arTrackedObjectManager.enabled = true;
-            
-            if (arTrackedImageManager != null)
-                arTrackedImageManager.enabled = true;
+
+            trackingManager.IsInSearchMode = true;
             
             objectLayout.gameObject.SetActive(false);
             searchingCircles.gameObject.SetActive(true);
