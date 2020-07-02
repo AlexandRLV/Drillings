@@ -17,16 +17,31 @@ MonoBehaviour:
   m_ReferenceObjects:
   - m_GuidLow: 5740562145721904318
     m_GuidHigh: 2724479852866539910
-    m_Name: 1015
+    m_Name: 1015-1
     m_Entries:
     - {fileID: -6831329414088302235, guid: bef5f2c114bd2ea4e88cc7826dd34aba, type: 3}
   - m_GuidLow: 5655031877908446052
     m_GuidHigh: 10333570927413928337
-    m_Name: 160
+    m_Name: 160-1
     m_Entries:
     - {fileID: -6831329414088302235, guid: 61b6082ac7ff63f44994889a1f099ff2, type: 3}
   - m_GuidLow: 5408777109892453756
     m_GuidHigh: 3051904050350079160
-    m_Name: 250
+    m_Name: 250-1
     m_Entries:
     - {fileID: -6831329414088302235, guid: 30bd4f976283c414d9aaf42b1db188e2, type: 3}
+  - m_GuidLow: 5524609560220990491
+    m_GuidHigh: 4801775885066144391
+    m_Name: 1015-2
+    m_Entries:
+    - {fileID: -6831329414088302235, guid: a432d1ebe5e6b4973acfe6a355efac0c, type: 3}
+  - m_GuidLow: 5246064304097421715
+    m_GuidHigh: 14679906699763173038
+    m_Name: 160-2
+    m_Entries:
+    - {fileID: -6831329414088302235, guid: 5a76a859c72334dd894c3ed711a33818, type: 3}
+  - m_GuidLow: 4903784776814170032
+    m_GuidHigh: 13854296406978799765
+    m_Name: 250-2
+    m_Entries:
+    - {fileID: -6831329414088302235, guid: 6227a27fdeb7749cab447fa42c01283d, type: 3}

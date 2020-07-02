@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5408207606566312850}
   - component: {fileID: 5408207606566312849}
   - component: {fileID: 5408207607196680148}
-  - component: {fileID: 5408207607196680147}
   - component: {fileID: 5408207607196680149}
   m_Layer: 0
   m_Name: ARSessionOrigin
@@ -73,22 +72,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f07ca66ce5514fb7a26ab1e51e9bfec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ReferenceLibrary: {fileID: 11400000, guid: 4a0e959746562fa4fb0acd304259fbdf, type: 2}
+  m_ReferenceLibrary: {fileID: 11400000, guid: a218f574a8621ba428c41307033c51c8, type: 2}
   m_TrackedObjectPrefab: {fileID: 0}
---- !u!114 &5408207607196680147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5408207606566312943}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ab0e80cee9cc1d44928bfe488dd1e2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PointCloudPrefab: {fileID: 6335328086745312120, guid: 6fc0970f3a5ac6c46b213bb2fcbe43b8,
-    type: 3}
 --- !u!114 &5408207607196680149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,12 +90,30 @@ MonoBehaviour:
   angleToShow: 5
   appManager: {fileID: 0}
   trackables:
-  - referenceName: 1015
+  - referenceName: 1015-1
     targetObject: {fileID: 0}
-  - referenceName: 160
+    objectRootPosition: {x: 0.022, y: 0.001, z: -0.01}
+    objectRootRotation: {x: 0, y: -3, z: 0}
+  - referenceName: 160-1
     targetObject: {fileID: 0}
-  - referenceName: 250
+    objectRootPosition: {x: 0.011, y: 0.03, z: 0}
+    objectRootRotation: {x: 0, y: 0, z: 0}
+  - referenceName: 250-1
     targetObject: {fileID: 0}
+    objectRootPosition: {x: 0.065, y: 0.04, z: 0.09}
+    objectRootRotation: {x: 0, y: 2.829, z: 0}
+  - referenceName: 1015-2
+    targetObject: {fileID: 0}
+    objectRootPosition: {x: -0.076, y: 0.0454, z: -0.1398}
+    objectRootRotation: {x: 0, y: 90, z: 0}
+  - referenceName: 160-2
+    targetObject: {fileID: 0}
+    objectRootPosition: {x: -0.08, y: 0.0703, z: -0.094}
+    objectRootRotation: {x: 0, y: 90, z: 0}
+  - referenceName: 250-2
+    targetObject: {fileID: 0}
+    objectRootPosition: {x: -0.089, y: 0.174, z: -0.113}
+    objectRootRotation: {x: 0, y: 90, z: 0}
 --- !u!1 &5408207607793220101
 GameObject:
   m_ObjectHideFlags: 0
