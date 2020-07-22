@@ -132,8 +132,8 @@ namespace AR
         {
             foreach (Trackable trackable in trackables.Where(x => x.IsActive))
             {
-                Vector3 directionToTr = trackable.Position - cameraTransform.transform.position;
-                if (Vector3.Angle(directionToTr, cameraTransform.transform.forward) > angleToHide)
+                Vector3 directionToTr = trackable.Position - cameraTransform.position;
+                if (Vector3.Angle(directionToTr, cameraTransform.forward) > angleToHide)
                 {
                     appManager.DeactivateCurrentLayout();
                 }
